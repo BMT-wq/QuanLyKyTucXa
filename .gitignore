@@ -1,0 +1,26 @@
+## Visual Studio / C# WinForms Ignore Patterns
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache
+*.pdb
+*.VisualState.xml
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# OS Files
+.DS_Store
+Thumbs.db
