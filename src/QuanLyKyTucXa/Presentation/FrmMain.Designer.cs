@@ -40,24 +40,6 @@ namespace QuanLyKyTucXa.Presentation
         private ToolStripMenuItem menuTroGiup;
         private ToolStripMenuItem menuThongTin;
 
-        // Toolbar
-        private ToolStrip toolStripMain;
-        private ToolStripButton btnToolTrangChu;
-        private ToolStripSeparator sepTool1;
-        private ToolStripButton btnToolToaNha;
-        private ToolStripButton btnToolPhong;
-        private ToolStripSeparator sepTool2;
-        private ToolStripButton btnToolSinhVien;
-        private ToolStripButton btnToolHopDong;
-        private ToolStripSeparator sepTool3;
-        private ToolStripButton btnToolDienNuoc;
-        private ToolStripButton btnToolThuPhi;
-        private ToolStripSeparator sepTool4;
-        private ToolStripButton btnToolLuu;
-        private ToolStripButton btnToolLamMoi;
-        private ToolStripSeparator sepTool5;
-        private ToolStripButton btnToolDangXuat;
-
         // Status Strip & Timer
         private StatusStrip statusStripMain;
         private ToolStripStatusLabel lblStatusUser;
@@ -109,23 +91,6 @@ namespace QuanLyKyTucXa.Presentation
             this.menuTroGiup = new System.Windows.Forms.ToolStripMenuItem();
             this.menuThongTin = new System.Windows.Forms.ToolStripMenuItem();
 
-            this.toolStripMain = new System.Windows.Forms.ToolStrip();
-            this.btnToolTrangChu = new System.Windows.Forms.ToolStripButton();
-            this.sepTool1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnToolToaNha = new System.Windows.Forms.ToolStripButton();
-            this.btnToolPhong = new System.Windows.Forms.ToolStripButton();
-            this.sepTool2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnToolSinhVien = new System.Windows.Forms.ToolStripButton();
-            this.btnToolHopDong = new System.Windows.Forms.ToolStripButton();
-            this.sepTool3 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnToolDienNuoc = new System.Windows.Forms.ToolStripButton();
-            this.btnToolThuPhi = new System.Windows.Forms.ToolStripButton();
-            this.sepTool4 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnToolLuu = new System.Windows.Forms.ToolStripButton();
-            this.btnToolLamMoi = new System.Windows.Forms.ToolStripButton();
-            this.sepTool5 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnToolDangXuat = new System.Windows.Forms.ToolStripButton();
-
             this.statusStripMain = new System.Windows.Forms.StatusStrip();
             this.lblStatusUser = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblStatusStats = new System.Windows.Forms.ToolStripStatusLabel();
@@ -133,7 +98,6 @@ namespace QuanLyKyTucXa.Presentation
             this.timerClock = new System.Windows.Forms.Timer(this.components);
 
             this.menuStripMain.SuspendLayout();
-            this.toolStripMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
             this.SuspendLayout();
 
@@ -313,165 +277,6 @@ namespace QuanLyKyTucXa.Presentation
             this.menuThongTin.Click += new System.EventHandler(this.MenuThongTin_Click);
 
             // =====================================================
-            // toolStripMain (Thanh công cụ lớn, chuẩn WinForms Designer)
-            // =====================================================
-            this.toolStripMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
-            this.toolStripMain.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStripMain.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.toolStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                this.btnToolTrangChu,
-                this.sepTool1,
-                this.btnToolToaNha,
-                this.btnToolPhong,
-                this.sepTool2,
-                this.btnToolSinhVien,
-                this.btnToolHopDong,
-                this.sepTool3,
-                this.btnToolDienNuoc,
-                this.btnToolThuPhi,
-                this.sepTool4,
-                this.btnToolLuu,
-                this.btnToolLamMoi,
-                this.sepTool5,
-                this.btnToolDangXuat
-            });
-            this.toolStripMain.Location = new System.Drawing.Point(0, 25);
-            this.toolStripMain.Name = "toolStripMain";
-            this.toolStripMain.Padding = new System.Windows.Forms.Padding(10, 4, 10, 4);
-            this.toolStripMain.Size = new System.Drawing.Size(1100, 36);
-            this.toolStripMain.TabIndex = 2;
-
-            // btnToolTrangChu
-            this.btnToolTrangChu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnToolTrangChu.Font = new System.Drawing.Font("Segoe UI", 9.25F, System.Drawing.FontStyle.Bold);
-            this.btnToolTrangChu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
-            this.btnToolTrangChu.Margin = new System.Windows.Forms.Padding(2, 1, 2, 2);
-            this.btnToolTrangChu.Name = "btnToolTrangChu";
-            this.btnToolTrangChu.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnToolTrangChu.Size = new System.Drawing.Size(95, 25);
-            this.btnToolTrangChu.Text = "📊 Trang Chủ";
-            this.btnToolTrangChu.Click += new System.EventHandler(this.MenuTrangChu_Click);
-
-            // sepTool1
-            this.sepTool1.Name = "sepTool1";
-            this.sepTool1.Size = new System.Drawing.Size(6, 28);
-
-            // btnToolToaNha
-            this.btnToolToaNha.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnToolToaNha.Font = new System.Drawing.Font("Segoe UI", 9.25F, System.Drawing.FontStyle.Bold);
-            this.btnToolToaNha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.btnToolToaNha.Margin = new System.Windows.Forms.Padding(2, 1, 2, 2);
-            this.btnToolToaNha.Name = "btnToolToaNha";
-            this.btnToolToaNha.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnToolToaNha.Size = new System.Drawing.Size(86, 25);
-            this.btnToolToaNha.Text = "🏢 Tòa Nhà";
-            this.btnToolToaNha.Click += new System.EventHandler(this.MenuToaNha_Click);
-
-            // btnToolPhong
-            this.btnToolPhong.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnToolPhong.Font = new System.Drawing.Font("Segoe UI", 9.25F, System.Drawing.FontStyle.Bold);
-            this.btnToolPhong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(125)))), ((int)(((byte)(50)))));
-            this.btnToolPhong.Margin = new System.Windows.Forms.Padding(2, 1, 2, 2);
-            this.btnToolPhong.Name = "btnToolPhong";
-            this.btnToolPhong.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnToolPhong.Size = new System.Drawing.Size(102, 25);
-            this.btnToolPhong.Text = "🚪 Phòng KTX";
-            this.btnToolPhong.Click += new System.EventHandler(this.MenuPhong_Click);
-
-            // sepTool2
-            this.sepTool2.Name = "sepTool2";
-            this.sepTool2.Size = new System.Drawing.Size(6, 28);
-
-            // btnToolSinhVien
-            this.btnToolSinhVien.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnToolSinhVien.Font = new System.Drawing.Font("Segoe UI", 9.25F, System.Drawing.FontStyle.Bold);
-            this.btnToolSinhVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(108)))), ((int)(((byte)(0)))));
-            this.btnToolSinhVien.Margin = new System.Windows.Forms.Padding(2, 1, 2, 2);
-            this.btnToolSinhVien.Name = "btnToolSinhVien";
-            this.btnToolSinhVien.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnToolSinhVien.Size = new System.Drawing.Size(92, 25);
-            this.btnToolSinhVien.Text = "👨‍🎓 Sinh Viên";
-            this.btnToolSinhVien.Click += new System.EventHandler(this.MenuSinhVien_Click);
-
-            // btnToolHopDong
-            this.btnToolHopDong.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnToolHopDong.Font = new System.Drawing.Font("Segoe UI", 9.25F, System.Drawing.FontStyle.Bold);
-            this.btnToolHopDong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(31)))), ((int)(((byte)(162)))));
-            this.btnToolHopDong.Margin = new System.Windows.Forms.Padding(2, 1, 2, 2);
-            this.btnToolHopDong.Name = "btnToolHopDong";
-            this.btnToolHopDong.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnToolHopDong.Size = new System.Drawing.Size(98, 25);
-            this.btnToolHopDong.Text = "📝 Hợp Đồng";
-            this.btnToolHopDong.Click += new System.EventHandler(this.MenuHopDong_Click);
-
-            // sepTool3
-            this.sepTool3.Name = "sepTool3";
-            this.sepTool3.Size = new System.Drawing.Size(6, 28);
-
-            // btnToolDienNuoc
-            this.btnToolDienNuoc.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnToolDienNuoc.Font = new System.Drawing.Font("Segoe UI", 9.25F, System.Drawing.FontStyle.Bold);
-            this.btnToolDienNuoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnToolDienNuoc.Margin = new System.Windows.Forms.Padding(2, 1, 2, 2);
-            this.btnToolDienNuoc.Name = "btnToolDienNuoc";
-            this.btnToolDienNuoc.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnToolDienNuoc.Size = new System.Drawing.Size(97, 25);
-            this.btnToolDienNuoc.Text = "⚡ Điện Nước";
-            this.btnToolDienNuoc.Click += new System.EventHandler(this.MenuDienNuoc_Click);
-
-            // btnToolThuPhi
-            this.btnToolThuPhi.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnToolThuPhi.Font = new System.Drawing.Font("Segoe UI", 9.25F, System.Drawing.FontStyle.Bold);
-            this.btnToolThuPhi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(137)))), ((int)(((byte)(123)))));
-            this.btnToolThuPhi.Margin = new System.Windows.Forms.Padding(2, 1, 2, 2);
-            this.btnToolThuPhi.Name = "btnToolThuPhi";
-            this.btnToolThuPhi.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnToolThuPhi.Size = new System.Drawing.Size(83, 25);
-            this.btnToolThuPhi.Text = "💰 Thu Phí";
-            this.btnToolThuPhi.Click += new System.EventHandler(this.MenuThuPhi_Click);
-
-            // sepTool4
-            this.sepTool4.Name = "sepTool4";
-            this.sepTool4.Size = new System.Drawing.Size(6, 28);
-
-            // btnToolLuu
-            this.btnToolLuu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnToolLuu.Font = new System.Drawing.Font("Segoe UI", 9.25F, System.Drawing.FontStyle.Bold);
-            this.btnToolLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.btnToolLuu.Margin = new System.Windows.Forms.Padding(2, 1, 2, 2);
-            this.btnToolLuu.Name = "btnToolLuu";
-            this.btnToolLuu.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnToolLuu.Size = new System.Drawing.Size(110, 25);
-            this.btnToolLuu.Text = "💾 Lưu Dữ Liệu";
-            this.btnToolLuu.Click += new System.EventHandler(this.MenuLuuDuLieu_Click);
-
-            // btnToolLamMoi
-            this.btnToolLamMoi.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnToolLamMoi.Font = new System.Drawing.Font("Segoe UI", 9.25F, System.Drawing.FontStyle.Bold);
-            this.btnToolLamMoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(97)))));
-            this.btnToolLamMoi.Margin = new System.Windows.Forms.Padding(2, 1, 2, 2);
-            this.btnToolLamMoi.Name = "btnToolLamMoi";
-            this.btnToolLamMoi.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnToolLamMoi.Size = new System.Drawing.Size(89, 25);
-            this.btnToolLamMoi.Text = "🔄 Làm Mới";
-            this.btnToolLamMoi.Click += new System.EventHandler(this.MenuTaiLaiDuLieu_Click);
-
-            // sepTool5
-            this.sepTool5.Name = "sepTool5";
-            this.sepTool5.Size = new System.Drawing.Size(6, 28);
-
-            // btnToolDangXuat
-            this.btnToolDangXuat.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnToolDangXuat.Font = new System.Drawing.Font("Segoe UI", 9.25F, System.Drawing.FontStyle.Bold);
-            this.btnToolDangXuat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnToolDangXuat.Margin = new System.Windows.Forms.Padding(2, 1, 2, 2);
-            this.btnToolDangXuat.Name = "btnToolDangXuat";
-            this.btnToolDangXuat.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnToolDangXuat.Size = new System.Drawing.Size(95, 25);
-            this.btnToolDangXuat.Text = "🚪 Đăng Xuất";
-            this.btnToolDangXuat.Click += new System.EventHandler(this.MenuDangXuat_Click);
-
-            // =====================================================
             // statusStripMain
             // =====================================================
             this.statusStripMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
@@ -484,7 +289,7 @@ namespace QuanLyKyTucXa.Presentation
             this.statusStripMain.Name = "statusStripMain";
             this.statusStripMain.Padding = new System.Windows.Forms.Padding(1, 0, 14, 0);
             this.statusStripMain.Size = new System.Drawing.Size(1100, 24);
-            this.statusStripMain.TabIndex = 3;
+            this.statusStripMain.TabIndex = 2;
 
             // lblStatusUser
             this.lblStatusUser.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
@@ -522,7 +327,6 @@ namespace QuanLyKyTucXa.Presentation
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(242)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(1100, 704);
             this.Controls.Add(this.statusStripMain);
-            this.Controls.Add(this.toolStripMain);
             this.Controls.Add(this.menuStripMain);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.IsMdiContainer = true;
@@ -537,8 +341,6 @@ namespace QuanLyKyTucXa.Presentation
 
             this.menuStripMain.ResumeLayout(false);
             this.menuStripMain.PerformLayout();
-            this.toolStripMain.ResumeLayout(false);
-            this.toolStripMain.PerformLayout();
             this.statusStripMain.ResumeLayout(false);
             this.statusStripMain.PerformLayout();
             this.ResumeLayout(false);
