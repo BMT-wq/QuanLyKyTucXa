@@ -1,0 +1,4 @@
+SV001|Nguyễn Văn An|2004-05-15|Nam|001204012345|0912345678|an.nv@gmail.com|CNTT K46A|Công nghệ thông tin|Hà Nội
+SV002|Trần Thị Bình|2005-09-20|Nữ|001205098765|0987654321|binh.tt@gmail.com|KT K47B|Kinh tế|Đà Nẵng
+SV003|Lê Hoàng Cường|2004-11-02|Nam|001204056789|0903123456|cuong.lh@gmail.com|CNTT K46B|Công nghệ thông tin|Hải Phòng
+SV004|Phạm Ngọc Diệp|2005-03-10|Nữ|001205034567|0978901234|diep.pn@gmail.com|NN K47A|Ngoại ngữ|Cần Thơ

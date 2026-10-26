@@ -1,0 +1,4 @@
+P101|Phòng 101|TN_A|Nam|4|1|600000|Còn chỗ
+P102|Phòng 102|TN_A|Nam|4|0|600000|Còn chỗ
+P201|Phòng 201|TN_B|Nữ|4|1|650000|Còn chỗ
+P202|Phòng 202|TN_B|Nữ|4|0|650000|Còn chỗ
