@@ -1,1 +1,3 @@
-admin|admin123|Quản trị viên|Admin|True
+admin|admin123|Quản Trị Viên KTX|Admin|True
+quanly01|123456|Nguyễn Văn Quản Lý|CanBo|True
+ketoan01|123456|Trần Thị Kế Toán|NhanVien|True
