@@ -1,7 +1,7 @@
-PT001|HD001|P101|Tiền phòng|0|10|2026|0001-01-01|2026-10-01|Thu tiền phòng kỳ 1 cho SV001
-PT002|HD002|P101|Tiền phòng|0|10|2026|0001-01-01|2026-10-02|Thu tiền phòng kỳ 1 cho SV002
-PT003|HD003|P201|Tiền phòng|0|10|2026|0001-01-01|2026-10-02|Thu tiền phòng kỳ 1 cho SV003
-PT004|HD004|P201|Tiền phòng|0|10|2026|0001-01-01|2026-10-03|Thu tiền phòng kỳ 1 cho SV004
-PT005|HD001|P101|Điện nước|0|10|2026|0001-01-01|2026-10-15|Thu tiền điện nước tháng 10 phòng P101
-PT006|HD003|P201|Điện nước|0|10|2026|0001-01-01|2026-10-16|Thu tiền điện nước tháng 10 phòng P201
-PT007|HD006|P302|Điện nước|0|10|2026|0001-01-01|2026-10-17|Thu tiền điện nước tháng 10 phòng P302
+PT001|HD001|P101|Tiền phòng|0|0|10|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV001
+PT002|HD002|P101|Tiền phòng|0|0|10|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV002
+PT003|HD003|P201|Tiền phòng|0|0|10|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV003
+PT004|HD004|P201|Tiền phòng|0|0|10|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV004
+PT005|HD001|P101|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10 phòng P101
+PT006|HD003|P201|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10 phòng P201
+PT007|HD006|P302|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10 phòng P302
