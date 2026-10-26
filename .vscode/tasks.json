@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Solution",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/QuanLyKyTucXa.sln"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run Application",
+            "command": "${workspaceFolder}/src/QuanLyKyTucXa/bin/Debug/QuanLyKyTucXa.exe",
+            "type": "process",
+            "dependsOn": "Build Solution",
+            "problemMatcher": []
+        }
+    ]
+}
