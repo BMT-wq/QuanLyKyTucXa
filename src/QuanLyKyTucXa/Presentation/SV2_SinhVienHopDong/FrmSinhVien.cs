@@ -18,7 +18,11 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="context"></param>
+        /// <exception cref="ArgumentNullException"></exception>
         public FrmSinhVien(DataContext context) : this()
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
