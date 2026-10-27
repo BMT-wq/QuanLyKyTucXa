@@ -54,17 +54,14 @@
     <Compile Include="Domain\HopDong.cs" />
     <Compile Include="Domain\DienNuoc.cs" />
     <Compile Include="Domain\ThuPhi.cs" />
-
     <!-- Infrastructure Layer -->
     <Compile Include="Infrastructure\FileHandler.cs" />
-
     <!-- Application Layer -->
     <Compile Include="Application\DataContext.cs" />
     <Compile Include="Application\Validator.cs" />
     <Compile Include="Application\PhongService.cs" />
     <Compile Include="Application\HopDongService.cs" />
     <Compile Include="Application\ThuPhiService.cs" />
-
     <!-- Presentation Layer -->
     <Compile Include="Presentation\FrmDangNhap.cs">
       <SubType>Form</SubType>
@@ -84,7 +81,6 @@
     <Compile Include="Presentation\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-
     <!-- Phân hệ 1: Phòng & Tòa nhà -->
     <Compile Include="Presentation\SV1_PhongToaNha\FrmToaNha.cs">
       <SubType>Form</SubType>
@@ -98,7 +94,6 @@
     <Compile Include="Presentation\SV1_PhongToaNha\FrmPhong.Designer.cs">
       <DependentUpon>FrmPhong.cs</DependentUpon>
     </Compile>
-
     <!-- Phân hệ 2: Sinh viên & Hợp đồng -->
     <Compile Include="Presentation\SV2_SinhVienHopDong\FrmSinhVien.cs">
       <SubType>Form</SubType>
@@ -112,7 +107,6 @@
     <Compile Include="Presentation\SV2_SinhVienHopDong\FrmHopDong.Designer.cs">
       <DependentUpon>FrmHopDong.cs</DependentUpon>
     </Compile>
-
     <!-- Phân hệ 3: Điện nước & Thu phí -->
     <Compile Include="Presentation\SV3_DienNuocThuPhi\FrmDienNuoc.cs">
       <SubType>Form</SubType>
@@ -126,10 +120,15 @@
     <Compile Include="Presentation\SV3_DienNuocThuPhi\FrmThuPhi.Designer.cs">
       <DependentUpon>FrmThuPhi.cs</DependentUpon>
     </Compile>
-
     <!-- Program & Properties -->
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation\SV3_DienNuocThuPhi\FrmDienNuoc.resx">
+      <DependentUpon>FrmDienNuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\SV3_DienNuocThuPhi\FrmThuPhi.resx">
+      <DependentUpon>FrmThuPhi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

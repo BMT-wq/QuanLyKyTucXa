@@ -382,10 +382,10 @@ namespace QuanLyKyTucXa.Infrastructure
                     var parts = line.Split(Delimiter);
                     if (parts.Length >= 9)
                     {
-                        int.TryParse(parts[3].Trim(), out int thang);
-                        int.TryParse(parts[4].Trim(), out int nam);
-                        decimal.TryParse(parts[5].Trim(), NumberStyles.Any, CultureInfo.InvariantCulture, out decimal soTien);
-                        DateTime.TryParseExact(parts[6].Trim(), "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime ngayThu);
+                        int.TryParse(parts[4].Trim(), out int thang);
+                        int.TryParse(parts[5].Trim(), out int nam);
+                        decimal.TryParse(parts[6].Trim(), NumberStyles.Any, CultureInfo.InvariantCulture, out decimal soTien);
+                        DateTime.TryParseExact(parts[7].Trim(), "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime ngayThu);
                         string ghiChu = parts.Length > 9 ? parts[9].Trim() : "";
 
                         list.Add(new ThuPhi(
@@ -397,7 +397,7 @@ namespace QuanLyKyTucXa.Infrastructure
                             nam,
                             soTien,
                             ngayThu,
-                            parts[7].Trim(),
+                            parts[8].Trim(),
                             ghiChu
                         ));
                     }
