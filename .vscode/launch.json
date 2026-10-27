@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Framework Launch (QuanLyKyTucXa)",
+            "type": "clr",
+            "request": "launch",
+            "preLaunchTask": "Build Solution",
+            "program": "${workspaceFolder}/src/QuanLyKyTucXa/bin/Debug/QuanLyKyTucXa.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/QuanLyKyTucXa/bin/Debug",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        }
+    ]
+}

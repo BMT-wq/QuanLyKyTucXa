@@ -1,0 +1,11 @@
+{
+    "folders": [
+        {
+            "name": "QuanLyKyTucXa",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "dotnet.defaultSolution": "QuanLyKyTucXa.sln"
+    }
+}
