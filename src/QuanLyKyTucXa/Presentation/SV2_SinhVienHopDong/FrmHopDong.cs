@@ -8,6 +8,7 @@ using QuanLyKyTucXa.Domain;
 
 namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 {
+    // test
     public partial class FrmHopDong : Form
     {
         private readonly DataContext _context;
