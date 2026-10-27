@@ -1,2 +1,6 @@
+
 TN_A|Tòa Nhà A (Khu Nam)|5|Dãy nhà nội trú nam
 TN_B|Tòa Nhà B (Khu Nữ)|5|Dãy nhà nội trú nữ
+TN01|Tòa A - Khu Nam|5|Khu ký túc xá nam sinh viên (Khu A)
+TN02|Tòa B - Khu Nữ|4|Khu ký túc xá nữ sinh viên (Khu B)
+TN03|Tòa C - Khu Hỗn Hợp|6|Tòa nhà dịch vụ & chất lượng cao mới xây

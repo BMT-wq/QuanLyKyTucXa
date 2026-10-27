@@ -1,4 +1,13 @@
+
 P101|Phòng 101|TN_A|Nam|4|1|600000|Còn chỗ
 P102|Phòng 102|TN_A|Nam|4|0|600000|Còn chỗ
 P201|Phòng 201|TN_B|Nữ|4|1|650000|Còn chỗ
 P202|Phòng 202|TN_B|Nữ|4|0|650000|Còn chỗ
+P101|Phòng 101|TN01|Nam|6|2|500000|Còn chỗ
+P102|Phòng 102|TN01|Nam|4|4|600000|Đầy
+P103|Phòng 103|TN01|Nam|4|0|450000|Còn chỗ
+P201|Phòng 201|TN02|Nữ|6|3|550000|Còn chỗ
+P202|Phòng 202|TN02|Nữ|4|4|650000|Đầy
+P301|Phòng 301|TN03|Nam|4|0|800000|Đang sửa chữa
+P302|Phòng 302|TN03|Nữ|4|1|800000|Còn chỗ
+P104|Phòng 104|TN01|Nam|6|0|500000|Còn chỗ

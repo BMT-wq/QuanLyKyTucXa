@@ -1,5 +1,12 @@
+
 SV001|Nguyễn Văn An|2004-05-15|Nam|001204012345|0912345678|an.nv@gmail.com|CNTT K46A|Công nghệ thông tin|Hà Nội
 SV002|Trần Thị Bình|2005-09-20|Nữ|001205098765|0987654321|binh.tt@gmail.com|KT K47B|Kinh tế|Đà Nẵng
 SV003|Lê Hoàng Cường|2004-11-02|Nam|001204056789|0903123456|cuong.lh@gmail.com|CNTT K46B|Công nghệ thông tin|Hải Phòng
 SV004|Phạm Ngọc Diệp|2005-03-10|Nữ|001205034567|0978901234|diep.pn@gmail.com|NN K47A|Ngoại ngữ|Cần Thơ
 SV005|Bui Minh Tu|2008-10-26|Nam|012545666422|0567522456|tubui@gmail.com|CNTT 24|Cong nghe thong tin|Phu Yen
+SV001|Nguyễn Văn An|2004-05-15|Nam|001204001234|0912345678|an.nv@sv.edu.vn|22DTH01|Công nghệ thông tin|Hà Nội
+SV002|Trần Minh Đức|2004-08-20|Nam|001204005678|0987654321|duc.tm@sv.edu.vn|22DTH02|Công nghệ thông tin|Đà Nẵng
+SV003|Lê Thị Mai|2005-03-10|Nữ|038205009876|0903112233|mai.lt@sv.edu.vn|23DQT01|Quản trị kinh doanh|Hải Phòng
+SV004|Phạm Thu Hương|2005-11-25|Nữ|040205004321|0934556677|huong.pt@sv.edu.vn|23DQT02|Quản trị kinh doanh|Quảng Ninh
+SV005|Hoàng Bích Ngọc|2004-09-18|Nữ|001204007890|0978998877|ngoc.hb@sv.edu.vn|22DNA01|Ngôn ngữ Anh|Nghệ An
+SV006|Vũ Thùy Linh|2005-07-02|Nữ|025205003456|0945667788|linh.vt@sv.edu.vn|23DNA02|Ngôn ngữ Anh|Nam Định
