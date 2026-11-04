@@ -123,6 +123,12 @@
     <!-- Program & Properties -->
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation\SV2_SinhVienHopDong\FrmHopDong.resx">
+      <DependentUpon>FrmHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\SV2_SinhVienHopDong\FrmSinhVien.resx">
+      <DependentUpon>FrmSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\SV3_DienNuocThuPhi\FrmDienNuoc.resx">
       <DependentUpon>FrmDienNuoc.cs</DependentUpon>
     </EmbeddedResource>
