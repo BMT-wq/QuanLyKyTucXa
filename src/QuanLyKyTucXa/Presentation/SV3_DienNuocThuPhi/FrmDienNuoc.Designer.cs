@@ -76,9 +76,8 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             this.pnlHeader.Controls.Add(this.lblHeaderTitle);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1579, 80);
+            this.pnlHeader.Size = new System.Drawing.Size(1184, 65);
             this.pnlHeader.TabIndex = 0;
             // 
             // lblHeaderSub
@@ -86,13 +85,10 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             this.lblHeaderSub.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblHeaderSub.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
             this.lblHeaderSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
-            this.lblHeaderSub.Location = new System.Drawing.Point(0, 49);
-            this.lblHeaderSub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHeaderSub.Location = new System.Drawing.Point(0, 40);
             this.lblHeaderSub.Name = "lblHeaderSub";
-            this.lblHeaderSub.Size = new System.Drawing.Size(1579, 31);
+            this.lblHeaderSub.Size = new System.Drawing.Size(1184, 25);
             this.lblHeaderSub.TabIndex = 1;
-            this.lblHeaderSub.Text = "Khung giao diện mẫu: Sinh viên 3 bổ sung controls ghi chỉ số điện, nước cũ/mới, t" +
-    "ính tiền tự động và ghi nhận thanh toán.";
             this.lblHeaderSub.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblHeaderTitle
@@ -101,16 +97,15 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             this.lblHeaderTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.lblHeaderTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
             this.lblHeaderTitle.Location = new System.Drawing.Point(0, 0);
-            this.lblHeaderTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHeaderTitle.Name = "lblHeaderTitle";
-            this.lblHeaderTitle.Size = new System.Drawing.Size(1579, 47);
+            this.lblHeaderTitle.Size = new System.Drawing.Size(1184, 38);
             this.lblHeaderTitle.TabIndex = 0;
-            this.lblHeaderTitle.Text = "PHÂN HỆ 3: QUẢN LÝ CHỈ SỐ ĐIỆN NƯỚC (SV3)";
+            this.lblHeaderTitle.Text = "QUẢN LÝ CHỈ SỐ ĐIỆN NƯỚC";
             this.lblHeaderTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // grpInfo
             // 
-            this.grpInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.grpInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grpInfo.Controls.Add(this.lblMaPhong);
             this.grpInfo.Controls.Add(this.txtMaPhong);
@@ -130,11 +125,9 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             this.grpInfo.Controls.Add(this.btnXoa);
             this.grpInfo.Controls.Add(this.btnLamMoi);
             this.grpInfo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.grpInfo.Location = new System.Drawing.Point(16, 92);
-            this.grpInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpInfo.Location = new System.Drawing.Point(12, 75);
             this.grpInfo.Name = "grpInfo";
-            this.grpInfo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grpInfo.Size = new System.Drawing.Size(1547, 215);
+            this.grpInfo.Size = new System.Drawing.Size(1160, 175);
             this.grpInfo.TabIndex = 1;
             this.grpInfo.TabStop = false;
             this.grpInfo.Text = "Thông tin chỉ số điện nước";
@@ -143,120 +136,108 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             // 
             this.lblMaPhong.AutoSize = true;
             this.lblMaPhong.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.lblMaPhong.Location = new System.Drawing.Point(27, 39);
-            this.lblMaPhong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMaPhong.Location = new System.Drawing.Point(20, 32);
             this.lblMaPhong.Name = "lblMaPhong";
-            this.lblMaPhong.Size = new System.Drawing.Size(84, 21);
+            this.lblMaPhong.Size = new System.Drawing.Size(72, 17);
             this.lblMaPhong.TabIndex = 0;
             this.lblMaPhong.Text = "Mã phòng:";
             // 
             // txtMaPhong
             // 
             this.txtMaPhong.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txtMaPhong.Location = new System.Drawing.Point(147, 36);
-            this.txtMaPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaPhong.Location = new System.Drawing.Point(110, 29);
             this.txtMaPhong.Name = "txtMaPhong";
-            this.txtMaPhong.Size = new System.Drawing.Size(239, 29);
+            this.txtMaPhong.Size = new System.Drawing.Size(180, 24);
             this.txtMaPhong.TabIndex = 1;
             // 
             // lblThangNam
             // 
             this.lblThangNam.AutoSize = true;
             this.lblThangNam.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.lblThangNam.Location = new System.Drawing.Point(27, 89);
-            this.lblThangNam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblThangNam.Location = new System.Drawing.Point(20, 72);
             this.lblThangNam.Name = "lblThangNam";
-            this.lblThangNam.Size = new System.Drawing.Size(96, 21);
+            this.lblThangNam.Size = new System.Drawing.Size(80, 17);
             this.lblThangNam.TabIndex = 2;
             this.lblThangNam.Text = "Tháng/Năm:";
             // 
             // txtThangNam
             // 
             this.txtThangNam.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txtThangNam.Location = new System.Drawing.Point(147, 85);
-            this.txtThangNam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtThangNam.Location = new System.Drawing.Point(110, 69);
             this.txtThangNam.Name = "txtThangNam";
-            this.txtThangNam.Size = new System.Drawing.Size(239, 29);
+            this.txtThangNam.Size = new System.Drawing.Size(180, 24);
             this.txtThangNam.TabIndex = 3;
             // 
             // lblDienCu
             // 
             this.lblDienCu.AutoSize = true;
             this.lblDienCu.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.lblDienCu.Location = new System.Drawing.Point(427, 39);
-            this.lblDienCu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDienCu.Location = new System.Drawing.Point(320, 32);
             this.lblDienCu.Name = "lblDienCu";
-            this.lblDienCu.Size = new System.Drawing.Size(65, 21);
+            this.lblDienCu.Size = new System.Drawing.Size(54, 17);
             this.lblDienCu.TabIndex = 4;
             this.lblDienCu.Text = "Điện cũ:";
             // 
             // txtDienCu
             // 
             this.txtDienCu.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txtDienCu.Location = new System.Drawing.Point(533, 36);
-            this.txtDienCu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDienCu.Location = new System.Drawing.Point(400, 29);
             this.txtDienCu.Name = "txtDienCu";
-            this.txtDienCu.Size = new System.Drawing.Size(239, 29);
+            this.txtDienCu.Size = new System.Drawing.Size(180, 24);
             this.txtDienCu.TabIndex = 5;
             // 
             // lblDienMoi
             // 
             this.lblDienMoi.AutoSize = true;
             this.lblDienMoi.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.lblDienMoi.Location = new System.Drawing.Point(427, 89);
-            this.lblDienMoi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDienMoi.Location = new System.Drawing.Point(320, 72);
             this.lblDienMoi.Name = "lblDienMoi";
-            this.lblDienMoi.Size = new System.Drawing.Size(77, 21);
+            this.lblDienMoi.Size = new System.Drawing.Size(63, 17);
             this.lblDienMoi.TabIndex = 6;
             this.lblDienMoi.Text = "Điện mới:";
             // 
             // txtDienMoi
             // 
             this.txtDienMoi.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txtDienMoi.Location = new System.Drawing.Point(533, 85);
-            this.txtDienMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDienMoi.Location = new System.Drawing.Point(400, 69);
             this.txtDienMoi.Name = "txtDienMoi";
-            this.txtDienMoi.Size = new System.Drawing.Size(239, 29);
+            this.txtDienMoi.Size = new System.Drawing.Size(180, 24);
             this.txtDienMoi.TabIndex = 7;
             // 
             // lblNuocCu
             // 
             this.lblNuocCu.AutoSize = true;
             this.lblNuocCu.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.lblNuocCu.Location = new System.Drawing.Point(827, 39);
-            this.lblNuocCu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNuocCu.Location = new System.Drawing.Point(620, 32);
             this.lblNuocCu.Name = "lblNuocCu";
-            this.lblNuocCu.Size = new System.Drawing.Size(71, 21);
+            this.lblNuocCu.Size = new System.Drawing.Size(60, 17);
             this.lblNuocCu.TabIndex = 8;
             this.lblNuocCu.Text = "Nước cũ:";
             // 
             // txtNuocCu
             // 
             this.txtNuocCu.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txtNuocCu.Location = new System.Drawing.Point(933, 36);
-            this.txtNuocCu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNuocCu.Location = new System.Drawing.Point(700, 29);
             this.txtNuocCu.Name = "txtNuocCu";
-            this.txtNuocCu.Size = new System.Drawing.Size(239, 29);
+            this.txtNuocCu.Size = new System.Drawing.Size(180, 24);
             this.txtNuocCu.TabIndex = 9;
             // 
             // lblNuocMoi
             // 
             this.lblNuocMoi.AutoSize = true;
             this.lblNuocMoi.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.lblNuocMoi.Location = new System.Drawing.Point(827, 89);
-            this.lblNuocMoi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNuocMoi.Location = new System.Drawing.Point(620, 72);
             this.lblNuocMoi.Name = "lblNuocMoi";
-            this.lblNuocMoi.Size = new System.Drawing.Size(83, 21);
+            this.lblNuocMoi.Size = new System.Drawing.Size(69, 17);
             this.lblNuocMoi.TabIndex = 10;
             this.lblNuocMoi.Text = "Nước mới:";
             // 
             // txtNuocMoi
             // 
             this.txtNuocMoi.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.txtNuocMoi.Location = new System.Drawing.Point(933, 85);
-            this.txtNuocMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNuocMoi.Location = new System.Drawing.Point(700, 69);
             this.txtNuocMoi.Name = "txtNuocMoi";
-            this.txtNuocMoi.Size = new System.Drawing.Size(239, 29);
+            this.txtNuocMoi.Size = new System.Drawing.Size(180, 24);
             this.txtNuocMoi.TabIndex = 11;
             // 
             // btnTinhTien
@@ -265,13 +246,13 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             this.btnTinhTien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTinhTien.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
             this.btnTinhTien.ForeColor = System.Drawing.Color.White;
-            this.btnTinhTien.Location = new System.Drawing.Point(147, 142);
-            this.btnTinhTien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTinhTien.Location = new System.Drawing.Point(110, 115);
             this.btnTinhTien.Name = "btnTinhTien";
-            this.btnTinhTien.Size = new System.Drawing.Size(133, 43);
+            this.btnTinhTien.Size = new System.Drawing.Size(100, 35);
             this.btnTinhTien.TabIndex = 12;
             this.btnTinhTien.Text = "Tính tiền";
             this.btnTinhTien.UseVisualStyleBackColor = false;
+            this.btnTinhTien.Click += new System.EventHandler(this.BtnTinhTien_Click);
             // 
             // btnLuu
             // 
@@ -279,13 +260,13 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(293, 142);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLuu.Location = new System.Drawing.Point(220, 115);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(120, 43);
+            this.btnLuu.Size = new System.Drawing.Size(90, 35);
             this.btnLuu.TabIndex = 13;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.BtnLuu_Click);
             // 
             // btnSua
             // 
@@ -293,13 +274,13 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(427, 142);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSua.Location = new System.Drawing.Point(320, 115);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(120, 43);
+            this.btnSua.Size = new System.Drawing.Size(90, 35);
             this.btnSua.TabIndex = 14;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.BtnSua_Click);
             // 
             // btnXoa
             // 
@@ -307,13 +288,13 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(560, 142);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoa.Location = new System.Drawing.Point(420, 115);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(120, 43);
+            this.btnXoa.Size = new System.Drawing.Size(90, 35);
             this.btnXoa.TabIndex = 15;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.BtnXoa_Click);
             // 
             // btnLamMoi
             // 
@@ -321,46 +302,39 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLamMoi.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoi.Location = new System.Drawing.Point(693, 142);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLamMoi.Location = new System.Drawing.Point(520, 115);
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(133, 43);
+            this.btnLamMoi.Size = new System.Drawing.Size(100, 35);
             this.btnLamMoi.TabIndex = 16;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.BtnLamMoi_Click);
             // 
             // dgvDienNuoc
             // 
-            this.dgvDienNuoc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.dgvDienNuoc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDienNuoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDienNuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDienNuoc.Location = new System.Drawing.Point(16, 320);
-            this.dgvDienNuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvDienNuoc.Location = new System.Drawing.Point(12, 260);
             this.dgvDienNuoc.Name = "dgvDienNuoc";
             this.dgvDienNuoc.RowHeadersWidth = 51;
-            this.dgvDienNuoc.Size = new System.Drawing.Size(1547, 528);
+            this.dgvDienNuoc.Size = new System.Drawing.Size(1160, 429);
             this.dgvDienNuoc.TabIndex = 2;
+            this.dgvDienNuoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDienNuoc_CellClick);
             // 
             // FrmDienNuoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1579, 863);
+            this.ClientSize = new System.Drawing.Size(1184, 701);
             this.Controls.Add(this.dgvDienNuoc);
             this.Controls.Add(this.grpInfo);
             this.Controls.Add(this.pnlHeader);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmDienNuoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý Điện Nước";
-                        this.btnTinhTien.Click += new System.EventHandler(this.BtnTinhTien_Click);
-            this.btnLuu.Click += new System.EventHandler(this.BtnLuu_Click);
-            this.btnSua.Click += new System.EventHandler(this.BtnSua_Click);
-            this.btnXoa.Click += new System.EventHandler(this.BtnXoa_Click);
-            this.btnLamMoi.Click += new System.EventHandler(this.BtnLamMoi_Click);
-            this.dgvDienNuoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDienNuoc_CellClick);
             this.Load += new System.EventHandler(this.FrmDienNuoc_Load);
             this.pnlHeader.ResumeLayout(false);
             this.grpInfo.ResumeLayout(false);

@@ -1,4 +1,4 @@
-PT001|HD001|P101|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV001
+PT001|HD001|P101|Tiền phòng|11|2026|500|2026-11-04|0001-01-01|Thu tiền phòng kỳ 1 cho SV001
 PT002|HD002|P101|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV002
 PT003|HD003|P201|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV003
 PT004|HD004|P201|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV004
