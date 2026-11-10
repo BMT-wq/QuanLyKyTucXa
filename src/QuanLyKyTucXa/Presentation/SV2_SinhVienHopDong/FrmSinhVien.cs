@@ -14,15 +14,14 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
         private readonly HopDongService _hopDongService;
         private bool _isBinding = false;
 
+        // Lưu Mã SV đang được chọn để cập nhật (null = chế độ thêm mới)
+        private string _maSVDangSua = null;
+
         public FrmSinhVien()
         {
             InitializeComponent();
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="context"></param>
-        /// <exception cref="ArgumentNullException"></exception>
+
         public FrmSinhVien(DataContext context) : this()
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
@@ -216,6 +215,9 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
         {
             if (dgvSinhVien.CurrentRow?.DataBoundItem is SinhVien sv)
             {
+                // Ghi nhớ Mã SV đang được chọn để sử dụng khi cập nhật
+                _maSVDangSua = sv.MaSV;
+
                 txtMaSV.Text = sv.MaSV;
                 txtMaSV.ReadOnly = true;
                 txtMaSV.BackColor = Color.FromArgb(245, 245, 245);
@@ -234,6 +236,9 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
         private void ResetForm()
         {
+            // Xóa trạng thái chế độ sửa
+            _maSVDangSua = null;
+
             txtMaSV.ReadOnly = false;
             txtMaSV.BackColor = Color.White;
             txtMaSV.Text = _hopDongService?.SinhMaSinhVienTuDong() ?? "SV001";
@@ -246,6 +251,9 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             txtLop.Clear();
             txtKhoa.Clear();
             txtQueQuan.Clear();
+
+            // Bỏ chọn dòng trong bảng
+            dgvSinhVien.ClearSelection();
 
             txtHoTen.Focus();
         }
@@ -304,15 +312,37 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
         private void BtnThem_Click(object sender, EventArgs e)
         {
+            // Nếu đang ở chế độ sửa thì cảnh báo, không cho thêm mới
+            if (_maSVDangSua != null)
+            {
+                MessageBox.Show(
+                    "Bạn đang ở chế độ chỉnh sửa sinh viên '" + _maSVDangSua + "'.\nVui lòng nhấn 'Làm mới' để chuyển sang chế độ thêm mới!",
+                    "Cảnh báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
             if (!ValidateInput(out SinhVien sv, out string error))
             {
                 MessageBox.Show(error, "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
+            // Kiểm tra trùng Mã SV trước khi gọi service (phòng trường hợp txtMaSV bị readonly)
+            if (txtMaSV.ReadOnly)
+            {
+                MessageBox.Show(
+                    "Mã sinh viên đang bị khóa. Vui lòng nhấn 'Làm mới' để nhập mã sinh viên mới!",
+                    "Cảnh báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
             if (_hopDongService.ThemSinhVien(sv, out string serviceError))
             {
-                MessageBox.Show($"Đã thêm sinh viên '{sv.HoTen}' thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đã thêm sinh viên '" + sv.HoTen + "' thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadKhoaFilter();
                 LoadData();
                 ResetForm();
@@ -325,9 +355,14 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
         private void BtnSua_Click(object sender, EventArgs e)
         {
-            if (dgvSinhVien.CurrentRow == null)
+            // Phải chọn sinh viên từ danh sách trước
+            if (_maSVDangSua == null)
             {
-                MessageBox.Show("Vui lòng chọn sinh viên cần cập nhật thông tin trong danh sách!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(
+                    "Vui lòng chọn sinh viên cần cập nhật thông tin trong danh sách!",
+                    "Thông báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
                 return;
             }
 
@@ -337,11 +372,25 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
                 return;
             }
 
-            if (_hopDongService.CapNhatSinhVien(sv, out string serviceError))
+            // Đảm bảo MaSV của đối tượng cập nhật là mã đã chọn ban đầu (không bị thay đổi)
+            var svCapNhat = new SinhVien(
+                _maSVDangSua,
+                sv.HoTen,
+                sv.NgaySinh,
+                sv.GioiTinh,
+                sv.SoCMND_CCCD,
+                sv.SoDienThoai,
+                sv.Email,
+                sv.Lop,
+                sv.Khoa,
+                sv.QueQuan);
+
+            if (_hopDongService.CapNhatSinhVien(svCapNhat, out string serviceError))
             {
-                MessageBox.Show($"Cập nhật thông tin sinh viên '{sv.HoTen}' thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Cập nhật thông tin sinh viên '" + svCapNhat.HoTen + "' thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadKhoaFilter();
                 LoadData();
+                ResetForm();
             }
             else
             {
