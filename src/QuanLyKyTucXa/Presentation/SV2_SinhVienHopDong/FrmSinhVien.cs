@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
 using QuanLyKyTucXa.Application;
@@ -13,6 +14,14 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
         private readonly DataContext _context;
         private readonly HopDongService _hopDongService;
         private bool _isBinding = false;
+
+        // Các định dạng ngày sinh được chấp nhận khi nhập bằng bàn phím
+        private static readonly string[] NgaySinhFormats =
+        {
+            "dd/MM/yyyy", "d/M/yyyy",
+            "dd-MM-yyyy", "d-M-yyyy",
+            "dd.MM.yyyy", "d.M.yyyy"
+        };
 
         // Lưu Mã SV đang được chọn để cập nhật (null = chế độ thêm mới)
         private string _maSVDangSua = null;
@@ -51,6 +60,9 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             txtTimKiem.TextChanged += TxtTimKiem_TextChanged;
             cboLocKhoa.SelectedIndexChanged += CboLoc_SelectedIndexChanged;
             cboLocGioiTinh.SelectedIndexChanged += CboLoc_SelectedIndexChanged;
+
+            txtNgaySinh.KeyPress += TxtNgaySinh_KeyPress;
+            txtNgaySinh.Leave += TxtNgaySinh_Leave;
 
             dgvSinhVien.SelectionChanged += DgvSinhVien_SelectionChanged;
             dgvSinhVien.CellClick += DgvSinhVien_CellClick;
@@ -213,7 +225,14 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
         private void SyncSelectionToForm()
         {
-            if (dgvSinhVien.CurrentRow?.DataBoundItem is SinhVien sv)
+            // Chỉ đồng bộ khi thực sự có dòng đang được chọn.
+            // Tránh trường hợp ClearSelection() vẫn giữ CurrentRow và tự động điền lại form.
+            if (dgvSinhVien.CurrentRow == null || !dgvSinhVien.CurrentRow.Selected)
+            {
+                return;
+            }
+
+            if (dgvSinhVien.CurrentRow.DataBoundItem is SinhVien sv)
             {
                 // Ghi nhớ Mã SV đang được chọn để sử dụng khi cập nhật
                 _maSVDangSua = sv.MaSV;
@@ -223,7 +242,7 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
                 txtMaSV.BackColor = Color.FromArgb(245, 245, 245);
 
                 txtHoTen.Text = sv.HoTen;
-                dtpNgaySinh.Value = sv.NgaySinh > dtpNgaySinh.MinDate && sv.NgaySinh < dtpNgaySinh.MaxDate ? sv.NgaySinh : DateTime.Today.AddYears(-18);
+                txtNgaySinh.Text = sv.NgaySinh.ToString("dd/MM/yyyy");
                 cboGioiTinh.SelectedItem = sv.GioiTinh ?? "Nam";
                 txtCCCD.Text = sv.SoCMND_CCCD;
                 txtDienThoai.Text = sv.SoDienThoai;
@@ -241,9 +260,11 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
             txtMaSV.ReadOnly = false;
             txtMaSV.BackColor = Color.White;
-            txtMaSV.Text = _hopDongService?.SinhMaSinhVienTuDong() ?? "SV001";
+
+            // Xóa trắng toàn bộ thông tin chi tiết
+            txtMaSV.Clear();
             txtHoTen.Clear();
-            dtpNgaySinh.Value = DateTime.Today.AddYears(-18);
+            txtNgaySinh.Clear();
             cboGioiTinh.SelectedIndex = 0;
             txtCCCD.Clear();
             txtDienThoai.Clear();
@@ -252,10 +273,48 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             txtKhoa.Clear();
             txtQueQuan.Clear();
 
-            // Bỏ chọn dòng trong bảng
-            dgvSinhVien.ClearSelection();
+            // Bỏ chọn dòng trong bảng. Tạm khóa binding để sự kiện SelectionChanged
+            // không điền lại dữ liệu của dòng đầu tiên vào form.
+            _isBinding = true;
+            try
+            {
+                dgvSinhVien.ClearSelection();
+                dgvSinhVien.CurrentCell = null;
+            }
+            finally
+            {
+                _isBinding = false;
+            }
 
-            txtHoTen.Focus();
+            txtMaSV.Focus();
+        }
+
+        private bool TryParseNgaySinh(string text, out DateTime ngaySinh)
+        {
+            return DateTime.TryParseExact(
+                text.Trim(),
+                NgaySinhFormats,
+                CultureInfo.InvariantCulture,
+                DateTimeStyles.None,
+                out ngaySinh);
+        }
+
+        private void TxtNgaySinh_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Chỉ cho phép nhập số và dấu '/' bằng bàn phím
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '/')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtNgaySinh_Leave(object sender, EventArgs e)
+        {
+            // Chuẩn hóa ngày sinh về định dạng dd/MM/yyyy sau khi rời ô nhập
+            if (TryParseNgaySinh(txtNgaySinh.Text, out DateTime ngaySinh))
+            {
+                txtNgaySinh.Text = ngaySinh.ToString("dd/MM/yyyy");
+            }
         }
 
         private bool ValidateInput(out SinhVien sv, out string error)
@@ -266,7 +325,7 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             string maSV = txtMaSV.Text.Trim();
             string hoTen = txtHoTen.Text.Trim();
             string gioiTinh = cboGioiTinh.SelectedItem?.ToString() ?? "Nam";
-            DateTime ngaySinh = dtpNgaySinh.Value;
+            string ngaySinhText = txtNgaySinh.Text.Trim();
             string cccd = txtCCCD.Text.Trim();
             string sdt = txtDienThoai.Text.Trim();
             string email = txtEmail.Text.Trim();
@@ -277,7 +336,26 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             if (!Validator.IsNotEmpty(maSV, "Mã sinh viên", out error)) return false;
             if (!Validator.IsNotEmpty(hoTen, "Họ và tên", out error)) return false;
 
-            if (DateTime.Today.Year - ngaySinh.Year < 15)
+            if (!Validator.IsNotEmpty(ngaySinhText, "Ngày sinh", out error)) return false;
+            if (!TryParseNgaySinh(ngaySinhText, out DateTime ngaySinh))
+            {
+                error = "Ngày sinh không đúng định dạng (dd/MM/yyyy)!";
+                return false;
+            }
+
+            if (ngaySinh.Date > DateTime.Today)
+            {
+                error = "Ngày sinh không được lớn hơn ngày hiện tại!";
+                return false;
+            }
+
+            int tuoi = DateTime.Today.Year - ngaySinh.Year;
+            if (ngaySinh.Date > DateTime.Today.AddYears(-tuoi))
+            {
+                tuoi--;
+            }
+
+            if (tuoi < 15)
             {
                 error = "Ngày sinh không hợp lệ (Sinh viên phải từ 15 tuổi trở lên)!";
                 return false;
