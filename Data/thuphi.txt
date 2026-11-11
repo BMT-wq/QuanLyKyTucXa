@@ -6,3 +6,7 @@ PT005|HD001|P101|Điện nước|0|0|0|0001-01-01|0001-01-01|Thu tiền điện 
 PT006|HD003|P201|Điện nước|0|0|0|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10 phòng P201
 PT007|HD006|P302|Điện nước|0|0|0|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10 phòng P302
 PT2610001|HD_01|01|Tiền phòng|10|2026|10000|2026-10-27|Admin|trả tiền
+PT2611001|HD001|P101|Điện nước|10|2026|135000|2026-11-11|Admin|Tiền điện nước T10/2026 chia đều (3 người) cho Nguyễn Văn An (SV001)
+PT2611002|HD001|P101|Điện nước|10|2026|135000|2026-11-11|Admin|Tiền điện nước T10/2026 chia đều (3 người) cho Nguyễn Văn An (SV001)
+PT2611003|HD002|P101|Điện nước|10|2026|135000|2026-11-11|Admin|Tiền điện nước T10/2026 chia đều (3 người) cho Trần Thị Bình (SV002)
+PT2611004|HD001|P101|Tiền đặt cọc|9|2026|500000|2026-09-01|Admin|Thu tiền cọc khi ký HĐ HD001 (Nguyễn Văn An). Đồng hồ bàn giao: Điện 10 kWh, Nước 10 m³

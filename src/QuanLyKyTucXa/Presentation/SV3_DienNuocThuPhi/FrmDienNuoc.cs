@@ -11,12 +11,23 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
     {
         private DataContext _context;
         private ThuPhiService _thuPhiService;
+        private bool _isBinding = false;
+
+        private class ComboBoxItemPhong
+        {
+            public string MaPhong { get; set; }
+            public string TenPhong { get; set; }
+            public int SoChoHienTai { get; set; }
+            public int SoChoToiDa { get; set; }
+            public override string ToString() => $"{MaPhong} - {TenPhong} ({SoChoHienTai}/{SoChoToiDa} người)";
+        }
 
         public FrmDienNuoc()
         {
             InitializeComponent();
             _context = new DataContext();
             _thuPhiService = new ThuPhiService(_context);
+            InitCustomEvents();
         }
 
         public FrmDienNuoc(DataContext context) : this()
@@ -25,18 +36,86 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             _thuPhiService = new ThuPhiService(_context);
         }
 
+        private void InitCustomEvents()
+        {
+            this.btnTinhTien.Click += BtnTinhTien_Click;
+            this.btnLuu.Click += BtnLuu_Click;
+            this.btnSua.Click += BtnSua_Click;
+            this.btnXoa.Click += BtnXoa_Click;
+            this.btnLamMoi.Click += BtnLamMoi_Click;
+            this.btnChiaTien.Click += BtnChiaTien_Click;
+            this.btnTraPhong.Click += BtnTraPhong_Click;
+            this.btnDongHoHD.Click += BtnDongHoHD_Click;
+            this.dgvDienNuoc.CellClick += DgvDienNuoc_CellClick;
+            this.txtTimPhong.TextChanged += TxtTimPhong_TextChanged;
+            this.btnHienThiTatCa.Click += BtnHienThiTatCa_Click;
+            this.cboPhong.SelectedIndexChanged += CboPhong_SelectedIndexChanged;
+            this.Load += FrmDienNuoc_Load;
+        }
+
         private void FrmDienNuoc_Load(object sender, EventArgs e)
         {
             txtThangNam.Text = $"{DateTime.Now.Month}/{DateTime.Now.Year}";
+            LoadPhongComboBox();
             LoadDataToGrid();
         }
 
-        private void LoadDataToGrid()
+        private void LoadPhongComboBox()
+        {
+            if (_thuPhiService == null) return;
+
+            _isBinding = true;
+            cboPhong.Items.Clear();
+
+            var phongList = _thuPhiService.GetAllPhong();
+            foreach (var p in phongList)
+            {
+                int soNguoi = _thuPhiService.GetSoNguoiDangOPhong(p.MaPhong);
+                cboPhong.Items.Add(new ComboBoxItemPhong
+                {
+                    MaPhong = p.MaPhong,
+                    TenPhong = p.TenPhong,
+                    SoChoHienTai = soNguoi,
+                    SoChoToiDa = p.SoChoToiDa
+                });
+            }
+
+            _isBinding = false;
+
+            if (cboPhong.Items.Count > 0)
+            {
+                cboPhong.SelectedIndex = 0;
+            }
+        }
+
+        private void CboPhong_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (_isBinding || !(cboPhong.SelectedItem is ComboBoxItemPhong item)) return;
+
+            txtMaPhong.Text = item.MaPhong;
+
+            // Tự động tìm chỉ số điện nước mới nhất của phòng làm chỉ số cũ
+            _thuPhiService.GetChiSoDienNuocMoiNhatCuaPhong(item.MaPhong, out int dienMoi, out int nuocMoi);
+            txtDienCu.Text = dienMoi.ToString();
+            txtNuocCu.Text = nuocMoi.ToString();
+            txtDienMoi.Clear();
+            txtNuocMoi.Clear();
+        }
+
+        private void LoadDataToGrid(string filterMaPhong = null)
         {
             try
             {
+                var list = _thuPhiService.GetAllDienNuoc();
+
+                if (!string.IsNullOrWhiteSpace(filterMaPhong))
+                {
+                    string kw = filterMaPhong.Trim().ToLower();
+                    list = list.Where(d => d.MaPhong != null && d.MaPhong.ToLower().Contains(kw)).ToList();
+                }
+
                 dgvDienNuoc.DataSource = null;
-                dgvDienNuoc.DataSource = _thuPhiService.GetAllDienNuoc();
+                dgvDienNuoc.DataSource = list;
 
                 if (dgvDienNuoc.Columns["MaDienNuoc"] != null)
                 {
@@ -60,6 +139,17 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             {
                 MessageBox.Show("Lỗi tải dữ liệu: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void TxtTimPhong_TextChanged(object sender, EventArgs e)
+        {
+            LoadDataToGrid(txtTimPhong.Text);
+        }
+
+        private void BtnHienThiTatCa_Click(object sender, EventArgs e)
+        {
+            txtTimPhong.Clear();
+            LoadDataToGrid();
         }
 
         private void BtnTinhTien_Click(object sender, EventArgs e)
@@ -88,10 +178,18 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
                     int soDien = Math.Max(0, dienMoi - dienCu);
                     int soNuoc = Math.Max(0, nuocMoi - nuocCu);
 
-                    MessageBox.Show($"--- TÍNH TOÁN NHANH TIỀN ĐIỆN NƯỚC ---\n" +
+                    string maPhong = txtMaPhong.Text.Trim();
+                    var dsHD = _thuPhiService.GetDanhSachHopDongHieuLucCuaPhong(maPhong);
+                    int soSV = dsHD.Count;
+                    string chiaTienText = soSV > 0
+                        ? $"- Chia đều {soSV} sinh viên đang ở: {tongTien / soSV:N0} đ/người\n"
+                        : "- Phòng hiện chưa có sinh viên nào đang ở.\n";
+
+                    MessageBox.Show($"--- TÍNH TOÁN TIỀN ĐIỆN NƯỚC PHÒNG {maPhong} ---\n" +
                                     $"- Điện tiêu thụ: {soDien} kWh x 3.000đ = {soDien * 3000:N0} đ\n" +
                                     $"- Nước tiêu thụ: {soNuoc} m³ x 15.000đ = {soNuoc * 15000:N0} đ\n" +
-                                    $"- TỔNG CỘNG: {tongTien:N0} VNĐ",
+                                    $"- TỔNG CỘNG: {tongTien:N0} VNĐ\n" +
+                                    $"{chiaTienText}",
                         "Kết quả tính toán", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -112,8 +210,8 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
                 string maPhong = txtMaPhong.Text.Trim();
                 if (string.IsNullOrEmpty(maPhong))
                 {
-                    MessageBox.Show("Vui lòng nhập mã phòng!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtMaPhong.Focus();
+                    MessageBox.Show("Vui lòng chọn phòng!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    cboPhong.Focus();
                     return;
                 }
 
@@ -242,13 +340,16 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
 
         private void BtnLamMoi_Click(object sender, EventArgs e)
         {
-            txtMaPhong.Clear();
             txtDienCu.Clear();
             txtDienMoi.Clear();
             txtNuocCu.Clear();
             txtNuocMoi.Clear();
             txtThangNam.Text = $"{DateTime.Now.Month}/{DateTime.Now.Year}";
-            txtMaPhong.Focus();
+
+            if (cboPhong.Items.Count > 0)
+            {
+                cboPhong.SelectedIndex = 0;
+            }
         }
 
         private void DgvDienNuoc_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -261,6 +362,226 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
                 txtDienMoi.Text = dn.ChiSoDienMoi.ToString();
                 txtNuocCu.Text = dn.ChiSoNuocCu.ToString();
                 txtNuocMoi.Text = dn.ChiSoNuocMoi.ToString();
+
+                // Đồng bộ cboPhong
+                _isBinding = true;
+                for (int i = 0; i < cboPhong.Items.Count; i++)
+                {
+                    if (cboPhong.Items[i] is ComboBoxItemPhong item && item.MaPhong.Equals(dn.MaPhong, StringComparison.OrdinalIgnoreCase))
+                    {
+                        cboPhong.SelectedIndex = i;
+                        break;
+                    }
+                }
+                _isBinding = false;
+            }
+        }
+
+        /// <summary>
+        /// Nghiệp vụ: Chia tiền điện nước đều cho các sinh viên trong phòng & Tự động tạo phiếu thu.
+        /// </summary>
+        private void BtnChiaTien_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvDienNuoc.CurrentRow == null || !(dgvDienNuoc.CurrentRow.DataBoundItem is DienNuoc selected))
+                {
+                    MessageBox.Show("Vui lòng chọn một hóa đơn điện nước trên bảng để chia tiền đều cho sinh viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (!_thuPhiService.TinhChiaTienDienNuoc(selected.MaDienNuoc, out int soSV, out decimal tienMoiSV, out var dsHD, out string thongTin))
+                {
+                    MessageBox.Show(thongTin, "Lỗi tính chia tiền", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (soSV == 0)
+                {
+                    MessageBox.Show($"Phòng '{selected.MaPhong}' hiện không có sinh viên nào có hợp đồng 'Hiệu lực'!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                string dsSVText = "";
+                int idx = 1;
+                foreach (var hd in dsHD)
+                {
+                    var sv = _thuPhiService.GetSinhVienById(hd.MaSV);
+                    string ten = sv != null ? sv.HoTen : hd.MaSV;
+                    dsSVText += $"  {idx++}. {ten} ({hd.MaSV}) - HĐ: {hd.MaHopDong} -> {tienMoiSV:N0} đ\n";
+                }
+
+                string msg = $"=== CHI TIẾT CHIA TIỀN ĐIỆN NƯỚC ĐỀU CHO SINH VIÊN ===\n\n" +
+                             $"- Hóa đơn: {selected.MaDienNuoc} (Tháng {selected.Thang}/{selected.Nam})\n" +
+                             $"- Phòng: {selected.MaPhong}\n" +
+                             $"- Tổng tiền hóa đơn: {selected.TongTien:N0} VNĐ\n" +
+                             $"- Sĩ số sinh viên đang ở: {soSV} người\n" +
+                             $"- Số tiền chia đều: {tienMoiSV:N0} VNĐ / sinh viên\n\n" +
+                             $"Danh sách sinh viên nộp:\n{dsSVText}\n" +
+                             $"Bạn có muốn TỰ ĐỘNG LẬP PHIẾU THU điện nước cho {soSV} sinh viên này ngay bây giờ không?";
+
+                var confirm = MessageBox.Show(msg, "Xác nhận lập phiếu thu chia đều", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (confirm == DialogResult.Yes)
+                {
+                    if (_thuPhiService.LapPhieuThuChiaDeuDienNuoc(selected.MaDienNuoc, "Admin", out string err))
+                    {
+                        MessageBox.Show($"Đã lập thành công {soSV} phiếu thu điện nước cho các sinh viên phòng {selected.MaPhong}!\nHóa đơn '{selected.MaDienNuoc}' đã được đánh dấu Đã Thanh Toán.",
+                            "Lập phiếu thu thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadDataToGrid();
+                    }
+                    else
+                    {
+                        MessageBox.Show(err, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Mở Form Quyết toán trả phòng & Trả cọc
+        /// </summary>
+        private void BtnTraPhong_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (var frm = new FrmQuyetToanTraPhong(_context))
+                {
+                    if (frm.ShowDialog() == DialogResult.OK)
+                    {
+                        LoadPhongComboBox();
+                        LoadDataToGrid();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi mở form quyết toán: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Nghiệp vụ: Gắn đồng hồ điện nước với hợp đồng mới & lập thu phí cọc vào ngày bắt đầu HĐ
+        /// </summary>
+        private void BtnDongHoHD_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var dsHD = _context.DanhSachHopDong
+                    .Where(h => h.TrangThai.Equals("Hiệu lực", StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+
+                if (dsHD.Count == 0)
+                {
+                    MessageBox.Show("Không có hợp đồng hiệu lực nào trong hệ thống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                // Hộp thoại WinForms chọn Hợp đồng và ghi nhận chỉ số đồng hồ ban đầu
+                using (Form dlg = new Form())
+                {
+                    dlg.Text = "Ghi nhận đồng hồ ban đầu & Thu cọc HĐ mới";
+                    dlg.Size = new Size(540, 320);
+                    dlg.StartPosition = FormStartPosition.CenterParent;
+                    dlg.FormBorderStyle = FormBorderStyle.FixedDialog;
+                    dlg.MaximizeBox = false;
+                    dlg.MinimizeBox = false;
+                    dlg.BackColor = Color.White;
+
+                    Label lblHD = new Label { Text = "Chọn hợp đồng:", Location = new Point(20, 25), AutoSize = true, Font = new Font("Segoe UI", 9.5F, FontStyle.Bold) };
+                    ComboBox cboHD = new ComboBox { Location = new Point(170, 22), Size = new Size(330, 28), DropDownStyle = ComboBoxStyle.DropDownList, Font = new Font("Segoe UI", 9.5F) };
+
+                    foreach (var h in dsHD)
+                    {
+                        var sv = _thuPhiService.GetSinhVienById(h.MaSV);
+                        string ten = sv != null ? sv.HoTen : h.MaSV;
+                        cboHD.Items.Add(new { Text = $"[{h.MaHopDong}] {ten} - Phòng {h.MaPhong} ({h.NgayBatDau:dd/MM/yyyy})", Value = h.MaHopDong });
+                    }
+                    cboHD.DisplayMember = "Text";
+                    cboHD.ValueMember = "Value";
+                    if (cboHD.Items.Count > 0) cboHD.SelectedIndex = 0;
+
+                    Label lblDien = new Label { Text = "Điện ban đầu (kWh):", Location = new Point(20, 75), AutoSize = true, Font = new Font("Segoe UI", 9.5F) };
+                    TextBox txtDienDau = new TextBox { Location = new Point(170, 72), Size = new Size(150, 28), Text = "0", Font = new Font("Segoe UI", 9.5F) };
+
+                    Label lblNuoc = new Label { Text = "Nước ban đầu (m³):", Location = new Point(20, 125), AutoSize = true, Font = new Font("Segoe UI", 9.5F) };
+                    TextBox txtNuocDau = new TextBox { Location = new Point(170, 122), Size = new Size(150, 28), Text = "0", Font = new Font("Segoe UI", 9.5F) };
+
+                    Label lblNote = new Label
+                    {
+                        Text = "ℹ️ Hệ thống sẽ tự động lập phiếu thu tiền cọc vào đúng ngày ký HĐ và lưu mốc đồng hồ.",
+                        Location = new Point(20, 170),
+                        Size = new Size(480, 40),
+                        ForeColor = Color.DimGray,
+                        Font = new Font("Segoe UI", 8.5F, FontStyle.Italic)
+                    };
+
+                    Button btnSave = new Button
+                    {
+                        Text = "Lưu & Lập thu phí",
+                        Location = new Point(170, 220),
+                        Size = new Size(170, 38),
+                        BackColor = Color.FromArgb(0, 122, 204),
+                        ForeColor = Color.White,
+                        FlatStyle = FlatStyle.Flat,
+                        Font = new Font("Segoe UI", 9.5F, FontStyle.Bold)
+                    };
+
+                    Button btnHuy = new Button
+                    {
+                        Text = "Hủy",
+                        Location = new Point(360, 220),
+                        Size = new Size(100, 38),
+                        BackColor = Color.FromArgb(108, 117, 125),
+                        ForeColor = Color.White,
+                        FlatStyle = FlatStyle.Flat,
+                        Font = new Font("Segoe UI", 9.5F, FontStyle.Bold)
+                    };
+
+                    btnSave.Click += (s, ev) =>
+                    {
+                        dynamic selectedItem = cboHD.SelectedItem;
+                        string maHD = selectedItem.Value;
+                        int.TryParse(txtDienDau.Text.Trim(), out int dDau);
+                        int.TryParse(txtNuocDau.Text.Trim(), out int nDau);
+
+                        if (_thuPhiService.LapThuPhiBanDauHopDong(maHD, dDau, nDau, "Admin", out string err))
+                        {
+                            var hdItem = _thuPhiService.GetHopDongById(maHD);
+                            MessageBox.Show(
+                                $"Đã ghi nhận mốc đồng hồ thành công cho HĐ '{maHD}'!\n" +
+                                $"- Phòng: {hdItem.MaPhong}\n" +
+                                $"- Đồng hồ bàn giao: Điện {dDau} kWh, Nước {nDau} m³\n" +
+                                $"- Phiếu thu tiền cọc ({hdItem.TienDatCoc:N0} đ) đã được tự động lập vào ngày {hdItem.NgayBatDau:dd/MM/yyyy}.",
+                                "Thành công",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+
+                            dlg.DialogResult = DialogResult.OK;
+                            dlg.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show(err, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    };
+
+                    btnHuy.Click += (s, ev) => dlg.Close();
+
+                    dlg.Controls.AddRange(new Control[] { lblHD, cboHD, lblDien, txtDienDau, lblNuoc, txtNuocDau, lblNote, btnSave, btnHuy });
+
+                    if (dlg.ShowDialog() == DialogResult.OK)
+                    {
+                        LoadDataToGrid();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
