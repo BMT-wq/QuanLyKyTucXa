@@ -1003,3 +1003,4 @@ SV1002|Huỳnh Anh Hùng|2004-10-05|Nam|100007935411|0985094410|sv1002@student.e
 SV1003|Ngô Hữu Sơn|2006-12-24|Nam|100007943295|0994383578|sv1003@student.edu.vn|CK K48B|Cơ khí|Phú Yên
 SV1004|Lê Thị Châu|2005-02-04|Nữ|100007951275|0913574824|sv1004@student.edu.vn|DĐT K48C|Điện - Điện tử|Khánh Hòa
 SV1005|Phạm Phương Châu|2006-08-17|Nữ|100007959148|0927096986|sv1005@student.edu.vn|CK K46B|Cơ khí|Lâm Đồng
+124000385|Bùi Minh Tự|2006-02-03|Nam|564564565466|0865162518|tubui00998877@gmail.com|24CT114|Công nghệ thông tin|Phú yên

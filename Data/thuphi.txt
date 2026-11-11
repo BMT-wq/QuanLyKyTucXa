@@ -138,3 +138,4 @@ PT137|HD119|P125|Điện nước|10|2026|394500|2026-10-10|ctathy|Thu tiền đi
 PT138|HD104|P126|Điện nước|10|2026|363000|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
 PT139|HD120|P128|Điện nước|10|2026|312500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
 PT140|HD135|P129|Điện nước|10|2026|696500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
+PT2611001|HD_P102|P102|Tiền phòng|9|2026|500000|2026-09-05|Admin|Thu tiền phòng tháng 9/2026
