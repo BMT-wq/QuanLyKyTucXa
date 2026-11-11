@@ -35,7 +35,7 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             _context = context ?? throw new ArgumentNullException(nameof(context));
             _thuPhiService = new ThuPhiService(_context);
         }
-
+        //.
         private void InitCustomEvents()
         {
             this.btnTinhTien.Click += BtnTinhTien_Click;
