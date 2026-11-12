@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> fb93b5475bb7d96c770f2bf4189f6d70247254c0
 PT001|HD001|P101|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV001
 PT002|HD002|P101|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV002
 PT003|HD003|P201|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV003
@@ -151,6 +155,7 @@ PT138|HD104|P126|Điện nước|10|2026|363000|2026-10-10|ctathy|Thu tiền đi
 PT139|HD120|P128|Điện nước|10|2026|312500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
 PT140|HD135|P129|Điện nước|10|2026|696500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
 PT2611001|HD_P102|P102|Tiền phòng|9|2026|500000|2026-09-05|Admin|Thu tiền phòng tháng 9/2026
+<<<<<<< HEAD
 PT2611005|HD001|P101|Điện nước|10|2026|81000|2026-11-12|Admin|Tiền điện nước T10/2026 chia đều (5 người) cho Nguyễn Văn An (SV001)
 PT2611006|HD002|P101|Điện nước|10|2026|81000|2026-11-12|Admin|Tiền điện nước T10/2026 chia đều (5 người) cho Trần Minh Đức (SV002)
 PT2611007|HD003|P101|Điện nước|10|2026|81000|2026-11-12|Admin|Tiền điện nước T10/2026 chia đều (5 người) cho Lê Thị Mai (SV003)
@@ -174,3 +179,5 @@ PT2611024|HD002|P101|Điện nước|10|2026|101250|2026-11-12|Admin|Tiền đi�
 PT2611025|HD003|P101|Điện nước|10|2026|101250|2026-11-12|Admin|Tiền điện nước T10/2026 chia đều (4 người) cho Lê Thị Mai (SV003)
 PT2611026|HD005|P101|Điện nước|10|2026|101250|2026-11-12|Admin|Tiền điện nước T10/2026 chia đều (4 người) cho Hoàng Bích Ngọc (SV005)
 PT2611027|HD008|P101|Điện nước|10|2026|101250|2026-11-12|Admin|Tiền điện nước T10/2026 chia đều (4 người) cho Hoàng Anh Phong (SV008)
+=======
+>>>>>>> fb93b5475bb7d96c770f2bf4189f6d70247254c0
