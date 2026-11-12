@@ -20,7 +20,7 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
             public override string ToString()
             {
                 string tenSV = SinhVien != null ? SinhVien.HoTen : HopDong.MaSV;
-                return $"[{HopDong.MaHopDong}] {tenSV} - Phòng {HopDong.MaPhong} (Cọc: {HopDong.TienDatCoc:N0}đ)";
+                return $"[{HopDong.MaHopDong}] {tenSV} ({HopDong.MaSV}) - Phòng {HopDong.MaPhong} (Cọc: {HopDong.TienDatCoc:N0}đ)";
             }
         }
 
@@ -40,7 +40,13 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
 
         private void InitEvents()
         {
+            cboHopDong.DropDownStyle = ComboBoxStyle.DropDown;
+            cboHopDong.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cboHopDong.AutoCompleteSource = AutoCompleteSource.ListItems;
             cboHopDong.SelectedIndexChanged += CboHopDong_SelectedIndexChanged;
+            cboHopDong.TextChanged += CboHopDong_TextChanged;
+            cboHopDong.KeyDown += CboHopDong_KeyDown;
+            cboHopDong.Validating += (s, e) => ChonHopDongTheoText();
             dtpNgayTraPhong.ValueChanged += DtpNgayTraPhong_ValueChanged;
             txtDienTra.TextChanged += TxtInput_TextChanged;
             txtNuocTra.TextChanged += TxtInput_TextChanged;
@@ -86,6 +92,43 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
                 MessageBox.Show("Hiện tại không có hợp đồng nào đang trong trạng thái 'Hiệu lực' để trả phòng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 btnXacNhan.Enabled = false;
                 btnTinhToan.Enabled = false;
+            }
+        }
+
+        private void CboHopDong_TextChanged(object sender, EventArgs e)
+        {
+            if (_isInitializing) return;
+
+            string text = cboHopDong.Text;
+            for (int i = 0; i < cboHopDong.Items.Count; i++)
+            {
+                if (cboHopDong.GetItemText(cboHopDong.Items[i]).Equals(text, StringComparison.OrdinalIgnoreCase))
+                {
+                    if (cboHopDong.SelectedIndex != i) cboHopDong.SelectedIndex = i;
+                    return;
+                }
+            }
+        }
+
+        private void CboHopDong_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.Enter) return;
+            ChonHopDongTheoText();
+            e.SuppressKeyPress = true;
+        }
+
+        private void ChonHopDongTheoText()
+        {
+            string text = cboHopDong.Text.Trim();
+            if (string.IsNullOrEmpty(text)) return;
+
+            for (int i = 0; i < cboHopDong.Items.Count; i++)
+            {
+                if (cboHopDong.GetItemText(cboHopDong.Items[i]).IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    cboHopDong.SelectedIndex = i;
+                    return;
+                }
             }
         }
 
@@ -156,6 +199,15 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
         private bool ThucHienTinhToan(bool showMessageIfError)
         {
             if (!(cboHopDong.SelectedItem is ComboBoxItemHD item)) return false;
+            if (!cboHopDong.GetItemText(item).Equals(cboHopDong.Text, StringComparison.OrdinalIgnoreCase))
+            {
+                if (showMessageIfError)
+                {
+                    MessageBox.Show("Không tìm thấy hợp đồng theo mã sinh viên đã nhập. Vui lòng chọn lại trong danh sách!",
+                                    "Không tìm thấy hợp đồng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                return false;
+            }
 
             var hd = item.HopDong;
             int.TryParse(txtDienTra.Text.Trim(), out int dienTra);
@@ -203,6 +255,7 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
 
         private void BtnTinhToan_Click(object sender, EventArgs e)
         {
+            ChonHopDongTheoText();
             if (ThucHienTinhToan(true))
             {
                 if (cboHopDong.SelectedItem is ComboBoxItemHD item)
@@ -228,6 +281,7 @@ namespace QuanLyKyTucXa.Presentation.SV3_DienNuocThuPhi
         {
             try
             {
+                ChonHopDongTheoText();
                 if (!(cboHopDong.SelectedItem is ComboBoxItemHD item))
                 {
                     MessageBox.Show("Vui lòng chọn hợp đồng cần thanh lý trả phòng!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);

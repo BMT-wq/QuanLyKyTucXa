@@ -72,7 +72,7 @@ namespace QuanLyKyTucXa.Presentation
 
         /// <summary>
         /// Mở hoặc kích hoạt Form con bên trong giao diện MDI Container.
-        /// Tránh mở trùng lặp nhiều form cùng một loại.
+        /// Nếu form loại này đã mở thì kích hoạt lại, không tạo form mới (tránh mở trùng).
         /// </summary>
         public void ShowChildForm<T>(Func<T> createForm) where T : Form
         {
@@ -80,12 +80,16 @@ namespace QuanLyKyTucXa.Presentation
             {
                 if (child is T)
                 {
-                    child.WindowState = FormWindowState.Maximized;
+                    // Đã có form cùng loại: đưa lên trước và kích hoạt thay vì mở thêm.
+                    if (child.WindowState == FormWindowState.Minimized)
+                        child.WindowState = FormWindowState.Maximized;
+                    child.BringToFront();
                     child.Activate();
                     return;
                 }
             }
 
+            // Chưa mở: tạo form mới và hiển thị như MDI child.
             T form = createForm();
             form.MdiParent = this;
             form.WindowState = FormWindowState.Maximized;
