@@ -1,3 +1,16 @@
+
+PT001|HD001|P101|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV001
+PT002|HD002|P101|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV002
+PT003|HD003|P201|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV003
+PT004|HD004|P201|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV004
+PT005|HD001|P101|Điện nước|0|0|0|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10 phòng P101
+PT006|HD003|P201|Điện nước|0|0|0|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10 phòng P201
+PT007|HD006|P302|Điện nước|0|0|0|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10 phòng P302
+PT2610001|HD_01|01|Tiền phòng|10|2026|10000|2026-10-27|Admin|trả tiền
+PT2611001|HD001|P101|Điện nước|10|2026|135000|2026-11-11|Admin|Tiền điện nước T10/2026 chia đều (3 người) cho Nguyễn Văn An (SV001)
+PT2611002|HD001|P101|Điện nước|10|2026|135000|2026-11-11|Admin|Tiền điện nước T10/2026 chia đều (3 người) cho Nguyễn Văn An (SV001)
+PT2611003|HD002|P101|Điện nước|10|2026|135000|2026-11-11|Admin|Tiền điện nước T10/2026 chia đều (3 người) cho Trần Thị Bình (SV002)
+PT2611004|HD001|P101|Tiền đặt cọc|9|2026|500000|2026-09-01|Admin|Thu tiền cọc khi ký HĐ HD001 (Nguyễn Văn An). Đồng hồ bàn giao: Điện 10 kWh, Nước 10 m³
 PT001|HD001|P102|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
 PT002|HD002|P101|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
 PT003|HD003|P101|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026

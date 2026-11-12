@@ -1,3 +1,12 @@
+
+P101|Phòng 101|TN01|Nam|6|2|500000|Còn chỗ
+P102|Phòng 102|TN01|Nam|4|0|600000|Còn chỗ
+P103|Phòng 103|TN01|Nam|4|0|450000|Còn chỗ
+P104|Phòng 104|TN01|Nam|6|0|500000|Còn chỗ
+P201|Phòng 201|TN02|Nữ|6|3|550000|Còn chỗ
+P202|Phòng 202|TN02|Nữ|4|0|650000|Còn chỗ
+P301|Phòng 301|TN03|Nam|4|0|800000|Đang sửa chữa
+P302|Phòng 302|TN03|Nữ|4|1|800000|Còn chỗ
 P101|Phòng 101|TN01|Nam|6|4|650000|Còn chỗ
 P102|Phòng 102|TN01|Nữ|6|6|500000|Đã đầy
 P103|Phòng 103|TN01|Nam|4|4|650000|Đã đầy
@@ -417,7 +426,7 @@ P516|Phòng 516|TN01|Nữ|6|0|500000|Còn chỗ
 P517|Phòng 517|TN01|Nam|4|0|650000|Còn chỗ
 P518|Phòng 518|TN01|Nữ|4|0|650000|Còn chỗ
 P519|Phòng 519|TN01|Nam|6|0|500000|Còn chỗ
-P520|Phòng 520|TN01|Nữ|4|0|650000|Còn chỗ
+P520|Phòng 520|TN01|Nữ|4|0|650000|Còn ch
 P521|Phòng 521|TN01|Nam|4|0|650000|Còn chỗ
 P522|Phòng 522|TN01|Nữ|6|0|500000|Còn chỗ
 P523|Phòng 523|TN01|Nam|4|0|650000|Còn chỗ
@@ -448,3 +457,4 @@ P547|Phòng 547|TN01|Nam|4|0|650000|Còn chỗ
 P548|Phòng 548|TN01|Nữ|4|0|650000|Còn chỗ
 P549|Phòng 549|TN01|Nam|6|0|500000|Còn chỗ
 P550|Phòng 550|TN01|Nữ|4|0|650000|Còn chỗ
+
