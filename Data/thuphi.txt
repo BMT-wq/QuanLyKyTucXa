@@ -1,141 +1,148 @@
-PT001|HD001|P102|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT002|HD002|P101|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT003|HD003|P101|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT004|HD004|P102|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT005|HD005|P101|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT006|HD006|P102|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT007|HD007|P102|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT008|HD008|P101|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT009|HD009|P103|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT010|HD010|P102|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT011|HD011|P102|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT012|HD012|P104|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT013|HD013|P103|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT014|HD014|P104|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT015|HD015|P103|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT016|HD016|P103|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT017|HD017|P104|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT018|HD018|P104|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT019|HD019|P105|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT020|HD020|P105|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT021|HD021|P106|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT022|HD022|P106|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT023|HD023|P106|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT024|HD024|P105|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT025|HD025|P105|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT026|HD026|P106|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT027|HD027|P108|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT028|HD028|P108|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT029|HD029|P108|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT030|HD030|P108|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT031|HD031|P108|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT032|HD032|P108|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT033|HD033|P105|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT034|HD034|P110|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT035|HD035|P105|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT036|HD036|P110|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT037|HD037|P110|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT038|HD038|P107|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT039|HD039|P110|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT040|HD040|P112|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT041|HD041|P107|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT042|HD042|P107|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT043|HD043|P112|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT044|HD044|P107|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT045|HD045|P109|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT046|HD046|P112|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT047|HD047|P109|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT048|HD048|P112|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT049|HD049|P109|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT050|HD050|P109|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT051|HD051|P111|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT052|HD052|P114|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT053|HD053|P111|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT054|HD054|P114|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT055|HD055|P114|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT056|HD056|P111|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT057|HD057|P114|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT058|HD058|P111|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT059|HD059|P114|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT060|HD060|P111|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT061|HD061|P114|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT062|HD062|P116|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT063|HD063|P111|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT064|HD064|P113|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT065|HD065|P113|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT066|HD066|P116|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT067|HD067|P113|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT068|HD068|P113|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT069|HD069|P116|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT070|HD070|P116|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT071|HD071|P118|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT072|HD072|P118|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT073|HD073|P118|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT074|HD074|P115|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT075|HD075|P118|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT076|HD076|P120|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT077|HD077|P120|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT078|HD078|P115|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT079|HD079|P120|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT080|HD080|P115|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT081|HD081|P115|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT082|HD082|P120|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT083|HD083|P120|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT084|HD084|P120|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT085|HD085|P117|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT086|HD086|P117|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT087|HD087|P117|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT088|HD088|P117|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT089|HD089|P117|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT090|HD090|P122|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT091|HD091|P117|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT092|HD092|P119|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT093|HD093|P119|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT094|HD094|P122|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT095|HD095|P122|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT096|HD096|P119|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT097|HD097|P119|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT098|HD098|P122|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT099|HD099|P124|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT100|HD100|P124|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT101|HD101|P124|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT102|HD102|P121|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT103|HD103|P124|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT104|HD104|P126|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT105|HD105|P121|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT106|HD106|P126|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT107|HD107|P126|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT108|HD108|P121|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT109|HD109|P126|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT110|HD110|P121|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT111|HD111|P123|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT112|HD112|P126|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT113|HD113|P123|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT114|HD114|P123|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT115|HD115|P123|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT116|HD116|P126|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT117|HD117|P123|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT118|HD118|P123|Tiền phòng|9|2026|500000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT119|HD119|P125|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT120|HD120|P128|Tiền phòng|9|2026|650000|2026-09-05|bmtu|Thu tiền phòng tháng 9/2026
-PT121|HD002|P101|Điện nước|10|2026|227500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT122|HD001|P102|Điện nước|10|2026|437500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT123|HD012|P104|Điện nước|10|2026|676000|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT124|HD019|P105|Điện nước|10|2026|399000|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT125|HD038|P107|Điện nước|10|2026|707500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT126|HD027|P108|Điện nước|10|2026|566500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT127|HD034|P110|Điện nước|10|2026|680500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT128|HD051|P111|Điện nước|10|2026|249000|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT129|HD064|P113|Điện nước|10|2026|406000|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT130|HD052|P114|Điện nước|10|2026|619500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT131|HD062|P116|Điện nước|10|2026|440500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT132|HD085|P117|Điện nước|10|2026|604000|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT133|HD092|P119|Điện nước|10|2026|279500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT134|HD076|P120|Điện nước|10|2026|406000|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT135|HD090|P122|Điện nước|10|2026|463000|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT136|HD111|P123|Điện nước|10|2026|396000|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT137|HD119|P125|Điện nước|10|2026|394500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT138|HD104|P126|Điện nước|10|2026|363000|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT139|HD120|P128|Điện nước|10|2026|312500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT140|HD135|P129|Điện nước|10|2026|696500|2026-10-10|ctathy|Thu tiền điện nước tháng 10/2026
-PT2611001|HD_P102|P102|Tiền phòng|9|2026|500000|2026-09-05|Admin|Thu tiền phòng tháng 9/2026
+PT001|HD001|P101|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV001
+PT002|HD002|P101|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV002
+PT003|HD003|P201|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV003
+PT004|HD004|P201|Tiền phòng|0|0|0|0001-01-01|0001-01-01|Thu tiền phòng kỳ 1 cho SV004
+PT005|HD001|P101|Điện nước|0|0|0|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10 phòng P101
+PT006|HD003|P201|Điện nước|0|0|0|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10 phòng P201
+PT007|HD006|P302|Điện nước|0|0|0|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10 phòng P302
+PT001|HD001|P102|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT002|HD002|P101|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT003|HD003|P101|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT004|HD004|P102|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT005|HD005|P101|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT006|HD006|P102|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT007|HD007|P102|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT008|HD008|P101|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT009|HD009|P103|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT010|HD010|P102|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT011|HD011|P102|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT012|HD012|P104|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT013|HD013|P103|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT014|HD014|P104|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT015|HD015|P103|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT016|HD016|P103|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT017|HD017|P104|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT018|HD018|P104|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT019|HD019|P105|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT020|HD020|P105|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT021|HD021|P106|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT022|HD022|P106|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT023|HD023|P106|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT024|HD024|P105|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT025|HD025|P105|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT026|HD026|P106|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT027|HD027|P108|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT028|HD028|P108|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT029|HD029|P108|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT030|HD030|P108|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT031|HD031|P108|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT032|HD032|P108|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT033|HD033|P105|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT034|HD034|P110|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT035|HD035|P105|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT036|HD036|P110|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT037|HD037|P110|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT038|HD038|P107|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT039|HD039|P110|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT040|HD040|P112|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT041|HD041|P107|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT042|HD042|P107|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT043|HD043|P112|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT044|HD044|P107|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT045|HD045|P109|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT046|HD046|P112|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT047|HD047|P109|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT048|HD048|P112|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT049|HD049|P109|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT050|HD050|P109|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT051|HD051|P111|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT052|HD052|P114|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT053|HD053|P111|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT054|HD054|P114|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT055|HD055|P114|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT056|HD056|P111|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT057|HD057|P114|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT058|HD058|P111|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT059|HD059|P114|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT060|HD060|P111|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT061|HD061|P114|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT062|HD062|P116|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT063|HD063|P111|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT064|HD064|P113|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT065|HD065|P113|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT066|HD066|P116|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT067|HD067|P113|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT068|HD068|P113|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT069|HD069|P116|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT070|HD070|P116|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT071|HD071|P118|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT072|HD072|P118|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT073|HD073|P118|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT074|HD074|P115|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT075|HD075|P118|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT076|HD076|P120|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT077|HD077|P120|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT078|HD078|P115|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT079|HD079|P120|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT080|HD080|P115|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT081|HD081|P115|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT082|HD082|P120|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT083|HD083|P120|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT084|HD084|P120|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT085|HD085|P117|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT086|HD086|P117|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT087|HD087|P117|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT088|HD088|P117|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT089|HD089|P117|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT090|HD090|P122|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT091|HD091|P117|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT092|HD092|P119|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT093|HD093|P119|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT094|HD094|P122|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT095|HD095|P122|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT096|HD096|P119|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT097|HD097|P119|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT098|HD098|P122|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT099|HD099|P124|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT100|HD100|P124|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT101|HD101|P124|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT102|HD102|P121|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT103|HD103|P124|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT104|HD104|P126|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT105|HD105|P121|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT106|HD106|P126|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT107|HD107|P126|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT108|HD108|P121|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT109|HD109|P126|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT110|HD110|P121|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT111|HD111|P123|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT112|HD112|P126|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT113|HD113|P123|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT114|HD114|P123|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT115|HD115|P123|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT116|HD116|P126|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT117|HD117|P123|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT118|HD118|P123|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT119|HD119|P125|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT120|HD120|P128|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
+PT121|HD002|P101|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT122|HD001|P102|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT123|HD012|P104|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT124|HD019|P105|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT125|HD038|P107|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT126|HD027|P108|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT127|HD034|P110|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT128|HD051|P111|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT129|HD064|P113|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT130|HD052|P114|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT131|HD062|P116|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT132|HD085|P117|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT133|HD092|P119|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT134|HD076|P120|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT135|HD090|P122|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT136|HD111|P123|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT137|HD119|P125|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT138|HD104|P126|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT139|HD120|P128|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT140|HD135|P129|Điện nước|0|0|10|0001-01-01|0001-01-01|Thu tiền điện nước tháng 10/2026
+PT2611001|HD_P102|P102|Tiền phòng|0|0|9|0001-01-01|0001-01-01|Thu tiền phòng tháng 9/2026
