@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> fb93b5475bb7d96c770f2bf4189f6d70247254c0
 SV001|Nguyễn Văn An|2004-05-15|Nam|001204001234|0912345678|an.nv@sv.edu.vn|22DTH01|Công nghệ thông tin|Hà Nội
 SV002|Trần Minh Đức|2004-08-20|Nam|001204005678|0987654321|duc.tm@sv.edu.vn|22DTH02|Công nghệ thông tin|Đà Nẵng
 SV003|Lê Thị Mai|2005-03-10|Nữ|038205009876|0903112233|mai.lt@sv.edu.vn|23DQT01|Quản trị kinh doanh|Hải Phòng

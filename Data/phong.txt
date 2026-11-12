@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> fb93b5475bb7d96c770f2bf4189f6d70247254c0
 P101|Phòng 101|TN01|Nam|6|2|500000|Còn chỗ
 P102|Phòng 102|TN01|Nam|4|0|600000|Còn chỗ
 P103|Phòng 103|TN01|Nam|4|0|450000|Còn chỗ
@@ -107,7 +110,7 @@ P197|Phòng 197|TN01|Nam|4|0|650000|Còn chỗ
 P198|Phòng 198|TN01|Nữ|6|0|500000|Còn chỗ
 P199|Phòng 199|TN01|Nam|4|0|650000|Còn chỗ
 P200|Phòng 200|TN01|Nữ|4|0|650000|Còn chỗ
-P201|Phòng 201|TN01|Nam|6|0|500000|Còn chỗ
+P201|Phòng 201|TN01|Nam|6|3|500000|Còn chỗ
 P202|Phòng 202|TN01|Nữ|4|0|650000|Còn chỗ
 P203|Phòng 203|TN01|Nam|4|0|650000|Còn chỗ
 P204|Phòng 204|TN01|Nữ|6|0|500000|Còn chỗ
@@ -208,7 +211,7 @@ P298|Phòng 298|TN01|Nữ|4|0|650000|Còn chỗ
 P299|Phòng 299|TN01|Nam|4|0|650000|Còn chỗ
 P300|Phòng 300|TN01|Nữ|6|0|500000|Còn chỗ
 P301|Phòng 301|TN01|Nam|4|0|650000|Còn chỗ
-P302|Phòng 302|TN01|Nữ|4|0|650000|Còn chỗ
+P302|Phòng 302|TN01|Nữ|4|1|650000|Còn chỗ
 P303|Phòng 303|TN01|Nam|6|0|500000|Còn chỗ
 P304|Phòng 304|TN01|Nữ|4|0|650000|Còn chỗ
 P305|Phòng 305|TN01|Nam|4|0|650000|Còn chỗ
@@ -457,4 +460,7 @@ P547|Phòng 547|TN01|Nam|4|0|650000|Còn chỗ
 P548|Phòng 548|TN01|Nữ|4|0|650000|Còn chỗ
 P549|Phòng 549|TN01|Nam|6|0|500000|Còn chỗ
 P550|Phòng 550|TN01|Nữ|4|0|650000|Còn chỗ
+<<<<<<< HEAD
+=======
 
+>>>>>>> fb93b5475bb7d96c770f2bf4189f6d70247254c0
