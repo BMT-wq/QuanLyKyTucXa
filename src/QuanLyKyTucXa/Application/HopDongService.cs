@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Text;
 using QuanLyKyTucXa.Domain;
 
 namespace QuanLyKyTucXa.Application
@@ -102,19 +104,19 @@ namespace QuanLyKyTucXa.Application
 
         public List<SinhVien> TimKiemSinhVien(string keyword)
         {
-            if (string.IsNullOrWhiteSpace(keyword))
+            string kw = ChuanHoaTimKiem(keyword);
+            if (kw.Length == 0)
             {
                 return _context.DanhSachSinhVien;
             }
 
-            string kw = keyword.Trim().ToLower();
             return _context.DanhSachSinhVien.Where(s =>
-                (!string.IsNullOrEmpty(s.MaSV) && s.MaSV.ToLower().Contains(kw)) ||
-                (!string.IsNullOrEmpty(s.HoTen) && s.HoTen.ToLower().Contains(kw)) ||
-                (!string.IsNullOrEmpty(s.SoCMND_CCCD) && s.SoCMND_CCCD.Contains(kw)) ||
-                (!string.IsNullOrEmpty(s.Lop) && s.Lop.ToLower().Contains(kw)) ||
-                (!string.IsNullOrEmpty(s.Khoa) && s.Khoa.ToLower().Contains(kw)) ||
-                (!string.IsNullOrEmpty(s.QueQuan) && s.QueQuan.ToLower().Contains(kw))
+                ChuanHoaTimKiem(s.MaSV).Contains(kw) ||
+                ChuanHoaTimKiem(s.HoTen).Contains(kw) ||
+                ChuanHoaTimKiem(s.SoCMND_CCCD).Contains(kw) ||
+                ChuanHoaTimKiem(s.Lop).Contains(kw) ||
+                ChuanHoaTimKiem(s.Khoa).Contains(kw) ||
+                ChuanHoaTimKiem(s.QueQuan).Contains(kw)
             ).ToList();
         }
 
@@ -178,11 +180,68 @@ namespace QuanLyKyTucXa.Application
             return _context.DanhSachHopDong.Any(h => h.MaSV.Equals(maSV.Trim(), StringComparison.OrdinalIgnoreCase) && h.TrangThai == "Hiệu lực");
         }
 
-        public List<Phong> GetDanhSachPhongConTrong()
+        public List<Phong> GetDanhSachPhongConTrong(string gioiTinh = null)
         {
-            return _context.DanhSachPhong
-                .Where(p => p.SoChoHienTai < p.SoChoToiDa && p.TrangThai != "Đang sửa chữa")
-                .ToList();
+            var phongConTrong = _context.DanhSachPhong
+                .Where(p => p.SoChoHienTai < p.SoChoToiDa && p.TrangThai != "Đang sửa chữa");
+
+            string gt = ChuanHoaGioiTinh(gioiTinh);
+            if (gt.Length > 0)
+            {
+                phongConTrong = phongConTrong.Where(p => ChuanHoaGioiTinh(p.LoaiPhong) == gt);
+            }
+
+            return phongConTrong.ToList();
+        }
+
+        /// <summary>
+        /// Kiểm tra giới tính sinh viên có phù hợp với loại phòng (Nam/Nữ) hay không.
+        /// </summary>
+        public static bool KiemTraGioiTinhPhuHop(SinhVien sv, Phong phong)
+        {
+            if (sv == null || phong == null) return false;
+
+            string gioiTinh = ChuanHoaGioiTinh(sv.GioiTinh);
+            string loaiPhong = ChuanHoaGioiTinh(phong.LoaiPhong);
+
+            // Nếu dữ liệu giới tính/loại phòng không xác định thì không chặn,
+            // các kiểm tra khác (sức chứa, trạng thái) vẫn được áp dụng.
+            if (gioiTinh.Length == 0 || loaiPhong.Length == 0) return true;
+
+            return gioiTinh == loaiPhong;
+        }
+
+        /// <summary>
+        /// Chuẩn hóa giới tính về "nam"/"nu" để so sánh.
+        /// </summary>
+        public static string ChuanHoaGioiTinh(string value)
+        {
+            string v = ChuanHoaTimKiem(value);
+            if (v == "nam" || v == "male" || v == "m") return "nam";
+            if (v == "nu" || v == "female" || v == "f") return "nu";
+            return v;
+        }
+
+        /// <summary>
+        /// Chuẩn hóa chuỗi tìm kiếm: bỏ dấu tiếng Việt, chuyển chữ thường để tìm gần đúng.
+        /// </summary>
+        public static string ChuanHoaTimKiem(string value)
+        {
+            if (string.IsNullOrWhiteSpace(value)) return string.Empty;
+
+            string lower = value.Trim().ToLowerInvariant().Replace('đ', 'd');
+            string normalized = lower.Normalize(NormalizationForm.FormD);
+
+            var builder = new StringBuilder(normalized.Length);
+            foreach (char c in normalized)
+            {
+                if (CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark)
+                {
+                    builder.Append(c);
+                }
+            }
+
+            return builder.ToString().Normalize(NormalizationForm.FormC);
         }
 
         public bool TaoHopDong(HopDong hd, out string error)
@@ -223,6 +282,13 @@ namespace QuanLyKyTucXa.Application
             if (phong == null)
             {
                 error = "Phòng được chọn không tồn tại!";
+                return false;
+            }
+            if (!KiemTraGioiTinhPhuHop(sv, phong))
+            {
+                error = $"Không thể xếp sinh viên '{sv.HoTen} ({sv.MaSV})' là {(ChuanHoaGioiTinh(sv.GioiTinh) == "nu" ? "Nữ" : "Nam")} " +
+                        $"vào phòng '{phong.TenPhong}' dành cho {phong.LoaiPhong}. " +
+                        "Vui lòng chọn phòng phù hợp với giới tính của sinh viên!";
                 return false;
             }
             if (phong.TrangThai == "Đang sửa chữa")
@@ -329,18 +395,28 @@ namespace QuanLyKyTucXa.Application
 
         public List<HopDong> TimKiemHopDong(string keyword)
         {
-            if (string.IsNullOrWhiteSpace(keyword))
+            string kw = ChuanHoaTimKiem(keyword);
+            if (kw.Length == 0)
             {
                 return _context.DanhSachHopDong;
             }
 
-            string kw = keyword.Trim().ToLower();
+            // Tìm theo tên, mã sinh viên hoặc lớp của sinh viên trong hợp đồng
+            var maSinhVienKhop = new HashSet<string>(
+                _context.DanhSachSinhVien
+                    .Where(s => ChuanHoaTimKiem(s.MaSV).Contains(kw) ||
+                                ChuanHoaTimKiem(s.HoTen).Contains(kw) ||
+                                ChuanHoaTimKiem(s.Lop).Contains(kw))
+                    .Select(s => s.MaSV),
+                StringComparer.OrdinalIgnoreCase);
+
             return _context.DanhSachHopDong.Where(h =>
-                (!string.IsNullOrEmpty(h.MaHopDong) && h.MaHopDong.ToLower().Contains(kw)) ||
-                (!string.IsNullOrEmpty(h.MaSV) && h.MaSV.ToLower().Contains(kw)) ||
-                (!string.IsNullOrEmpty(h.MaPhong) && h.MaPhong.ToLower().Contains(kw)) ||
-                (!string.IsNullOrEmpty(h.TrangThai) && h.TrangThai.ToLower().Contains(kw)) ||
-                (!string.IsNullOrEmpty(h.GhiChu) && h.GhiChu.ToLower().Contains(kw))
+                ChuanHoaTimKiem(h.MaHopDong).Contains(kw) ||
+                ChuanHoaTimKiem(h.MaSV).Contains(kw) ||
+                ChuanHoaTimKiem(h.MaPhong).Contains(kw) ||
+                ChuanHoaTimKiem(h.TrangThai).Contains(kw) ||
+                ChuanHoaTimKiem(h.GhiChu).Contains(kw) ||
+                maSinhVienKhop.Contains(h.MaSV)
             ).ToList();
         }
 

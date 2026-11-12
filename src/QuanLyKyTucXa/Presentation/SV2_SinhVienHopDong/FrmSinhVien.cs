@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
 using QuanLyKyTucXa.Application;
@@ -14,15 +15,22 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
         private readonly HopDongService _hopDongService;
         private bool _isBinding = false;
 
+        // Các định dạng ngày sinh được chấp nhận khi nhập bằng bàn phím
+        private static readonly string[] NgaySinhFormats =
+        {
+            "dd/MM/yyyy", "d/M/yyyy",
+            "dd-MM-yyyy", "d-M-yyyy",
+            "dd.MM.yyyy", "d.M.yyyy"
+        };
+
+        // Lưu Mã SV đang được chọn để cập nhật (null = chế độ thêm mới)
+        private string _maSVDangSua = null;
+
         public FrmSinhVien()
         {
             InitializeComponent();
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="context"></param>
-        /// <exception cref="ArgumentNullException"></exception>
+
         public FrmSinhVien(DataContext context) : this()
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
@@ -52,6 +60,9 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             txtTimKiem.TextChanged += TxtTimKiem_TextChanged;
             cboLocKhoa.SelectedIndexChanged += CboLoc_SelectedIndexChanged;
             cboLocGioiTinh.SelectedIndexChanged += CboLoc_SelectedIndexChanged;
+
+            txtNgaySinh.KeyPress += TxtNgaySinh_KeyPress;
+            txtNgaySinh.Leave += TxtNgaySinh_Leave;
 
             dgvSinhVien.SelectionChanged += DgvSinhVien_SelectionChanged;
             dgvSinhVien.CellClick += DgvSinhVien_CellClick;
@@ -214,14 +225,24 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
         private void SyncSelectionToForm()
         {
-            if (dgvSinhVien.CurrentRow?.DataBoundItem is SinhVien sv)
+            // Chỉ đồng bộ khi thực sự có dòng đang được chọn.
+            // Tránh trường hợp ClearSelection() vẫn giữ CurrentRow và tự động điền lại form.
+            if (dgvSinhVien.CurrentRow == null || !dgvSinhVien.CurrentRow.Selected)
             {
+                return;
+            }
+
+            if (dgvSinhVien.CurrentRow.DataBoundItem is SinhVien sv)
+            {
+                // Ghi nhớ Mã SV đang được chọn để sử dụng khi cập nhật
+                _maSVDangSua = sv.MaSV;
+
                 txtMaSV.Text = sv.MaSV;
                 txtMaSV.ReadOnly = true;
                 txtMaSV.BackColor = Color.FromArgb(245, 245, 245);
 
                 txtHoTen.Text = sv.HoTen;
-                dtpNgaySinh.Value = sv.NgaySinh > dtpNgaySinh.MinDate && sv.NgaySinh < dtpNgaySinh.MaxDate ? sv.NgaySinh : DateTime.Today.AddYears(-18);
+                txtNgaySinh.Text = sv.NgaySinh.ToString("dd/MM/yyyy");
                 cboGioiTinh.SelectedItem = sv.GioiTinh ?? "Nam";
                 txtCCCD.Text = sv.SoCMND_CCCD;
                 txtDienThoai.Text = sv.SoDienThoai;
@@ -234,11 +255,16 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
         private void ResetForm()
         {
+            // Xóa trạng thái chế độ sửa
+            _maSVDangSua = null;
+
             txtMaSV.ReadOnly = false;
             txtMaSV.BackColor = Color.White;
-            txtMaSV.Text = _hopDongService?.SinhMaSinhVienTuDong() ?? "SV001";
+
+            // Xóa trắng toàn bộ thông tin chi tiết
+            txtMaSV.Clear();
             txtHoTen.Clear();
-            dtpNgaySinh.Value = DateTime.Today.AddYears(-18);
+            txtNgaySinh.Clear();
             cboGioiTinh.SelectedIndex = 0;
             txtCCCD.Clear();
             txtDienThoai.Clear();
@@ -247,7 +273,48 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             txtKhoa.Clear();
             txtQueQuan.Clear();
 
-            txtHoTen.Focus();
+            // Bỏ chọn dòng trong bảng. Tạm khóa binding để sự kiện SelectionChanged
+            // không điền lại dữ liệu của dòng đầu tiên vào form.
+            _isBinding = true;
+            try
+            {
+                dgvSinhVien.ClearSelection();
+                dgvSinhVien.CurrentCell = null;
+            }
+            finally
+            {
+                _isBinding = false;
+            }
+
+            txtMaSV.Focus();
+        }
+
+        private bool TryParseNgaySinh(string text, out DateTime ngaySinh)
+        {
+            return DateTime.TryParseExact(
+                text.Trim(),
+                NgaySinhFormats,
+                CultureInfo.InvariantCulture,
+                DateTimeStyles.None,
+                out ngaySinh);
+        }
+
+        private void TxtNgaySinh_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Chỉ cho phép nhập số và dấu '/' bằng bàn phím
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '/')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtNgaySinh_Leave(object sender, EventArgs e)
+        {
+            // Chuẩn hóa ngày sinh về định dạng dd/MM/yyyy sau khi rời ô nhập
+            if (TryParseNgaySinh(txtNgaySinh.Text, out DateTime ngaySinh))
+            {
+                txtNgaySinh.Text = ngaySinh.ToString("dd/MM/yyyy");
+            }
         }
 
         private bool ValidateInput(out SinhVien sv, out string error)
@@ -258,7 +325,7 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             string maSV = txtMaSV.Text.Trim();
             string hoTen = txtHoTen.Text.Trim();
             string gioiTinh = cboGioiTinh.SelectedItem?.ToString() ?? "Nam";
-            DateTime ngaySinh = dtpNgaySinh.Value;
+            string ngaySinhText = txtNgaySinh.Text.Trim();
             string cccd = txtCCCD.Text.Trim();
             string sdt = txtDienThoai.Text.Trim();
             string email = txtEmail.Text.Trim();
@@ -269,7 +336,26 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             if (!Validator.IsNotEmpty(maSV, "Mã sinh viên", out error)) return false;
             if (!Validator.IsNotEmpty(hoTen, "Họ và tên", out error)) return false;
 
-            if (DateTime.Today.Year - ngaySinh.Year < 15)
+            if (!Validator.IsNotEmpty(ngaySinhText, "Ngày sinh", out error)) return false;
+            if (!TryParseNgaySinh(ngaySinhText, out DateTime ngaySinh))
+            {
+                error = "Ngày sinh không đúng định dạng (dd/MM/yyyy)!";
+                return false;
+            }
+
+            if (ngaySinh.Date > DateTime.Today)
+            {
+                error = "Ngày sinh không được lớn hơn ngày hiện tại!";
+                return false;
+            }
+
+            int tuoi = DateTime.Today.Year - ngaySinh.Year;
+            if (ngaySinh.Date > DateTime.Today.AddYears(-tuoi))
+            {
+                tuoi--;
+            }
+
+            if (tuoi < 15)
             {
                 error = "Ngày sinh không hợp lệ (Sinh viên phải từ 15 tuổi trở lên)!";
                 return false;
@@ -304,15 +390,37 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
         private void BtnThem_Click(object sender, EventArgs e)
         {
+            // Nếu đang ở chế độ sửa thì cảnh báo, không cho thêm mới
+            if (_maSVDangSua != null)
+            {
+                MessageBox.Show(
+                    "Bạn đang ở chế độ chỉnh sửa sinh viên '" + _maSVDangSua + "'.\nVui lòng nhấn 'Làm mới' để chuyển sang chế độ thêm mới!",
+                    "Cảnh báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
             if (!ValidateInput(out SinhVien sv, out string error))
             {
                 MessageBox.Show(error, "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
+            // Kiểm tra trùng Mã SV trước khi gọi service (phòng trường hợp txtMaSV bị readonly)
+            if (txtMaSV.ReadOnly)
+            {
+                MessageBox.Show(
+                    "Mã sinh viên đang bị khóa. Vui lòng nhấn 'Làm mới' để nhập mã sinh viên mới!",
+                    "Cảnh báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
             if (_hopDongService.ThemSinhVien(sv, out string serviceError))
             {
-                MessageBox.Show($"Đã thêm sinh viên '{sv.HoTen}' thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đã thêm sinh viên '" + sv.HoTen + "' thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadKhoaFilter();
                 LoadData();
                 ResetForm();
@@ -325,9 +433,14 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
         private void BtnSua_Click(object sender, EventArgs e)
         {
-            if (dgvSinhVien.CurrentRow == null)
+            // Phải chọn sinh viên từ danh sách trước
+            if (_maSVDangSua == null)
             {
-                MessageBox.Show("Vui lòng chọn sinh viên cần cập nhật thông tin trong danh sách!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(
+                    "Vui lòng chọn sinh viên cần cập nhật thông tin trong danh sách!",
+                    "Thông báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
                 return;
             }
 
@@ -337,11 +450,25 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
                 return;
             }
 
-            if (_hopDongService.CapNhatSinhVien(sv, out string serviceError))
+            // Đảm bảo MaSV của đối tượng cập nhật là mã đã chọn ban đầu (không bị thay đổi)
+            var svCapNhat = new SinhVien(
+                _maSVDangSua,
+                sv.HoTen,
+                sv.NgaySinh,
+                sv.GioiTinh,
+                sv.SoCMND_CCCD,
+                sv.SoDienThoai,
+                sv.Email,
+                sv.Lop,
+                sv.Khoa,
+                sv.QueQuan);
+
+            if (_hopDongService.CapNhatSinhVien(svCapNhat, out string serviceError))
             {
-                MessageBox.Show($"Cập nhật thông tin sinh viên '{sv.HoTen}' thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Cập nhật thông tin sinh viên '" + svCapNhat.HoTen + "' thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadKhoaFilter();
                 LoadData();
+                ResetForm();
             }
             else
             {

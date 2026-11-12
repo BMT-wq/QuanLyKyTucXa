@@ -18,7 +18,7 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
         private Label lblHoTen;
         private TextBox txtHoTen;
         private Label lblNgaySinh;
-        private DateTimePicker dtpNgaySinh;
+        private TextBox txtNgaySinh;
         private Label lblGioiTinh;
         private ComboBox cboGioiTinh;
         private Label lblCCCD;
@@ -75,7 +75,7 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblHoTen = new System.Windows.Forms.Label();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.lblNgaySinh = new System.Windows.Forms.Label();
-            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.txtNgaySinh = new System.Windows.Forms.TextBox();
             this.lblGioiTinh = new System.Windows.Forms.Label();
             this.cboGioiTinh = new System.Windows.Forms.ComboBox();
             this.lblCCCD = new System.Windows.Forms.Label();
@@ -155,7 +155,7 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.grpThongTin.Controls.Add(this.lblHoTen);
             this.grpThongTin.Controls.Add(this.txtHoTen);
             this.grpThongTin.Controls.Add(this.lblNgaySinh);
-            this.grpThongTin.Controls.Add(this.dtpNgaySinh);
+            this.grpThongTin.Controls.Add(this.txtNgaySinh);
             this.grpThongTin.Controls.Add(this.lblGioiTinh);
             this.grpThongTin.Controls.Add(this.cboGioiTinh);
             this.grpThongTin.Controls.Add(this.lblCCCD);
@@ -229,15 +229,15 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblNgaySinh.TabIndex = 2;
             this.lblNgaySinh.Text = "Ngày sinh:";
             // 
-            // dtpNgaySinh
+            // txtNgaySinh
             // 
-            this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
-            this.dtpNgaySinh.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgaySinh.Location = new System.Drawing.Point(110, 95);
-            this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(240, 23);
-            this.dtpNgaySinh.TabIndex = 2;
+            this.txtNgaySinh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNgaySinh.Location = new System.Drawing.Point(110, 95);
+            this.txtNgaySinh.MaxLength = 10;
+            this.txtNgaySinh.Name = "txtNgaySinh";
+            this.txtNgaySinh.Size = new System.Drawing.Size(240, 23);
+            this.txtNgaySinh.TabIndex = 2;
+
             // 
             // lblGioiTinh
             // 

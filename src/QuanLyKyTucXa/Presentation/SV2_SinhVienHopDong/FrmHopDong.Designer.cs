@@ -197,11 +197,11 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblSinhVien.Name = "lblSinhVien";
             this.lblSinhVien.Size = new System.Drawing.Size(58, 15);
             this.lblSinhVien.TabIndex = 2;
-            this.lblSinhVien.Text = "Sinh viên:";
+            this.lblSinhVien.Text = "SV (tên/mã):";
             // 
             // cboSinhVien
             // 
-            this.cboSinhVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSinhVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.cboSinhVien.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cboSinhVien.FormattingEnabled = true;
             this.cboSinhVien.Location = new System.Drawing.Point(115, 67);
