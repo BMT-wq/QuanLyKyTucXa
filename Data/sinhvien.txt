@@ -1,12 +1,1006 @@
-SV001|Nguyễn Văn An|2004-05-15|Nam|001204012345|0912345678|an.nv@gmail.com|CNTT K46A|Công nghệ thông tin|Hà Nội
-SV002|Trần Minh Đức|2004-08-20|Nam|001204005678|0987654321|duc.tm@sv.edu.vn|22DTH02|Công nghệ thông tin|Đà Nẵng
-SV003|Lê Hoàng Cường|2004-11-02|Nam|001204056789|0903123456|cuong.lh@gmail.com|CNTT K46B|Công nghệ thông tin|Hải Phòng
-SV004|Phạm Ngọc Diệp|2005-03-10|Nữ|001205034567|0978901234|diep.pn@gmail.com|NN K47A|Ngoại ngữ|Cần Thơ
-SV005|Bui Minh Tu|2008-10-26|Nam|012545666422|0567522456|tubui@gmail.com|CNTT 24|Cong nghe thong tin|Phu Yen
-SV001|Nguyễn Văn An|2004-05-15|Nam|001204001234|0912345678|an.nv@sv.edu.vn|22DTH01|Công nghệ thông tin|Hà Nội
-SV002|Trần Minh Đức|2004-08-20|Nam|001204005678|0987654321|duc.tm@sv.edu.vn|22DTH02|Công nghệ thông tin|Đà Nẵng
-SV003|Lê Thị Mai|2005-03-10|Nữ|038205009876|0903112233|mai.lt@sv.edu.vn|23DQT01|Quản trị kinh doanh|Hải Phòng
-SV004|Phạm Thu Hương|2005-11-25|Nữ|040205004321|0934556677|huong.pt@sv.edu.vn|23DQT02|Quản trị kinh doanh|Quảng Ninh
-SV005|Hoàng Bích Ngọc|2004-09-18|Nữ|001204007890|0978998877|ngoc.hb@sv.edu.vn|22DNA01|Ngôn ngữ Anh|Nghệ An
-SV006|Vũ Thùy Linh|2005-07-02|Nữ|025205003456|0945667788|linh.vt@sv.edu.vn|23DNA02|Ngôn ngữ Anh|Nam Định
-SV007|Trần Duy Quang|2007-07-01|Nam|054200500893|0867225173|duyquang@gmail.com|CNTT|Công nghệ thông tin|Hà Nội
+SV001|Lê Ngọc Linh|2003-04-20|Nữ|100000008380|0925628605|sv001@student.edu.vn|DĐT K46A|Điện - Điện tử|Huế
+SV002|Phan Hoàng Nam|2003-10-16|Nam|100000016195|0923697377|sv002@student.edu.vn|CNTT K48C|Công nghệ thông tin|Huế
+SV003|Đỗ Minh Tuấn|2005-07-06|Nam|100000023794|0937737969|sv003@student.edu.vn|KTTC K49A|Kế toán|Huế
+SV004|Đỗ Mai Châu|2003-01-22|Nữ|100000032239|0920365873|sv004@student.edu.vn|KT K48A|Kinh tế|Đồng Nai
+SV005|Nguyễn Gia Nam|2003-06-20|Nam|100000040160|0929660098|sv005@student.edu.vn|CNTT K46A|Công nghệ thông tin|TP.HCM
+SV006|Trần Khánh Anh|2006-06-14|Nữ|100000047963|0910805761|sv006@student.edu.vn|DĐT K45A|Điện - Điện tử|TP.HCM
+SV007|Nguyễn Kim Trang|2004-05-17|Nữ|100000055472|0943549050|sv007@student.edu.vn|KT K47C|Kinh tế|Huế
+SV008|Hoàng Anh Phong|2005-01-24|Nam|100000064213|0939955083|sv008@student.edu.vn|CK K45A|Cơ khí|Thanh Hóa
+SV009|Hồ Minh Cường|2003-08-14|Nam|100000072159|0978960072|sv009@student.edu.vn|CK K48A|Cơ khí|Huế
+SV010|Bùi Thị Hạnh|2006-01-06|Nữ|100000079428|0913463244|sv010@student.edu.vn|KT K47B|Kinh tế|TP.HCM
+SV011|Trần Ngọc Hạnh|2004-10-23|Nữ|100000087117|0913787569|sv011@student.edu.vn|DĐT K49A|Điện - Điện tử|Thái Bình
+SV012|Hoàng Phương Nga|2005-03-09|Nữ|100000095192|0912662522|sv012@student.edu.vn|KT K49C|Kinh tế|Phú Yên
+SV013|Dương Minh Hùng|2005-07-20|Nam|100000103056|0963836001|sv013@student.edu.vn|NNA K49B|Ngôn ngữ Anh|Quảng Ninh
+SV014|Vũ Phương Vy|2006-02-03|Nữ|100000110868|0926366920|sv014@student.edu.vn|XD K48B|Xây dựng|Bình Dương
+SV015|Trần Anh Việt|2006-03-10|Nam|100000119272|0965433832|sv015@student.edu.vn|XD K49C|Xây dựng|Cần Thơ
+SV016|Võ Tuấn Hải|2006-08-06|Nam|100000126953|0930565979|sv016@student.edu.vn|DĐT K48A|Điện - Điện tử|Nghệ An
+SV017|Dương Lan Vy|2006-06-25|Nữ|100000135495|0924056308|sv017@student.edu.vn|KTTC K46B|Kế toán|Huế
+SV018|Trần Bảo Hạnh|2005-09-06|Nữ|100000143018|0980977446|sv018@student.edu.vn|KTTC K45C|Kế toán|Hà Nội
+SV019|Phạm Quốc Cường|2004-04-24|Nam|100000150884|0943074407|sv019@student.edu.vn|NNA K48B|Ngôn ngữ Anh|Nam Định
+SV020|Ngô Quốc Dũng|2006-08-17|Nam|100000158728|0996051016|sv020@student.edu.vn|CNTT K47C|Công nghệ thông tin|Cần Thơ
+SV021|Dương Bảo Anh|2004-07-01|Nữ|100000167100|0946983264|sv021@student.edu.vn|CK K48C|Cơ khí|Cần Thơ
+SV022|Hồ Thị Hạnh|2005-01-19|Nữ|100000174687|0942846114|sv022@student.edu.vn|QTKD K46B|Quản trị kinh doanh|Đồng Nai
+SV023|Huỳnh Thanh Bình|2003-11-08|Nữ|100000183018|0941618451|sv023@student.edu.vn|CNTT K47B|Công nghệ thông tin|Đà Nẵng
+SV024|Bùi Minh Việt|2003-08-06|Nam|100000190633|0968722499|sv024@student.edu.vn|DĐT K46B|Điện - Điện tử|Nghệ An
+SV025|Phạm Thanh Phong|2005-09-12|Nam|100000198564|0997726926|sv025@student.edu.vn|CK K46A|Cơ khí|Huế
+SV026|Đỗ Mai My|2006-06-27|Nữ|100000206345|0987348624|sv026@student.edu.vn|CNTT K47B|Công nghệ thông tin|Đà Nẵng
+SV027|Phan Thị Vy|2004-04-14|Nữ|100000214456|0947261655|sv027@student.edu.vn|CNTT K45C|Công nghệ thông tin|Thanh Hóa
+SV028|Lý Phương Dung|2006-11-18|Nữ|100000222307|0985853597|sv028@student.edu.vn|KTTC K46A|Kế toán|TP.HCM
+SV029|Bùi Kim Mai|2003-05-04|Nữ|100000229987|0919850983|sv029@student.edu.vn|CNTT K48A|Công nghệ thông tin|Hải Phòng
+SV030|Ngô Bảo Hương|2005-02-22|Nữ|100000237829|0958990716|sv030@student.edu.vn|CNTT K45B|Công nghệ thông tin|TP.HCM
+SV031|Hồ Phương Ngọc|2006-09-25|Nữ|100000245806|0946382796|sv031@student.edu.vn|DĐT K48C|Điện - Điện tử|Nam Định
+SV032|Bùi Thị Phương|2006-11-06|Nữ|100000254048|0996968472|sv032@student.edu.vn|DĐT K49B|Điện - Điện tử|Thái Bình
+SV033|Hoàng Tuấn Khang|2005-12-25|Nam|100000261380|0986211828|sv033@student.edu.vn|QTKD K49B|Quản trị kinh doanh|TP.HCM
+SV034|Lê Bảo Linh|2006-01-15|Nữ|100000269837|0938588304|sv034@student.edu.vn|KT K45C|Kinh tế|TP.HCM
+SV035|Vũ Quốc Phong|2006-09-08|Nam|100000278060|0953332535|sv035@student.edu.vn|KTTC K47A|Kế toán|Cần Thơ
+SV036|Dương Bảo Vy|2004-03-12|Nữ|100000285831|0988500649|sv036@student.edu.vn|CNTT K49B|Công nghệ thông tin|Lâm Đồng
+SV037|Dương Thu Thảo|2003-08-17|Nữ|100000293416|0978874596|sv037@student.edu.vn|NNA K48A|Ngôn ngữ Anh|Quảng Ninh
+SV038|Trần Minh Nam|2005-05-13|Nam|100000301538|0923852931|sv038@student.edu.vn|CK K48B|Cơ khí|Lâm Đồng
+SV039|Huỳnh Thu Hà|2004-07-03|Nữ|100000308969|0993373868|sv039@student.edu.vn|NNA K48B|Ngôn ngữ Anh|Thanh Hóa
+SV040|Phan Bảo Châu|2004-03-19|Nữ|100000317613|0918899463|sv040@student.edu.vn|QTKD K48B|Quản trị kinh doanh|Huế
+SV041|Lý Minh Quân|2004-06-15|Nam|100000324973|0969521218|sv041@student.edu.vn|QTKD K45B|Quản trị kinh doanh|Hà Nội
+SV042|Lê Hoàng Dũng|2005-05-25|Nam|100000332629|0949719541|sv042@student.edu.vn|CNTT K49A|Công nghệ thông tin|Đà Nẵng
+SV043|Bùi Bảo Thảo|2003-07-25|Nữ|100000341297|0916893555|sv043@student.edu.vn|CNTT K49A|Công nghệ thông tin|TP.HCM
+SV044|Trần Minh Hải|2003-08-17|Nam|100000348821|0917219255|sv044@student.edu.vn|KTTC K48C|Kế toán|Bình Dương
+SV045|Vũ Hữu An|2006-04-16|Nam|100000356452|0991368737|sv045@student.edu.vn|DĐT K47C|Điện - Điện tử|Hải Phòng
+SV046|Đặng Ngọc Anh|2003-03-25|Nữ|100000364817|0918609920|sv046@student.edu.vn|DĐT K49A|Điện - Điện tử|Thái Bình
+SV047|Phan Thanh Nam|2003-02-27|Nam|100000372621|0928647564|sv047@student.edu.vn|NNA K46A|Ngôn ngữ Anh|Đà Nẵng
+SV048|Đỗ Thị Hạnh|2003-09-13|Nữ|100000380943|0913385014|sv048@student.edu.vn|CNTT K46A|Công nghệ thông tin|Thanh Hóa
+SV049|Lý Anh Hải|2005-08-23|Nam|100000388088|0917124115|sv049@student.edu.vn|KT K46B|Kinh tế|Khánh Hòa
+SV050|Ngô Thanh Khang|2003-10-01|Nam|100000396733|0958332060|sv050@student.edu.vn|KT K47C|Kinh tế|Bình Dương
+SV051|Đỗ Anh Cường|2004-06-13|Nam|100000404500|0968900540|sv051@student.edu.vn|CNTT K47C|Công nghệ thông tin|Khánh Hòa
+SV052|Phạm Ngọc My|2005-08-26|Nữ|100000412268|0943570922|sv052@student.edu.vn|KTTC K45B|Kế toán|Thái Bình
+SV053|Nguyễn Hữu Việt|2006-05-15|Nam|100000419786|0948563643|sv053@student.edu.vn|CNTT K45C|Công nghệ thông tin|Phú Yên
+SV054|Lý Kim Nga|2006-03-13|Nữ|100000428008|0916917772|sv054@student.edu.vn|DĐT K48C|Điện - Điện tử|Đồng Nai
+SV055|Hồ Thị Phương|2003-10-15|Nữ|100000435985|0913315806|sv055@student.edu.vn|NNA K45C|Ngôn ngữ Anh|Hải Phòng
+SV056|Phan Gia Hùng|2003-01-20|Nam|100000444126|0975022058|sv056@student.edu.vn|XD K47C|Xây dựng|Phú Yên
+SV057|Lê Khánh Hạnh|2003-11-01|Nữ|100000451465|0947688846|sv057@student.edu.vn|DĐT K45B|Điện - Điện tử|Nam Định
+SV058|Huỳnh Quốc Trung|2005-11-26|Nam|100000459813|0919412640|sv058@student.edu.vn|CNTT K48C|Công nghệ thông tin|Khánh Hòa
+SV059|Phạm Kim Giang|2006-07-03|Nữ|100000467500|0987927183|sv059@student.edu.vn|QTKD K45C|Quản trị kinh doanh|Hải Phòng
+SV060|Bùi Minh Tài|2005-08-19|Nam|100000475245|0972937414|sv060@student.edu.vn|QTKD K47C|Quản trị kinh doanh|Thanh Hóa
+SV061|Đỗ Thu Phương|2003-09-17|Nữ|100000483514|0918027618|sv061@student.edu.vn|DĐT K45A|Điện - Điện tử|Nam Định
+SV062|Vũ Thanh Lan|2006-04-06|Nữ|100000491257|0964333081|sv062@student.edu.vn|QTKD K47B|Quản trị kinh doanh|Nghệ An
+SV063|Trần Hữu An|2006-07-11|Nam|100000499176|0985849374|sv063@student.edu.vn|QTKD K45A|Quản trị kinh doanh|Hải Phòng
+SV064|Trần Thanh Dũng|2006-12-15|Nam|100000507441|0918156086|sv064@student.edu.vn|KT K47A|Kinh tế|Quảng Ninh
+SV065|Bùi Minh Bình|2004-10-12|Nam|100000515417|0957495357|sv065@student.edu.vn|KTTC K49A|Kế toán|Nam Định
+SV066|Hồ Thanh Ngọc|2003-08-11|Nữ|100000523344|0993155114|sv066@student.edu.vn|CNTT K48B|Công nghệ thông tin|Thanh Hóa
+SV067|Ngô Gia Bình|2006-02-22|Nam|100000531021|0942432725|sv067@student.edu.vn|CK K45C|Cơ khí|Thái Bình
+SV068|Đặng Đức Trung|2005-10-04|Nam|100000539268|0940996670|sv068@student.edu.vn|CK K45B|Cơ khí|TP.HCM
+SV069|Ngô Phương Giang|2005-07-18|Nữ|100000546419|0946948596|sv069@student.edu.vn|KTTC K45B|Kế toán|Đồng Nai
+SV070|Hoàng Khánh Hà|2003-07-25|Nữ|100000554541|0942311979|sv070@student.edu.vn|DĐT K46A|Điện - Điện tử|Huế
+SV071|Hoàng Phương Bình|2003-08-18|Nữ|100000562958|0937029153|sv071@student.edu.vn|XD K49A|Xây dựng|Hải Phòng
+SV072|Lê Bảo Phương|2003-05-10|Nữ|100000570964|0912447406|sv072@student.edu.vn|XD K46A|Xây dựng|Đồng Nai
+SV073|Võ Bảo Linh|2003-04-04|Nữ|100000578974|0977409962|sv073@student.edu.vn|QTKD K47B|Quản trị kinh doanh|Thanh Hóa
+SV074|Hồ Tuấn Long|2004-07-05|Nam|100000586800|0992845656|sv074@student.edu.vn|DĐT K46B|Điện - Điện tử|Phú Yên
+SV075|Đỗ Thanh Nhung|2004-03-01|Nữ|100000594334|0920859339|sv075@student.edu.vn|KT K49C|Kinh tế|Thái Bình
+SV076|Nguyễn Thu Phương|2006-06-14|Nữ|100000602346|0996933575|sv076@student.edu.vn|KTTC K45B|Kế toán|Bình Dương
+SV077|Dương Lan My|2005-06-26|Nữ|100000610025|0945479963|sv077@student.edu.vn|NNA K46C|Ngôn ngữ Anh|Nam Định
+SV078|Huỳnh Văn Hùng|2005-12-18|Nam|100000618069|0995256627|sv078@student.edu.vn|KT K48A|Kinh tế|Hà Nội
+SV079|Nguyễn Thu Trang|2003-09-06|Nữ|100000626319|0944757126|sv079@student.edu.vn|CNTT K48B|Công nghệ thông tin|Nghệ An
+SV080|Ngô Hữu Dũng|2005-11-24|Nam|100000634219|0932504276|sv080@student.edu.vn|KT K47B|Kinh tế|Thái Bình
+SV081|Dương Minh Trung|2006-02-15|Nam|100000642102|0965646973|sv081@student.edu.vn|XD K45B|Xây dựng|Hải Phòng
+SV082|Đỗ Ngọc Phương|2003-05-22|Nữ|100000649568|0952064202|sv082@student.edu.vn|DĐT K49C|Điện - Điện tử|Huế
+SV083|Phạm Thu My|2006-08-08|Nữ|100000657527|0963607672|sv083@student.edu.vn|QTKD K48B|Quản trị kinh doanh|Quảng Ninh
+SV084|Lý Thanh Thảo|2006-07-21|Nữ|100000665573|0931713769|sv084@student.edu.vn|KT K47B|Kinh tế|Nam Định
+SV085|Ngô Gia Quân|2003-04-04|Nam|100000673328|0937419663|sv085@student.edu.vn|QTKD K47C|Quản trị kinh doanh|TP.HCM
+SV086|Lê Anh An|2004-07-09|Nam|100000681784|0978499307|sv086@student.edu.vn|DĐT K47B|Điện - Điện tử|Lâm Đồng
+SV087|Lý Văn Phong|2003-08-06|Nam|100000689746|0950531260|sv087@student.edu.vn|NNA K48C|Ngôn ngữ Anh|Hải Phòng
+SV088|Huỳnh Minh Hải|2005-03-23|Nam|100000697648|0917633781|sv088@student.edu.vn|KTTC K47A|Kế toán|Khánh Hòa
+SV089|Trần Minh Long|2003-02-27|Nam|100000705004|0997427311|sv089@student.edu.vn|KT K45C|Kinh tế|Hải Phòng
+SV090|Hồ Ngọc Vy|2006-04-02|Nữ|100000712913|0928440079|sv090@student.edu.vn|XD K48B|Xây dựng|Đà Nẵng
+SV091|Hồ Văn Hải|2004-08-10|Nam|100000720969|0963564740|sv091@student.edu.vn|CNTT K48A|Công nghệ thông tin|Quảng Ninh
+SV092|Nguyễn Anh Khang|2003-12-15|Nam|100000728931|0936224885|sv092@student.edu.vn|CNTT K48A|Công nghệ thông tin|Phú Yên
+SV093|Lê Đức Trung|2003-06-26|Nam|100000737300|0975753621|sv093@student.edu.vn|KT K46C|Kinh tế|Phú Yên
+SV094|Phan Bảo Hà|2005-06-27|Nữ|100000744762|0984422860|sv094@student.edu.vn|CNTT K46C|Công nghệ thông tin|Phú Yên
+SV095|Lý Lan Bình|2005-04-04|Nữ|100000752824|0949086932|sv095@student.edu.vn|KT K49C|Kinh tế|Nam Định
+SV096|Nguyễn Đức Tài|2006-09-18|Nam|100000760558|0951159076|sv096@student.edu.vn|KT K47A|Kinh tế|Nghệ An
+SV097|Lê Quốc Hùng|2003-03-27|Nam|100000768488|0974659835|sv097@student.edu.vn|XD K46B|Xây dựng|Thanh Hóa
+SV098|Đặng Thu Bình|2003-12-15|Nữ|100000776717|0922937899|sv098@student.edu.vn|XD K49A|Xây dựng|Cần Thơ
+SV099|Phạm Mai Giang|2006-02-03|Nữ|100000784283|0918685752|sv099@student.edu.vn|XD K45A|Xây dựng|Đà Nẵng
+SV100|Hồ Phương My|2003-03-04|Nữ|100000792179|0985573790|sv100@student.edu.vn|CNTT K45B|Công nghệ thông tin|Nam Định
+SV101|Vũ Thanh Bình|2003-05-08|Nữ|100000800562|0972543172|sv101@student.edu.vn|DĐT K49B|Điện - Điện tử|Đà Nẵng
+SV102|Võ Minh Thắng|2005-01-01|Nam|100000807743|0933764085|sv102@student.edu.vn|DĐT K45B|Điện - Điện tử|Thái Bình
+SV103|Lý Kim Nga|2003-04-25|Nữ|100000816440|0958950564|sv103@student.edu.vn|KTTC K48A|Kế toán|Phú Yên
+SV104|Hồ Mai Vy|2006-07-04|Nữ|100000824390|0922151325|sv104@student.edu.vn|KTTC K45A|Kế toán|Thanh Hóa
+SV105|Huỳnh Anh Hùng|2005-06-15|Nam|100000831797|0965321645|sv105@student.edu.vn|QTKD K49A|Quản trị kinh doanh|Khánh Hòa
+SV106|Võ Thu Mai|2006-06-22|Nữ|100000840140|0932175105|sv106@student.edu.vn|KT K48A|Kinh tế|Lâm Đồng
+SV107|Phan Kim Nga|2004-10-18|Nữ|100000847910|0924123162|sv107@student.edu.vn|KTTC K49A|Kế toán|Lâm Đồng
+SV108|Vũ Đức Dũng|2004-06-27|Nam|100000855485|0986829240|sv108@student.edu.vn|KTTC K48B|Kế toán|Bình Dương
+SV109|Phạm Thanh Thảo|2003-04-02|Nữ|100000863985|0992593272|sv109@student.edu.vn|CNTT K46C|Công nghệ thông tin|Nam Định
+SV110|Huỳnh Văn Phong|2003-05-09|Nam|100000871163|0934862275|sv110@student.edu.vn|QTKD K46A|Quản trị kinh doanh|Khánh Hòa
+SV111|Hoàng Hữu Tài|2006-05-02|Nam|100000879683|0918833812|sv111@student.edu.vn|NNA K49A|Ngôn ngữ Anh|Nghệ An
+SV112|Lê Kim Hà|2004-01-06|Nữ|100000887373|0940621230|sv112@student.edu.vn|KTTC K46A|Kế toán|Huế
+SV113|Hoàng Hữu Khang|2006-04-22|Nam|100000895222|0914025574|sv113@student.edu.vn|DĐT K46A|Điện - Điện tử|Hải Phòng
+SV114|Dương Hoàng An|2006-01-08|Nam|100000903315|0977455344|sv114@student.edu.vn|KT K45A|Kinh tế|Thái Bình
+SV115|Ngô Hoàng Tuấn|2005-05-12|Nam|100000910959|0917886495|sv115@student.edu.vn|DĐT K46C|Điện - Điện tử|Thanh Hóa
+SV116|Võ Kim Mai|2004-08-03|Nữ|100000918743|0915742859|sv116@student.edu.vn|QTKD K46B|Quản trị kinh doanh|Đồng Nai
+SV117|Nguyễn Anh Nam|2003-06-12|Nam|100000927413|0912357354|sv117@student.edu.vn|XD K45A|Xây dựng|TP.HCM
+SV118|Hồ Anh Tuấn|2003-01-09|Nam|100000934887|0947393506|sv118@student.edu.vn|DĐT K48A|Điện - Điện tử|Lâm Đồng
+SV119|Dương Thanh Dũng|2005-12-16|Nam|100000942393|0928683830|sv119@student.edu.vn|NNA K46B|Ngôn ngữ Anh|Đồng Nai
+SV120|Hoàng Khánh Nga|2005-10-12|Nữ|100000950479|0965823660|sv120@student.edu.vn|QTKD K46A|Quản trị kinh doanh|TP.HCM
+SV121|Nguyễn Minh Tài|2004-04-10|Nam|100000958413|0993912340|sv121@student.edu.vn|NNA K46C|Ngôn ngữ Anh|Quảng Ninh
+SV122|Đặng Văn Thắng|2004-07-10|Nam|100000966565|0929533035|sv122@student.edu.vn|CNTT K45C|Công nghệ thông tin|Đà Nẵng
+SV123|Đỗ Thanh Thảo|2005-07-03|Nữ|100000974445|0973288198|sv123@student.edu.vn|KTTC K49B|Kế toán|Đà Nẵng
+SV124|Phạm Đức Trung|2006-04-23|Nam|100000982159|0963044546|sv124@student.edu.vn|DĐT K45C|Điện - Điện tử|Nam Định
+SV125|Hồ Thanh Anh|2006-02-26|Nữ|100000989957|0953996202|sv125@student.edu.vn|KTTC K48A|Kế toán|Thái Bình
+SV126|Đỗ Kim Linh|2003-03-09|Nữ|100000997935|0957769825|sv126@student.edu.vn|CNTT K45B|Công nghệ thông tin|Hải Phòng
+SV127|Lý Kim Giang|2006-06-02|Nữ|100001006257|0989376070|sv127@student.edu.vn|QTKD K49B|Quản trị kinh doanh|Huế
+SV128|Võ Thị Mai|2005-10-22|Nữ|100001014445|0965021995|sv128@student.edu.vn|CNTT K46A|Công nghệ thông tin|Phú Yên
+SV129|Võ Bảo Châu|2005-07-19|Nữ|100001022217|0946405788|sv129@student.edu.vn|XD K45A|Xây dựng|Khánh Hòa
+SV130|Nguyễn Hoàng Thắng|2004-01-24|Nam|100001029914|0948389630|sv130@student.edu.vn|DĐT K45C|Điện - Điện tử|Thanh Hóa
+SV131|Võ Quốc Cường|2006-08-05|Nam|100001037472|0958249053|sv131@student.edu.vn|KTTC K48C|Kế toán|Bình Dương
+SV132|Lý Tuấn Khang|2005-12-09|Nam|100001046164|0973063612|sv132@student.edu.vn|DĐT K48C|Điện - Điện tử|Đồng Nai
+SV133|Phạm Quốc Nam|2006-10-05|Nam|100001053428|0937653082|sv133@student.edu.vn|KT K46A|Kinh tế|Đà Nẵng
+SV134|Trần Thanh My|2004-07-01|Nữ|100001061865|0981080877|sv134@student.edu.vn|XD K48A|Xây dựng|Hải Phòng
+SV135|Bùi Hữu Phong|2006-09-08|Nam|100001069214|0943559059|sv135@student.edu.vn|XD K48A|Xây dựng|Phú Yên
+SV136|Đặng Quốc Việt|2006-05-02|Nam|100001077361|0945655303|sv136@student.edu.vn|KT K46A|Kinh tế|Cần Thơ
+SV137|Hồ Tuấn Long|2004-08-13|Nam|100001085396|0964333693|sv137@student.edu.vn|NNA K48C|Ngôn ngữ Anh|Quảng Ninh
+SV138|Lý Kim Châu|2003-10-16|Nữ|100001093468|0955560219|sv138@student.edu.vn|NNA K47C|Ngôn ngữ Anh|Hà Nội
+SV139|Nguyễn Thanh Tài|2004-02-12|Nam|100001101184|0965465993|sv139@student.edu.vn|NNA K46C|Ngôn ngữ Anh|Bình Dương
+SV140|Võ Hoàng Khang|2003-09-06|Nam|100001109105|0976304812|sv140@student.edu.vn|CNTT K47A|Công nghệ thông tin|Hà Nội
+SV141|Võ Phương My|2004-06-18|Nữ|100001116850|0941899694|sv141@student.edu.vn|NNA K48C|Ngôn ngữ Anh|Nam Định
+SV142|Huỳnh Bảo Bình|2004-09-07|Nữ|100001125012|0969555889|sv142@student.edu.vn|CNTT K47A|Công nghệ thông tin|Cần Thơ
+SV143|Đặng Phương Mai|2006-05-15|Nữ|100001132794|0967105616|sv143@student.edu.vn|XD K49A|Xây dựng|Đà Nẵng
+SV144|Hoàng Thu Phương|2003-06-16|Nữ|100001140456|0920154685|sv144@student.edu.vn|XD K48C|Xây dựng|Bình Dương
+SV145|Lý Khánh Thảo|2005-01-14|Nữ|100001148298|0978245968|sv145@student.edu.vn|CNTT K48C|Công nghệ thông tin|Huế
+SV146|Huỳnh Hữu Tuấn|2004-12-02|Nam|100001156494|0989884958|sv146@student.edu.vn|XD K46C|Xây dựng|Thái Bình
+SV147|Võ Minh Quân|2005-11-24|Nam|100001164405|0962034104|sv147@student.edu.vn|KTTC K49C|Kế toán|Quảng Ninh
+SV148|Võ Thị Anh|2003-07-27|Nữ|100001172523|0913186294|sv148@student.edu.vn|KT K47A|Kinh tế|Nghệ An
+SV149|Bùi Thu Thảo|2003-03-01|Nữ|100001180469|0913993346|sv149@student.edu.vn|XD K49A|Xây dựng|Quảng Ninh
+SV150|Lý Ngọc Thảo|2006-08-05|Nữ|100001187922|0917584083|sv150@student.edu.vn|KTTC K46C|Kế toán|Khánh Hòa
+SV151|Ngô Mai Vy|2004-08-12|Nữ|100001196033|0927446987|sv151@student.edu.vn|KT K45C|Kinh tế|Thanh Hóa
+SV152|Hồ Lan Phương|2005-03-25|Nữ|100001204512|0971695463|sv152@student.edu.vn|CNTT K46A|Công nghệ thông tin|Nghệ An
+SV153|Nguyễn Mai My|2003-12-01|Nữ|100001211862|0949633915|sv153@student.edu.vn|KT K46A|Kinh tế|Đồng Nai
+SV154|Đỗ Văn Sơn|2005-01-04|Nam|100001219801|0990625364|sv154@student.edu.vn|NNA K46A|Ngôn ngữ Anh|Nam Định
+SV155|Lý Tuấn Bình|2006-12-22|Nam|100001228237|0972797539|sv155@student.edu.vn|NNA K49B|Ngôn ngữ Anh|TP.HCM
+SV156|Bùi Hoàng Hùng|2005-07-21|Nam|100001236184|0996343439|sv156@student.edu.vn|KT K49A|Kinh tế|Cần Thơ
+SV157|Nguyễn Minh An|2005-01-10|Nam|100001243414|0992328756|sv157@student.edu.vn|CNTT K47B|Công nghệ thông tin|Cần Thơ
+SV158|Phạm Thanh Phong|2004-01-03|Nam|100001251767|0990254178|sv158@student.edu.vn|NNA K45B|Ngôn ngữ Anh|Phú Yên
+SV159|Võ Thị Bình|2006-12-01|Nữ|100001259635|0967723532|sv159@student.edu.vn|DĐT K48C|Điện - Điện tử|Phú Yên
+SV160|Phạm Kim Giang|2005-10-26|Nữ|100001267355|0932526232|sv160@student.edu.vn|KTTC K45B|Kế toán|Lâm Đồng
+SV161|Lý Thanh Lan|2005-01-12|Nữ|100001275754|0932747527|sv161@student.edu.vn|DĐT K45C|Điện - Điện tử|Cần Thơ
+SV162|Huỳnh Lan Nga|2004-01-24|Nữ|100001283378|0925587740|sv162@student.edu.vn|DĐT K48B|Điện - Điện tử|Lâm Đồng
+SV163|Bùi Đức Phong|2003-11-19|Nam|100001291620|0919757117|sv163@student.edu.vn|CNTT K49A|Công nghệ thông tin|Đà Nẵng
+SV164|Phạm Bảo Nga|2004-11-12|Nữ|100001298983|0929836741|sv164@student.edu.vn|KTTC K48B|Kế toán|Hà Nội
+SV165|Võ Quốc Quân|2003-12-22|Nam|100001307288|0971999129|sv165@student.edu.vn|DĐT K47C|Điện - Điện tử|Phú Yên
+SV166|Lê Quốc Long|2003-10-12|Nam|100001314822|0934895246|sv166@student.edu.vn|CK K48B|Cơ khí|Thanh Hóa
+SV167|Phạm Phương Châu|2003-10-25|Nữ|100001323347|0979580068|sv167@student.edu.vn|KT K48B|Kinh tế|Hà Nội
+SV168|Phan Khánh Anh|2004-05-26|Nữ|100001330932|0971697701|sv168@student.edu.vn|QTKD K49C|Quản trị kinh doanh|Quảng Ninh
+SV169|Phạm Lan Thảo|2006-08-04|Nữ|100001338866|0928047827|sv169@student.edu.vn|KTTC K45B|Kế toán|Khánh Hòa
+SV170|Hồ Bảo Hương|2006-10-26|Nữ|100001346440|0987208890|sv170@student.edu.vn|CNTT K49A|Công nghệ thông tin|Đà Nẵng
+SV171|Đặng Tuấn Bình|2006-08-09|Nam|100001354792|0992582210|sv171@student.edu.vn|CK K46C|Cơ khí|Cần Thơ
+SV172|Huỳnh Mai Ngọc|2006-04-13|Nữ|100001362767|0971779695|sv172@student.edu.vn|KT K48A|Kinh tế|Cần Thơ
+SV173|Ngô Minh Việt|2003-11-17|Nam|100001370626|0941269448|sv173@student.edu.vn|KTTC K48A|Kế toán|Đồng Nai
+SV174|Phạm Kim Phương|2003-08-14|Nữ|100001378505|0981033334|sv174@student.edu.vn|KTTC K49A|Kế toán|Đà Nẵng
+SV175|Hồ Mai My|2004-02-23|Nữ|100001386391|0956960258|sv175@student.edu.vn|NNA K47C|Ngôn ngữ Anh|Huế
+SV176|Hoàng Hữu Quân|2006-08-18|Nam|100001393921|0979969669|sv176@student.edu.vn|KT K48C|Kinh tế|TP.HCM
+SV177|Hồ Gia Hùng|2003-04-24|Nam|100001402551|0940301389|sv177@student.edu.vn|DĐT K46C|Điện - Điện tử|TP.HCM
+SV178|Hoàng Thị Vy|2006-05-24|Nữ|100001410039|0934199878|sv178@student.edu.vn|KT K45A|Kinh tế|Lâm Đồng
+SV179|Vũ Anh Thắng|2005-08-19|Nam|100001417842|0993263759|sv179@student.edu.vn|CNTT K49A|Công nghệ thông tin|Cần Thơ
+SV180|Trần Hữu Việt|2004-04-24|Nam|100001426063|0997576566|sv180@student.edu.vn|QTKD K45C|Quản trị kinh doanh|Thanh Hóa
+SV181|Nguyễn Hữu Tuấn|2005-07-06|Nam|100001433689|0916749527|sv181@student.edu.vn|QTKD K45B|Quản trị kinh doanh|Quảng Ninh
+SV182|Nguyễn Lan Nhung|2003-01-22|Nữ|100001441688|0916190303|sv182@student.edu.vn|DĐT K49A|Điện - Điện tử|Phú Yên
+SV183|Hoàng Ngọc Giang|2003-10-27|Nữ|100001449236|0927240040|sv183@student.edu.vn|CK K49A|Cơ khí|Thanh Hóa
+SV184|Lý Tuấn Hải|2005-07-12|Nam|100001457183|0958057441|sv184@student.edu.vn|DĐT K45A|Điện - Điện tử|Đà Nẵng
+SV185|Lý Anh Hùng|2003-08-17|Nam|100001465718|0978460847|sv185@student.edu.vn|XD K46C|Xây dựng|Hải Phòng
+SV186|Võ Hoàng Phong|2004-11-20|Nam|100001473575|0964520241|sv186@student.edu.vn|DĐT K47C|Điện - Điện tử|TP.HCM
+SV187|Ngô Gia Hải|2004-02-27|Nam|100001481718|0966512983|sv187@student.edu.vn|CNTT K45C|Công nghệ thông tin|Thanh Hóa
+SV188|Phan Thanh Sơn|2003-08-11|Nam|100001489168|0943106678|sv188@student.edu.vn|XD K49C|Xây dựng|Thanh Hóa
+SV189|Võ Đức Phong|2003-05-14|Nam|100001496781|0933509311|sv189@student.edu.vn|DĐT K45B|Điện - Điện tử|Thanh Hóa
+SV190|Ngô Hoàng Phong|2005-03-19|Nam|100001505435|0973108928|sv190@student.edu.vn|QTKD K45C|Quản trị kinh doanh|Phú Yên
+SV191|Phan Thanh Vy|2006-11-08|Nữ|100001513417|0998523268|sv191@student.edu.vn|NNA K47A|Ngôn ngữ Anh|Lâm Đồng
+SV192|Huỳnh Mai Trang|2005-08-05|Nữ|100001520959|0948109946|sv192@student.edu.vn|KTTC K45C|Kế toán|Quảng Ninh
+SV193|Hoàng Phương Hương|2003-06-17|Nữ|100001528719|0947791138|sv193@student.edu.vn|CNTT K47A|Công nghệ thông tin|Lâm Đồng
+SV194|Phạm Hữu Dũng|2004-10-14|Nam|100001536909|0956062261|sv194@student.edu.vn|QTKD K47C|Quản trị kinh doanh|Khánh Hòa
+SV195|Hồ Minh Phong|2006-07-06|Nam|100001544763|0928322154|sv195@student.edu.vn|XD K47B|Xây dựng|Cần Thơ
+SV196|Vũ Đức Hải|2004-12-18|Nam|100001552808|0943425503|sv196@student.edu.vn|XD K45A|Xây dựng|Đà Nẵng
+SV197|Hoàng Gia Cường|2006-12-18|Nam|100001560499|0915633886|sv197@student.edu.vn|DĐT K45C|Điện - Điện tử|Hải Phòng
+SV198|Nguyễn Thu Anh|2003-01-18|Nữ|100001568064|0973548585|sv198@student.edu.vn|CNTT K46A|Công nghệ thông tin|TP.HCM
+SV199|Trần Kim Anh|2006-02-10|Nữ|100001576512|0922688702|sv199@student.edu.vn|XD K49A|Xây dựng|Nam Định
+SV200|Dương Thanh An|2005-04-11|Nam|100001583847|0912862407|sv200@student.edu.vn|KTTC K47A|Kế toán|Khánh Hòa
+SV201|Đặng Văn Sơn|2003-05-24|Nam|100001592535|0942121113|sv201@student.edu.vn|KTTC K47A|Kế toán|Hà Nội
+SV202|Võ Hữu Tài|2003-03-27|Nam|100001599856|0961453751|sv202@student.edu.vn|CK K46C|Cơ khí|Nghệ An
+SV203|Ngô Thị My|2005-05-19|Nữ|100001607634|0920390025|sv203@student.edu.vn|CK K48B|Cơ khí|Khánh Hòa
+SV204|Phạm Thị Châu|2004-03-26|Nữ|100001616022|0928445275|sv204@student.edu.vn|DĐT K47A|Điện - Điện tử|Thanh Hóa
+SV205|Huỳnh Đức Long|2006-09-27|Nam|100001624103|0950226247|sv205@student.edu.vn|CNTT K49C|Công nghệ thông tin|Hà Nội
+SV206|Huỳnh Anh Việt|2006-11-08|Nam|100001631706|0969692410|sv206@student.edu.vn|DĐT K45B|Điện - Điện tử|Cần Thơ
+SV207|Đỗ Tuấn Tài|2006-06-09|Nam|100001639261|0919836528|sv207@student.edu.vn|QTKD K47C|Quản trị kinh doanh|Lâm Đồng
+SV208|Vũ Kim Châu|2003-03-10|Nữ|100001647474|0913196409|sv208@student.edu.vn|KTTC K48A|Kế toán|TP.HCM
+SV209|Lý Thị Nga|2005-04-27|Nữ|100001655590|0958072066|sv209@student.edu.vn|KT K49C|Kinh tế|Hà Nội
+SV210|Vũ Văn An|2003-04-08|Nam|100001663828|0993154734|sv210@student.edu.vn|DĐT K47B|Điện - Điện tử|Bình Dương
+SV211|Trần Kim Châu|2003-02-14|Nữ|100001671734|0981502449|sv211@student.edu.vn|QTKD K49B|Quản trị kinh doanh|Phú Yên
+SV212|Bùi Hoàng Khang|2004-12-12|Nam|100001678968|0980071161|sv212@student.edu.vn|XD K46C|Xây dựng|Huế
+SV213|Lý Minh Tài|2003-07-03|Nam|100001687611|0943182849|sv213@student.edu.vn|XD K48B|Xây dựng|TP.HCM
+SV214|Phạm Ngọc My|2003-01-16|Nữ|100001694922|0915432341|sv214@student.edu.vn|KTTC K48B|Kế toán|Huế
+SV215|Trần Khánh Dung|2003-08-04|Nữ|100001703133|0981854013|sv215@student.edu.vn|KTTC K48A|Kế toán|Đà Nẵng
+SV216|Huỳnh Thanh Tuấn|2006-08-01|Nam|100001710684|0923058219|sv216@student.edu.vn|KT K45A|Kinh tế|Phú Yên
+SV217|Phan Hoàng Hải|2004-06-07|Nam|100001718995|0994796110|sv217@student.edu.vn|CNTT K47A|Công nghệ thông tin|Khánh Hòa
+SV218|Hoàng Đức An|2005-04-16|Nam|100001727175|0956688388|sv218@student.edu.vn|KT K47A|Kinh tế|Lâm Đồng
+SV219|Võ Quốc Long|2006-05-01|Nam|100001734617|0932217079|sv219@student.edu.vn|CK K46B|Cơ khí|Đà Nẵng
+SV220|Hồ Hữu Phong|2004-04-20|Nam|100001742259|0966551355|sv220@student.edu.vn|CK K48A|Cơ khí|Bình Dương
+SV221|Đặng Bảo Phương|2003-10-04|Nữ|100001750607|0954372168|sv221@student.edu.vn|CK K46B|Cơ khí|Đà Nẵng
+SV222|Lê Quốc Thắng|2005-02-14|Nam|100001758497|0915328554|sv222@student.edu.vn|DĐT K46C|Điện - Điện tử|Lâm Đồng
+SV223|Vũ Thanh Khang|2006-08-08|Nam|100001766185|0970767024|sv223@student.edu.vn|NNA K47B|Ngôn ngữ Anh|Huế
+SV224|Phan Phương Nhung|2003-03-01|Nữ|100001774048|0926392915|sv224@student.edu.vn|KTTC K48C|Kế toán|Hải Phòng
+SV225|Bùi Thị Nga|2006-06-24|Nữ|100001782127|0961525856|sv225@student.edu.vn|CK K49A|Cơ khí|Nam Định
+SV226|Phạm Bảo Lan|2005-10-10|Nữ|100001789717|0958627223|sv226@student.edu.vn|CNTT K49A|Công nghệ thông tin|Khánh Hòa
+SV227|Lý Gia An|2006-12-15|Nam|100001798114|0996618611|sv227@student.edu.vn|CK K46A|Cơ khí|Đồng Nai
+SV228|Võ Minh Việt|2005-09-18|Nam|100001805634|0957749188|sv228@student.edu.vn|DĐT K46C|Điện - Điện tử|Lâm Đồng
+SV229|Vũ Minh Bình|2005-01-11|Nam|100001813528|0941000088|sv229@student.edu.vn|XD K48B|Xây dựng|Phú Yên
+SV230|Đặng Khánh Nhung|2005-08-12|Nữ|100001821410|0977320164|sv230@student.edu.vn|DĐT K49B|Điện - Điện tử|Nghệ An
+SV231|Đặng Hữu Quân|2003-04-08|Nam|100001829325|0993498399|sv231@student.edu.vn|CNTT K46C|Công nghệ thông tin|Đà Nẵng
+SV232|Bùi Hữu Sơn|2005-05-13|Nam|100001838019|0984985588|sv232@student.edu.vn|CNTT K48C|Công nghệ thông tin|Hải Phòng
+SV233|Huỳnh Bảo Giang|2005-04-15|Nữ|100001845195|0987196087|sv233@student.edu.vn|DĐT K47C|Điện - Điện tử|Phú Yên
+SV234|Hoàng Lan Vy|2005-01-24|Nữ|100001853423|0953858773|sv234@student.edu.vn|DĐT K47A|Điện - Điện tử|Đà Nẵng
+SV235|Trần Phương Hương|2005-11-23|Nữ|100001861798|0962680455|sv235@student.edu.vn|XD K46B|Xây dựng|Quảng Ninh
+SV236|Huỳnh Văn Hùng|2006-01-26|Nam|100001869687|0985291515|sv236@student.edu.vn|KT K45C|Kinh tế|Huế
+SV237|Dương Bảo Dung|2005-05-06|Nữ|100001877272|0973231130|sv237@student.edu.vn|NNA K47B|Ngôn ngữ Anh|Hải Phòng
+SV238|Dương Bảo Trang|2004-07-09|Nữ|100001884904|0994032285|sv238@student.edu.vn|KTTC K46A|Kế toán|Thái Bình
+SV239|Trần Hoàng Tài|2006-05-15|Nam|100001892688|0928086797|sv239@student.edu.vn|XD K45B|Xây dựng|Nghệ An
+SV240|Vũ Bảo Hương|2006-07-23|Nữ|100001901142|0952074702|sv240@student.edu.vn|CNTT K45C|Công nghệ thông tin|Lâm Đồng
+SV241|Võ Thu Nhung|2004-06-01|Nữ|100001909016|0995008610|sv241@student.edu.vn|CNTT K46C|Công nghệ thông tin|Huế
+SV242|Dương Minh Long|2006-09-15|Nam|100001917245|0965728359|sv242@student.edu.vn|DĐT K46B|Điện - Điện tử|Đồng Nai
+SV243|Huỳnh Thu Trang|2003-03-22|Nữ|100001924423|0977538523|sv243@student.edu.vn|XD K48B|Xây dựng|Huế
+SV244|Huỳnh Bảo Vy|2004-07-12|Nữ|100001932550|0942514302|sv244@student.edu.vn|XD K47A|Xây dựng|TP.HCM
+SV245|Phan Tuấn An|2005-12-06|Nam|100001940768|0968272857|sv245@student.edu.vn|CK K46A|Cơ khí|Hà Nội
+SV246|Lê Đức Long|2006-05-26|Nam|100001948450|0914755459|sv246@student.edu.vn|KT K45B|Kinh tế|Thanh Hóa
+SV247|Trần Mai Lan|2004-10-24|Nữ|100001956861|0986355703|sv247@student.edu.vn|NNA K46C|Ngôn ngữ Anh|Cần Thơ
+SV248|Phạm Bảo Anh|2005-06-26|Nữ|100001964199|0957070251|sv248@student.edu.vn|QTKD K49C|Quản trị kinh doanh|Nam Định
+SV249|Trần Gia Hùng|2003-09-10|Nam|100001972044|0922795372|sv249@student.edu.vn|CNTT K46A|Công nghệ thông tin|Hải Phòng
+SV250|Lê Thị Dung|2005-02-19|Nữ|100001980365|0962819395|sv250@student.edu.vn|CK K47A|Cơ khí|Thanh Hóa
+SV251|Đỗ Ngọc Hà|2006-05-14|Nữ|100001988143|0974954072|sv251@student.edu.vn|DĐT K46B|Điện - Điện tử|Hải Phòng
+SV252|Phan Thị Nga|2003-07-23|Nữ|100001996054|0999522844|sv252@student.edu.vn|DĐT K46A|Điện - Điện tử|Huế
+SV253|Hoàng Thu Linh|2004-02-07|Nữ|100002004184|0919528344|sv253@student.edu.vn|KTTC K45C|Kế toán|Cần Thơ
+SV254|Bùi Thanh Nhung|2004-10-18|Nữ|100002011884|0968769576|sv254@student.edu.vn|QTKD K48C|Quản trị kinh doanh|Huế
+SV255|Phạm Anh Quân|2006-12-26|Nam|100002019599|0963242096|sv255@student.edu.vn|KT K46A|Kinh tế|Nghệ An
+SV256|Hoàng Đức Khang|2006-12-22|Nam|100002028064|0960059898|sv256@student.edu.vn|KT K49A|Kinh tế|Nghệ An
+SV257|Bùi Văn Cường|2006-08-16|Nam|100002035928|0919786251|sv257@student.edu.vn|CNTT K49B|Công nghệ thông tin|Đồng Nai
+SV258|Dương Anh Khang|2004-05-15|Nam|100002043106|0964365247|sv258@student.edu.vn|QTKD K45A|Quản trị kinh doanh|Huế
+SV259|Trần Thanh Lan|2003-02-12|Nữ|100002051523|0952051862|sv259@student.edu.vn|QTKD K46B|Quản trị kinh doanh|Cần Thơ
+SV260|Bùi Phương Bình|2004-08-26|Nữ|100002059043|0980408751|sv260@student.edu.vn|XD K49A|Xây dựng|Khánh Hòa
+SV261|Bùi Quốc Trung|2004-12-24|Nam|100002067290|0991436110|sv261@student.edu.vn|NNA K45B|Ngôn ngữ Anh|Thái Bình
+SV262|Nguyễn Ngọc Ngọc|2005-09-25|Nữ|100002074944|0975139654|sv262@student.edu.vn|XD K47B|Xây dựng|TP.HCM
+SV263|Huỳnh Quốc Tuấn|2003-10-08|Nam|100002083061|0966203833|sv263@student.edu.vn|DĐT K45B|Điện - Điện tử|Hà Nội
+SV264|Đặng Thanh Tài|2003-05-12|Nam|100002090909|0993611537|sv264@student.edu.vn|XD K45A|Xây dựng|Hải Phòng
+SV265|Hoàng Hữu Tài|2005-12-09|Nam|100002098698|0963753430|sv265@student.edu.vn|KTTC K45C|Kế toán|Cần Thơ
+SV266|Huỳnh Hữu Bình|2004-12-03|Nam|100002107018|0954487494|sv266@student.edu.vn|QTKD K47C|Quản trị kinh doanh|Khánh Hòa
+SV267|Trần Thanh Long|2004-05-23|Nam|100002115256|0962872327|sv267@student.edu.vn|CNTT K49C|Công nghệ thông tin|Hà Nội
+SV268|Hoàng Tuấn Sơn|2003-09-21|Nam|100002123114|0999727059|sv268@student.edu.vn|CNTT K48C|Công nghệ thông tin|Đồng Nai
+SV269|Nguyễn Gia Sơn|2006-02-22|Nam|100002131107|0989194689|sv269@student.edu.vn|KT K46A|Kinh tế|Đà Nẵng
+SV270|Lê Thu Phương|2004-08-06|Nữ|100002138343|0973070389|sv270@student.edu.vn|DĐT K49C|Điện - Điện tử|Quảng Ninh
+SV271|Lê Bảo Bình|2003-12-18|Nữ|100002146769|0937263001|sv271@student.edu.vn|DĐT K46C|Điện - Điện tử|Đà Nẵng
+SV272|Trần Thị Hạnh|2003-06-15|Nữ|100002154758|0998183230|sv272@student.edu.vn|KTTC K48A|Kế toán|Khánh Hòa
+SV273|Đặng Quốc Khang|2003-10-23|Nam|100002162389|0944086416|sv273@student.edu.vn|KTTC K45C|Kế toán|Đà Nẵng
+SV274|Vũ Quốc Khang|2004-11-25|Nam|100002170003|0984423034|sv274@student.edu.vn|CNTT K46B|Công nghệ thông tin|Đồng Nai
+SV275|Huỳnh Đức Tài|2005-03-24|Nam|100002178050|0983807524|sv275@student.edu.vn|CNTT K47C|Công nghệ thông tin|Bình Dương
+SV276|Trần Phương Lan|2005-11-15|Nữ|100002186520|0910871339|sv276@student.edu.vn|CNTT K47B|Công nghệ thông tin|Cần Thơ
+SV277|Hoàng Khánh Hạnh|2005-03-01|Nữ|100002194073|0949045557|sv277@student.edu.vn|KTTC K45B|Kế toán|Hà Nội
+SV278|Lý Lan My|2004-12-13|Nữ|100002202128|0942293829|sv278@student.edu.vn|DĐT K48B|Điện - Điện tử|Bình Dương
+SV279|Ngô Gia Khang|2004-12-05|Nam|100002209632|0950493189|sv279@student.edu.vn|KTTC K49B|Kế toán|Huế
+SV280|Dương Văn Bình|2005-06-22|Nam|100002217753|0990754046|sv280@student.edu.vn|KTTC K46B|Kế toán|Huế
+SV281|Trần Phương Hương|2004-10-26|Nữ|100002226064|0986744531|sv281@student.edu.vn|KT K49A|Kinh tế|Hải Phòng
+SV282|Vũ Thanh Nam|2004-11-04|Nam|100002234029|0972870651|sv282@student.edu.vn|KTTC K48A|Kế toán|Hải Phòng
+SV283|Đặng Minh Long|2003-06-26|Nam|100002241750|0936385567|sv283@student.edu.vn|CNTT K48A|Công nghệ thông tin|TP.HCM
+SV284|Võ Hữu Khang|2005-02-02|Nam|100002249333|0936498482|sv284@student.edu.vn|QTKD K48B|Quản trị kinh doanh|Hải Phòng
+SV285|Hoàng Hữu Tuấn|2005-11-04|Nam|100002257110|0968438852|sv285@student.edu.vn|QTKD K49B|Quản trị kinh doanh|Nam Định
+SV286|Trần Đức Tuấn|2004-02-13|Nam|100002265044|0986118550|sv286@student.edu.vn|KTTC K46A|Kế toán|Thái Bình
+SV287|Phạm Bảo Thảo|2004-05-02|Nữ|100002273651|0926362463|sv287@student.edu.vn|CK K45B|Cơ khí|Huế
+SV288|Dương Kim Hương|2003-10-26|Nữ|100002281299|0979221992|sv288@student.edu.vn|XD K49B|Xây dựng|Thái Bình
+SV289|Dương Kim Lan|2005-03-17|Nữ|100002289146|0943447930|sv289@student.edu.vn|XD K46C|Xây dựng|Hà Nội
+SV290|Huỳnh Anh Dũng|2004-04-14|Nam|100002297272|0939672988|sv290@student.edu.vn|KTTC K46B|Kế toán|Quảng Ninh
+SV291|Huỳnh Ngọc Nhung|2003-12-13|Nữ|100002304792|0981889890|sv291@student.edu.vn|KT K45C|Kinh tế|Thái Bình
+SV292|Hồ Kim Hương|2006-07-18|Nữ|100002312544|0944673251|sv292@student.edu.vn|KTTC K48B|Kế toán|Thanh Hóa
+SV293|Dương Thị Hà|2004-09-01|Nữ|100002320623|0964990733|sv293@student.edu.vn|KT K47B|Kinh tế|Khánh Hòa
+SV294|Hoàng Gia Quân|2003-12-14|Nam|100002328672|0939933145|sv294@student.edu.vn|CK K49C|Cơ khí|Huế
+SV295|Hồ Ngọc Dung|2006-06-06|Nữ|100002336790|0938347037|sv295@student.edu.vn|KTTC K46B|Kế toán|Khánh Hòa
+SV296|Đỗ Hữu Hùng|2005-07-22|Nam|100002344296|0924376130|sv296@student.edu.vn|QTKD K48C|Quản trị kinh doanh|Nghệ An
+SV297|Trần Kim Hà|2003-02-10|Nữ|100002352732|0991095074|sv297@student.edu.vn|KT K46B|Kinh tế|Thanh Hóa
+SV298|Phan Kim Bình|2005-04-03|Nữ|100002360285|0968405041|sv298@student.edu.vn|DĐT K45C|Điện - Điện tử|Hải Phòng
+SV299|Lê Hoàng Quân|2004-07-12|Nam|100002368126|0979042430|sv299@student.edu.vn|CNTT K49A|Công nghệ thông tin|Nghệ An
+SV300|Lê Tuấn Long|2005-03-26|Nam|100002375783|0963688291|sv300@student.edu.vn|QTKD K46A|Quản trị kinh doanh|Đồng Nai
+SV301|Đỗ Anh Bình|2004-12-09|Nam|100002384468|0979131868|sv301@student.edu.vn|KT K48A|Kinh tế|Khánh Hòa
+SV302|Lý Thị Dung|2004-02-02|Nữ|100002391777|0915782613|sv302@student.edu.vn|XD K48A|Xây dựng|Cần Thơ
+SV303|Nguyễn Ngọc Nhung|2006-11-15|Nữ|100002400189|0923559433|sv303@student.edu.vn|CK K47C|Cơ khí|Lâm Đồng
+SV304|Đỗ Khánh Lan|2006-03-04|Nữ|100002408059|0953110284|sv304@student.edu.vn|XD K45B|Xây dựng|TP.HCM
+SV305|Nguyễn Quốc Hải|2006-04-24|Nam|100002415312|0923710106|sv305@student.edu.vn|QTKD K49C|Quản trị kinh doanh|Nghệ An
+SV306|Hồ Kim My|2004-08-13|Nữ|100002423643|0930626918|sv306@student.edu.vn|QTKD K48B|Quản trị kinh doanh|Thái Bình
+SV307|Trần Hữu Hùng|2003-02-10|Nam|100002431758|0963077308|sv307@student.edu.vn|KTTC K47C|Kế toán|Thái Bình
+SV308|Ngô Tuấn Tài|2004-08-13|Nam|100002439532|0945703295|sv308@student.edu.vn|NNA K49C|Ngôn ngữ Anh|Khánh Hòa
+SV309|Lý Hữu An|2005-08-18|Nam|100002447753|0991777954|sv309@student.edu.vn|DĐT K47C|Điện - Điện tử|Hải Phòng
+SV310|Bùi Lan Giang|2003-06-21|Nữ|100002455199|0950434315|sv310@student.edu.vn|CK K48B|Cơ khí|Nam Định
+SV311|Phạm Đức An|2005-09-12|Nam|100002463136|0969759220|sv311@student.edu.vn|NNA K45B|Ngôn ngữ Anh|Thái Bình
+SV312|Phạm Thị Giang|2003-04-24|Nữ|100002470935|0991895236|sv312@student.edu.vn|DĐT K48A|Điện - Điện tử|Đà Nẵng
+SV313|Trần Quốc Việt|2004-12-15|Nam|100002479273|0954612754|sv313@student.edu.vn|NNA K47C|Ngôn ngữ Anh|TP.HCM
+SV314|Phan Bảo Bình|2004-08-18|Nữ|100002486873|0970677222|sv314@student.edu.vn|KTTC K46A|Kế toán|Bình Dương
+SV315|Đặng Thanh Dũng|2004-08-23|Nam|100002494977|0942148993|sv315@student.edu.vn|QTKD K49C|Quản trị kinh doanh|Hà Nội
+SV316|Nguyễn Minh Hùng|2005-07-10|Nam|100002503259|0954244104|sv316@student.edu.vn|NNA K46C|Ngôn ngữ Anh|Huế
+SV317|Võ Tuấn Sơn|2005-01-21|Nam|100002510992|0959261439|sv317@student.edu.vn|XD K49A|Xây dựng|TP.HCM
+SV318|Trần Phương Lan|2003-11-11|Nữ|100002518428|0951836760|sv318@student.edu.vn|CK K45B|Cơ khí|Phú Yên
+SV319|Ngô Thanh Thảo|2003-04-11|Nữ|100002526896|0951106460|sv319@student.edu.vn|QTKD K48C|Quản trị kinh doanh|Phú Yên
+SV320|Dương Mai My|2003-03-01|Nữ|100002534677|0974399713|sv320@student.edu.vn|QTKD K47A|Quản trị kinh doanh|Quảng Ninh
+SV321|Phan Mai Ngọc|2006-08-09|Nữ|100002542668|0941031651|sv321@student.edu.vn|XD K45B|Xây dựng|Phú Yên
+SV322|Dương Thu Hương|2006-10-21|Nữ|100002550206|0991440344|sv322@student.edu.vn|NNA K49C|Ngôn ngữ Anh|Huế
+SV323|Hoàng Ngọc Anh|2005-03-23|Nữ|100002558560|0977918628|sv323@student.edu.vn|XD K47C|Xây dựng|Nghệ An
+SV324|Phan Văn Phong|2003-03-27|Nam|100002566077|0958334508|sv324@student.edu.vn|CNTT K47A|Công nghệ thông tin|Huế
+SV325|Hoàng Thị Nga|2006-06-23|Nữ|100002574006|0974834997|sv325@student.edu.vn|XD K47B|Xây dựng|Cần Thơ
+SV326|Ngô Kim Trang|2006-10-18|Nữ|100002581904|0974544655|sv326@student.edu.vn|QTKD K46A|Quản trị kinh doanh|Thanh Hóa
+SV327|Ngô Ngọc Hương|2003-09-19|Nữ|100002589597|0967113666|sv327@student.edu.vn|KTTC K48A|Kế toán|Nam Định
+SV328|Dương Văn Khang|2004-06-07|Nam|100002598066|0939834898|sv328@student.edu.vn|KT K47B|Kinh tế|Đà Nẵng
+SV329|Bùi Ngọc Thảo|2006-10-10|Nữ|100002605811|0976748512|sv329@student.edu.vn|XD K46A|Xây dựng|Phú Yên
+SV330|Bùi Thu Giang|2004-03-23|Nữ|100002614154|0980805213|sv330@student.edu.vn|CK K46B|Cơ khí|Nam Định
+SV331|Trần Lan Hương|2005-10-22|Nữ|100002621221|0922888488|sv331@student.edu.vn|CNTT K49C|Công nghệ thông tin|Đồng Nai
+SV332|Hồ Đức Hải|2006-11-02|Nam|100002629628|0962000515|sv332@student.edu.vn|KTTC K47A|Kế toán|Thái Bình
+SV333|Hồ Minh Thắng|2006-11-15|Nam|100002637872|0990560204|sv333@student.edu.vn|QTKD K48B|Quản trị kinh doanh|Cần Thơ
+SV334|Võ Thanh Tài|2005-04-14|Nam|100002645505|0925107667|sv334@student.edu.vn|CNTT K47B|Công nghệ thông tin|Phú Yên
+SV335|Hoàng Quốc Hải|2004-04-08|Nam|100002653626|0957586658|sv335@student.edu.vn|XD K49A|Xây dựng|Hà Nội
+SV336|Phạm Thanh Cường|2004-09-25|Nam|100002661400|0945467067|sv336@student.edu.vn|KTTC K49C|Kế toán|Nam Định
+SV337|Đặng Hoàng An|2005-08-09|Nam|100002668872|0947737760|sv337@student.edu.vn|KT K47B|Kinh tế|Phú Yên
+SV338|Trần Khánh Trang|2005-11-11|Nữ|100002677136|0928794101|sv338@student.edu.vn|QTKD K49A|Quản trị kinh doanh|Huế
+SV339|Đặng Thị Anh|2006-08-12|Nữ|100002684976|0914918696|sv339@student.edu.vn|CK K47B|Cơ khí|Hải Phòng
+SV340|Nguyễn Tuấn Sơn|2006-02-14|Nam|100002693086|0927958992|sv340@student.edu.vn|DĐT K46B|Điện - Điện tử|Nam Định
+SV341|Vũ Khánh Vy|2004-05-01|Nữ|100002700552|0986967450|sv341@student.edu.vn|CK K45B|Cơ khí|Nghệ An
+SV342|Phạm Mai Lan|2004-10-13|Nữ|100002708595|0973379006|sv342@student.edu.vn|QTKD K48B|Quản trị kinh doanh|Cần Thơ
+SV343|Võ Bảo My|2006-10-16|Nữ|100002716987|0972705957|sv343@student.edu.vn|XD K45A|Xây dựng|Cần Thơ
+SV344|Vũ Văn Hùng|2004-10-08|Nam|100002724646|0929377160|sv344@student.edu.vn|QTKD K46C|Quản trị kinh doanh|Nghệ An
+SV345|Nguyễn Gia Dũng|2003-09-12|Nam|100002732127|0962070685|sv345@student.edu.vn|NNA K46A|Ngôn ngữ Anh|Thái Bình
+SV346|Hồ Hữu Hải|2004-03-11|Nam|100002740084|0961670286|sv346@student.edu.vn|XD K46B|Xây dựng|Hà Nội
+SV347|Hoàng Lan Mai|2003-06-24|Nữ|100002748256|0942380262|sv347@student.edu.vn|KTTC K46B|Kế toán|Phú Yên
+SV348|Đặng Hoàng Sơn|2006-09-03|Nam|100002756208|0953550286|sv348@student.edu.vn|NNA K49C|Ngôn ngữ Anh|Hà Nội
+SV349|Huỳnh Hoàng Trung|2003-04-23|Nam|100002763837|0978921021|sv349@student.edu.vn|KT K46A|Kinh tế|Hải Phòng
+SV350|Phan Khánh Trang|2003-04-21|Nữ|100002772082|0988354008|sv350@student.edu.vn|DĐT K49C|Điện - Điện tử|Nam Định
+SV351|Hoàng Phương Lan|2006-09-16|Nữ|100002779775|0941187101|sv351@student.edu.vn|KTTC K45B|Kế toán|Huế
+SV352|Bùi Thanh My|2004-11-18|Nữ|100002788190|0986868339|sv352@student.edu.vn|CK K49B|Cơ khí|Cần Thơ
+SV353|Phạm Phương Hà|2005-05-27|Nữ|100002795438|0975865117|sv353@student.edu.vn|KTTC K47A|Kế toán|Nghệ An
+SV354|Vũ Kim Linh|2006-05-13|Nữ|100002803946|0946356602|sv354@student.edu.vn|CNTT K49A|Công nghệ thông tin|Quảng Ninh
+SV355|Hoàng Hoàng Tài|2005-08-25|Nam|100002811694|0913026854|sv355@student.edu.vn|QTKD K48A|Quản trị kinh doanh|Thái Bình
+SV356|Võ Phương Dung|2003-02-08|Nữ|100002819208|0926421841|sv356@student.edu.vn|KT K48B|Kinh tế|Lâm Đồng
+SV357|Trần Phương Hà|2003-09-01|Nữ|100002827309|0938880361|sv357@student.edu.vn|CK K49C|Cơ khí|Hà Nội
+SV358|Phan Bảo Nga|2003-04-12|Nữ|100002835870|0962701267|sv358@student.edu.vn|XD K45A|Xây dựng|Nam Định
+SV359|Lý Thu Thảo|2003-06-11|Nữ|100002843576|0913508054|sv359@student.edu.vn|DĐT K49C|Điện - Điện tử|Hải Phòng
+SV360|Trần Thanh Lan|2006-09-06|Nữ|100002850884|0929243260|sv360@student.edu.vn|XD K45B|Xây dựng|TP.HCM
+SV361|Dương Tuấn An|2003-05-02|Nam|100002858889|0916358320|sv361@student.edu.vn|CNTT K49B|Công nghệ thông tin|Bình Dương
+SV362|Đặng Quốc Trung|2005-12-24|Nam|100002867471|0941096327|sv362@student.edu.vn|QTKD K46A|Quản trị kinh doanh|Đà Nẵng
+SV363|Nguyễn Kim Lan|2003-02-09|Nữ|100002874604|0993273004|sv363@student.edu.vn|NNA K49A|Ngôn ngữ Anh|Bình Dương
+SV364|Đỗ Thị Thảo|2003-09-27|Nữ|100002882679|0934943362|sv364@student.edu.vn|KTTC K48B|Kế toán|Hải Phòng
+SV365|Bùi Minh Cường|2005-07-24|Nam|100002890464|0989463526|sv365@student.edu.vn|CNTT K45B|Công nghệ thông tin|Thái Bình
+SV366|Lê Thanh Linh|2003-06-23|Nữ|100002898385|0951492909|sv366@student.edu.vn|KT K49B|Kinh tế|Cần Thơ
+SV367|Lê Kim Giang|2004-03-04|Nữ|100002907044|0996461172|sv367@student.edu.vn|CK K49C|Cơ khí|Lâm Đồng
+SV368|Lê Hữu Quân|2005-11-08|Nam|100002914296|0986833632|sv368@student.edu.vn|DĐT K47C|Điện - Điện tử|Nghệ An
+SV369|Vũ Hoàng Tài|2005-05-19|Nam|100002922377|0997136434|sv369@student.edu.vn|CK K45B|Cơ khí|Bình Dương
+SV370|Vũ Thị Thảo|2005-10-19|Nữ|100002930286|0920655984|sv370@student.edu.vn|CK K47C|Cơ khí|Thanh Hóa
+SV371|Phạm Ngọc Nhung|2004-05-12|Nữ|100002937963|0990121593|sv371@student.edu.vn|CK K48A|Cơ khí|TP.HCM
+SV372|Trần Hữu Hùng|2004-06-27|Nam|100002945942|0989142629|sv372@student.edu.vn|DĐT K45C|Điện - Điện tử|Quảng Ninh
+SV373|Trần Ngọc Dung|2006-09-24|Nữ|100002953815|0950716661|sv373@student.edu.vn|NNA K45A|Ngôn ngữ Anh|Nghệ An
+SV374|Phạm Phương Bình|2006-06-18|Nữ|100002962048|0944016255|sv374@student.edu.vn|KTTC K48C|Kế toán|Hải Phòng
+SV375|Ngô Khánh Bình|2004-02-21|Nữ|100002970468|0964976541|sv375@student.edu.vn|QTKD K49C|Quản trị kinh doanh|Lâm Đồng
+SV376|Huỳnh Thị Vy|2005-06-04|Nữ|100002977549|0983182982|sv376@student.edu.vn|DĐT K47C|Điện - Điện tử|Thái Bình
+SV377|Huỳnh Kim Hương|2004-06-12|Nữ|100002985988|0979414786|sv377@student.edu.vn|CNTT K48B|Công nghệ thông tin|Hà Nội
+SV378|Vũ Phương Bình|2006-09-12|Nữ|100002993427|0955165512|sv378@student.edu.vn|QTKD K46B|Quản trị kinh doanh|Hà Nội
+SV379|Bùi Hoàng Cường|2003-11-08|Nam|100003001778|0956714937|sv379@student.edu.vn|NNA K49A|Ngôn ngữ Anh|Lâm Đồng
+SV380|Hoàng Hoàng Cường|2004-06-16|Nam|100003009715|0952028686|sv380@student.edu.vn|CK K47C|Cơ khí|Thái Bình
+SV381|Huỳnh Bảo Châu|2003-09-27|Nữ|100003017575|0925600624|sv381@student.edu.vn|DĐT K46B|Điện - Điện tử|Nam Định
+SV382|Trần Phương Lan|2003-07-24|Nữ|100003025096|0932991969|sv382@student.edu.vn|KT K49B|Kinh tế|Nam Định
+SV383|Ngô Khánh Phương|2006-09-12|Nữ|100003033129|0918437462|sv383@student.edu.vn|XD K48B|Xây dựng|Quảng Ninh
+SV384|Phạm Quốc Hải|2005-11-15|Nam|100003041187|0975732070|sv384@student.edu.vn|NNA K45A|Ngôn ngữ Anh|Đồng Nai
+SV385|Dương Bảo Mai|2003-01-21|Nữ|100003048937|0986747025|sv385@student.edu.vn|KT K45B|Kinh tế|Phú Yên
+SV386|Phạm Bảo Nga|2003-11-02|Nữ|100003057339|0932400442|sv386@student.edu.vn|CK K48C|Cơ khí|Bình Dương
+SV387|Ngô Thanh Bình|2004-06-22|Nữ|100003064982|0977300689|sv387@student.edu.vn|KTTC K46B|Kế toán|Đồng Nai
+SV388|Bùi Thu Lan|2003-04-25|Nữ|100003073246|0931072134|sv388@student.edu.vn|QTKD K47A|Quản trị kinh doanh|Cần Thơ
+SV389|Dương Anh Tài|2003-02-16|Nam|100003081042|0917714639|sv389@student.edu.vn|XD K47C|Xây dựng|Phú Yên
+SV390|Đặng Mai Thảo|2005-07-03|Nữ|100003088873|0927748234|sv390@student.edu.vn|NNA K47C|Ngôn ngữ Anh|Huế
+SV391|Trần Tuấn Tài|2004-02-01|Nam|100003096433|0931968736|sv391@student.edu.vn|DĐT K47A|Điện - Điện tử|Cần Thơ
+SV392|Lý Văn Phong|2005-09-19|Nam|100003104519|0975082948|sv392@student.edu.vn|QTKD K46B|Quản trị kinh doanh|Đồng Nai
+SV393|Nguyễn Lan Vy|2005-07-25|Nữ|100003112778|0982246840|sv393@student.edu.vn|NNA K48B|Ngôn ngữ Anh|Thanh Hóa
+SV394|Đỗ Gia Khang|2005-12-24|Nam|100003120418|0940886333|sv394@student.edu.vn|CNTT K47B|Công nghệ thông tin|Khánh Hòa
+SV395|Lê Thu Nga|2006-07-10|Nữ|100003128762|0921226542|sv395@student.edu.vn|CNTT K46A|Công nghệ thông tin|Quảng Ninh
+SV396|Trần Thanh Hạnh|2005-04-06|Nữ|100003136164|0937179730|sv396@student.edu.vn|XD K48B|Xây dựng|Huế
+SV397|Vũ Hoàng Sơn|2006-04-10|Nam|100003144564|0977251354|sv397@student.edu.vn|DĐT K47A|Điện - Điện tử|Đồng Nai
+SV398|Nguyễn Hữu Hải|2005-04-03|Nam|100003152126|0918089980|sv398@student.edu.vn|CK K48C|Cơ khí|Bình Dương
+SV399|Vũ Đức Long|2003-08-08|Nam|100003159900|0924376252|sv399@student.edu.vn|XD K47B|Xây dựng|TP.HCM
+SV400|Dương Hữu Cường|2004-03-06|Nam|100003168352|0919803998|sv400@student.edu.vn|KT K48A|Kinh tế|Đà Nẵng
+SV401|Hoàng Minh Hải|2005-07-18|Nam|100003175775|0926743853|sv401@student.edu.vn|XD K46A|Xây dựng|Huế
+SV402|Dương Khánh Bình|2003-01-22|Nữ|100003184005|0929779018|sv402@student.edu.vn|KT K49C|Kinh tế|Nghệ An
+SV403|Hồ Lan Anh|2004-10-12|Nữ|100003191382|0933125408|sv403@student.edu.vn|CNTT K45C|Công nghệ thông tin|Đà Nẵng
+SV404|Hồ Tuấn Trung|2003-03-24|Nam|100003199991|0945411501|sv404@student.edu.vn|QTKD K47A|Quản trị kinh doanh|TP.HCM
+SV405|Phạm Phương Châu|2003-04-10|Nữ|100003207494|0998484883|sv405@student.edu.vn|DĐT K47A|Điện - Điện tử|Đồng Nai
+SV406|Ngô Phương Mai|2006-04-05|Nữ|100003215968|0912130307|sv406@student.edu.vn|XD K48B|Xây dựng|Đà Nẵng
+SV407|Trần Thanh Dung|2005-05-26|Nữ|100003223207|0923072524|sv407@student.edu.vn|KT K47A|Kinh tế|Nam Định
+SV408|Võ Bảo Anh|2006-04-19|Nữ|100003231283|0963997452|sv408@student.edu.vn|XD K46C|Xây dựng|Nghệ An
+SV409|Dương Minh Quân|2003-10-22|Nam|100003239666|0962682732|sv409@student.edu.vn|QTKD K48C|Quản trị kinh doanh|Quảng Ninh
+SV410|Phạm Đức Long|2005-01-12|Nam|100003247642|0956389454|sv410@student.edu.vn|KTTC K45C|Kế toán|Hà Nội
+SV411|Bùi Tuấn Bình|2003-05-09|Nam|100003254790|0935639225|sv411@student.edu.vn|CNTT K45B|Công nghệ thông tin|Nam Định
+SV412|Huỳnh Thị Giang|2004-02-06|Nữ|100003263135|0923993905|sv412@student.edu.vn|NNA K49A|Ngôn ngữ Anh|Quảng Ninh
+SV413|Phan Đức Phong|2004-01-17|Nam|100003270706|0933877339|sv413@student.edu.vn|KT K45B|Kinh tế|Đà Nẵng
+SV414|Võ Hoàng Trung|2003-05-25|Nam|100003279105|0939526825|sv414@student.edu.vn|CNTT K49A|Công nghệ thông tin|Quảng Ninh
+SV415|Hồ Đức Hùng|2003-11-26|Nam|100003287063|0920800799|sv415@student.edu.vn|XD K48C|Xây dựng|Lâm Đồng
+SV416|Dương Thanh Long|2003-12-20|Nam|100003294402|0973377579|sv416@student.edu.vn|CK K46A|Cơ khí|Quảng Ninh
+SV417|Hoàng Thanh Thảo|2004-07-08|Nữ|100003303065|0998536138|sv417@student.edu.vn|DĐT K48C|Điện - Điện tử|Hà Nội
+SV418|Đặng Đức Hải|2005-08-04|Nam|100003310426|0937005500|sv418@student.edu.vn|XD K49C|Xây dựng|Nam Định
+SV419|Võ Thu Hà|2003-03-02|Nữ|100003318791|0940445416|sv419@student.edu.vn|CK K45A|Cơ khí|Bình Dương
+SV420|Vũ Tuấn Bình|2003-02-15|Nam|100003326111|0983569474|sv420@student.edu.vn|KT K48B|Kinh tế|TP.HCM
+SV421|Lê Thị Giang|2004-09-01|Nữ|100003334216|0970010816|sv421@student.edu.vn|CK K48C|Cơ khí|Phú Yên
+SV422|Dương Minh Trung|2006-04-02|Nam|100003341836|0963258788|sv422@student.edu.vn|CK K47A|Cơ khí|Thái Bình
+SV423|Huỳnh Bảo Bình|2004-07-24|Nữ|100003350623|0961957331|sv423@student.edu.vn|XD K48A|Xây dựng|Quảng Ninh
+SV424|Phạm Hoàng Khang|2005-02-12|Nam|100003357941|0966630932|sv424@student.edu.vn|CK K49C|Cơ khí|Cần Thơ
+SV425|Phan Văn An|2004-08-02|Nam|100003365938|0987442176|sv425@student.edu.vn|CK K47B|Cơ khí|Quảng Ninh
+SV426|Hồ Thanh Tuấn|2006-05-21|Nam|100003373991|0985123289|sv426@student.edu.vn|DĐT K48A|Điện - Điện tử|Nam Định
+SV427|Hồ Hữu Dũng|2005-11-03|Nam|100003381512|0922784115|sv427@student.edu.vn|KTTC K49B|Kế toán|Thanh Hóa
+SV428|Nguyễn Anh Quân|2005-09-22|Nam|100003389653|0997924077|sv428@student.edu.vn|CK K47C|Cơ khí|Đồng Nai
+SV429|Phạm Lan Mai|2005-04-23|Nữ|100003397662|0939766324|sv429@student.edu.vn|KT K49B|Kinh tế|Nam Định
+SV430|Vũ Thu Anh|2004-11-10|Nữ|100003405617|0929839372|sv430@student.edu.vn|CK K47A|Cơ khí|Cần Thơ
+SV431|Phan Gia Hải|2003-01-13|Nam|100003413123|0938979209|sv431@student.edu.vn|DĐT K47B|Điện - Điện tử|Nam Định
+SV432|Đỗ Thị Thảo|2006-02-26|Nữ|100003421526|0910589232|sv432@student.edu.vn|QTKD K45C|Quản trị kinh doanh|Quảng Ninh
+SV433|Phan Ngọc Hạnh|2005-02-09|Nữ|100003429175|0927885237|sv433@student.edu.vn|NNA K49A|Ngôn ngữ Anh|TP.HCM
+SV434|Phạm Kim Hạnh|2005-11-13|Nữ|100003437153|0931328959|sv434@student.edu.vn|CK K47B|Cơ khí|Thái Bình
+SV435|Hoàng Thanh Bình|2003-07-10|Nam|100003445493|0942761866|sv435@student.edu.vn|CNTT K49A|Công nghệ thông tin|Quảng Ninh
+SV436|Hoàng Gia Long|2003-03-23|Nam|100003453325|0940519024|sv436@student.edu.vn|CK K48B|Cơ khí|Khánh Hòa
+SV437|Vũ Văn Long|2005-09-26|Nam|100003461155|0967828324|sv437@student.edu.vn|CNTT K47A|Công nghệ thông tin|Nghệ An
+SV438|Bùi Hoàng Long|2003-01-10|Nam|100003468762|0960210597|sv438@student.edu.vn|KT K48C|Kinh tế|Nghệ An
+SV439|Võ Minh Cường|2005-01-12|Nam|100003476743|0933228723|sv439@student.edu.vn|XD K48C|Xây dựng|Quảng Ninh
+SV440|Nguyễn Thanh Sơn|2004-02-09|Nam|100003485118|0988362059|sv440@student.edu.vn|KT K47C|Kinh tế|Bình Dương
+SV441|Hoàng Khánh Ngọc|2004-05-17|Nữ|100003492536|0946038550|sv441@student.edu.vn|NNA K47B|Ngôn ngữ Anh|Nghệ An
+SV442|Bùi Thị Bình|2006-06-14|Nữ|100003500864|0989816418|sv442@student.edu.vn|QTKD K47C|Quản trị kinh doanh|Thái Bình
+SV443|Vũ Phương Lan|2004-10-06|Nữ|100003508990|0952700114|sv443@student.edu.vn|KT K49B|Kinh tế|Bình Dương
+SV444|Hoàng Văn Thắng|2005-04-04|Nam|100003516794|0962882769|sv444@student.edu.vn|CK K48C|Cơ khí|Quảng Ninh
+SV445|Phan Bảo Ngọc|2006-11-22|Nữ|100003524271|0977901178|sv445@student.edu.vn|KT K48C|Kinh tế|Hà Nội
+SV446|Hoàng Khánh Anh|2005-03-14|Nữ|100003532045|0910821205|sv446@student.edu.vn|KT K48A|Kinh tế|Đồng Nai
+SV447|Hồ Văn Việt|2006-10-17|Nam|100003539863|0981534064|sv447@student.edu.vn|DĐT K45C|Điện - Điện tử|Đà Nẵng
+SV448|Hồ Thu Ngọc|2003-05-22|Nữ|100003548282|0969191941|sv448@student.edu.vn|DĐT K46B|Điện - Điện tử|TP.HCM
+SV449|Huỳnh Ngọc Vy|2003-03-16|Nữ|100003555899|0972441042|sv449@student.edu.vn|CNTT K46C|Công nghệ thông tin|Cần Thơ
+SV450|Huỳnh Kim Thảo|2004-05-07|Nữ|100003563851|0929043423|sv450@student.edu.vn|CK K49A|Cơ khí|Hà Nội
+SV451|Huỳnh Văn Phong|2006-09-12|Nam|100003572135|0927818019|sv451@student.edu.vn|QTKD K49C|Quản trị kinh doanh|Bình Dương
+SV452|Phạm Bảo Hà|2006-12-26|Nữ|100003580193|0953333148|sv452@student.edu.vn|NNA K48C|Ngôn ngữ Anh|Quảng Ninh
+SV453|Hoàng Thanh Khang|2005-03-18|Nam|100003587471|0995769576|sv453@student.edu.vn|QTKD K46A|Quản trị kinh doanh|TP.HCM
+SV454|Huỳnh Phương Ngọc|2003-12-01|Nữ|100003596047|0952830355|sv454@student.edu.vn|CNTT K47C|Công nghệ thông tin|Nam Định
+SV455|Huỳnh Ngọc Nhung|2006-04-21|Nữ|100003603680|0968887528|sv455@student.edu.vn|KT K49C|Kinh tế|Khánh Hòa
+SV456|Lê Khánh Trang|2006-08-04|Nữ|100003611668|0947242960|sv456@student.edu.vn|CK K46C|Cơ khí|Quảng Ninh
+SV457|Hồ Khánh Mai|2003-05-13|Nữ|100003619518|0933882228|sv457@student.edu.vn|QTKD K45A|Quản trị kinh doanh|Nghệ An
+SV458|Huỳnh Khánh Trang|2003-07-25|Nữ|100003627225|0933580443|sv458@student.edu.vn|DĐT K47B|Điện - Điện tử|Đà Nẵng
+SV459|Hồ Mai Mai|2005-10-01|Nữ|100003635311|0964658903|sv459@student.edu.vn|XD K45A|Xây dựng|Thái Bình
+SV460|Huỳnh Ngọc Lan|2006-05-21|Nữ|100003643229|0973022299|sv460@student.edu.vn|DĐT K45B|Điện - Điện tử|Thanh Hóa
+SV461|Dương Kim Lan|2006-11-01|Nữ|100003650728|0956235446|sv461@student.edu.vn|CK K46C|Cơ khí|Bình Dương
+SV462|Lê Tuấn Hùng|2004-04-23|Nam|100003658811|0995796780|sv462@student.edu.vn|KTTC K46C|Kế toán|Nam Định
+SV463|Hồ Gia Cường|2003-02-02|Nam|100003666747|0998797447|sv463@student.edu.vn|KT K47A|Kinh tế|Hà Nội
+SV464|Trần Tuấn Bình|2005-11-20|Nam|100003674678|0917768552|sv464@student.edu.vn|KTTC K48B|Kế toán|Nghệ An
+SV465|Bùi Ngọc Phương|2004-09-18|Nữ|100003683207|0978232799|sv465@student.edu.vn|KT K47B|Kinh tế|Đồng Nai
+SV466|Đỗ Quốc Hải|2003-04-05|Nam|100003690526|0915730407|sv466@student.edu.vn|CK K47C|Cơ khí|Lâm Đồng
+SV467|Trần Gia Bình|2003-11-21|Nam|100003698705|0932449990|sv467@student.edu.vn|QTKD K45A|Quản trị kinh doanh|Phú Yên
+SV468|Vũ Thị Linh|2006-05-20|Nữ|100003706136|0970839327|sv468@student.edu.vn|CNTT K49C|Công nghệ thông tin|Bình Dương
+SV469|Phạm Minh Thắng|2006-10-27|Nam|100003714446|0941246839|sv469@student.edu.vn|KTTC K46C|Kế toán|Hà Nội
+SV470|Bùi Thị Trang|2004-03-04|Nữ|100003722134|0952127159|sv470@student.edu.vn|CK K46B|Cơ khí|Thái Bình
+SV471|Lê Thanh Tài|2003-09-08|Nam|100003730407|0951051086|sv471@student.edu.vn|KTTC K47B|Kế toán|Thanh Hóa
+SV472|Lê Quốc Long|2006-10-22|Nam|100003738524|0981029542|sv472@student.edu.vn|CNTT K49C|Công nghệ thông tin|Khánh Hòa
+SV473|Bùi Mai Vy|2005-11-07|Nữ|100003745716|0974734520|sv473@student.edu.vn|DĐT K48B|Điện - Điện tử|Huế
+SV474|Phan Khánh Châu|2003-07-13|Nữ|100003754385|0989949862|sv474@student.edu.vn|XD K49A|Xây dựng|Phú Yên
+SV475|Hồ Văn Hải|2003-10-26|Nam|100003761833|0992010576|sv475@student.edu.vn|KTTC K46B|Kế toán|Hà Nội
+SV476|Phạm Khánh My|2004-08-23|Nữ|100003769775|0926574120|sv476@student.edu.vn|NNA K47B|Ngôn ngữ Anh|Nam Định
+SV477|Hoàng Tuấn Tuấn|2005-06-26|Nam|100003778026|0953997632|sv477@student.edu.vn|NNA K49B|Ngôn ngữ Anh|Phú Yên
+SV478|Bùi Ngọc Ngọc|2006-02-18|Nữ|100003785373|0911033747|sv478@student.edu.vn|QTKD K47A|Quản trị kinh doanh|Đồng Nai
+SV479|Lê Đức Dũng|2004-08-17|Nam|100003793309|0945541246|sv479@student.edu.vn|CK K47A|Cơ khí|Thái Bình
+SV480|Võ Thu Bình|2005-06-04|Nữ|100003801579|0977725328|sv480@student.edu.vn|KT K45B|Kinh tế|Huế
+SV481|Nguyễn Tuấn Khang|2003-05-17|Nam|100003809070|0923451360|sv481@student.edu.vn|DĐT K46A|Điện - Điện tử|TP.HCM
+SV482|Ngô Gia Nam|2006-09-19|Nam|100003817796|0935965634|sv482@student.edu.vn|CNTT K49C|Công nghệ thông tin|Huế
+SV483|Lê Minh Phong|2006-03-21|Nam|100003825610|0936612597|sv483@student.edu.vn|KTTC K46C|Kế toán|Đồng Nai
+SV484|Phan Tuấn Sơn|2005-12-23|Nam|100003833357|0914331364|sv484@student.edu.vn|QTKD K49A|Quản trị kinh doanh|Hải Phòng
+SV485|Hồ Gia An|2006-01-13|Nam|100003841140|0945023459|sv485@student.edu.vn|NNA K49B|Ngôn ngữ Anh|Phú Yên
+SV486|Võ Hoàng Bình|2004-05-14|Nam|100003848942|0962166208|sv486@student.edu.vn|QTKD K45B|Quản trị kinh doanh|Quảng Ninh
+SV487|Trần Kim Vy|2006-04-08|Nữ|100003857273|0977481831|sv487@student.edu.vn|XD K45A|Xây dựng|Đồng Nai
+SV488|Võ Minh Tài|2006-12-02|Nam|100003865312|0988205880|sv488@student.edu.vn|QTKD K46C|Quản trị kinh doanh|Nam Định
+SV489|Hồ Tuấn Tuấn|2005-07-12|Nam|100003872883|0923378179|sv489@student.edu.vn|QTKD K47B|Quản trị kinh doanh|Bình Dương
+SV490|Huỳnh Thị Hạnh|2005-02-23|Nữ|100003880899|0922689554|sv490@student.edu.vn|XD K45C|Xây dựng|Cần Thơ
+SV491|Võ Đức An|2006-08-01|Nam|100003889019|0989058103|sv491@student.edu.vn|NNA K49C|Ngôn ngữ Anh|Nghệ An
+SV492|Ngô Thị Châu|2003-08-08|Nữ|100003896464|0947929666|sv492@student.edu.vn|CK K49B|Cơ khí|Khánh Hòa
+SV493|Lê Quốc Hùng|2006-09-02|Nam|100003904303|0951559521|sv493@student.edu.vn|XD K45A|Xây dựng|Bình Dương
+SV494|Phan Lan Nga|2006-01-14|Nữ|100003912157|0952396160|sv494@student.edu.vn|XD K47A|Xây dựng|Phú Yên
+SV495|Đặng Kim Nga|2006-07-13|Nữ|100003919948|0941353476|sv495@student.edu.vn|DĐT K47B|Điện - Điện tử|Đồng Nai
+SV496|Hồ Minh Cường|2006-12-26|Nam|100003928355|0969807551|sv496@student.edu.vn|DĐT K48C|Điện - Điện tử|Lâm Đồng
+SV497|Nguyễn Phương Nhung|2003-10-08|Nữ|100003935758|0922466032|sv497@student.edu.vn|NNA K46C|Ngôn ngữ Anh|TP.HCM
+SV498|Bùi Phương My|2005-03-03|Nữ|100003943858|0979356773|sv498@student.edu.vn|CK K45A|Cơ khí|Hà Nội
+SV499|Trần Thu Thảo|2005-04-26|Nữ|100003952455|0965809410|sv499@student.edu.vn|NNA K47B|Ngôn ngữ Anh|Đồng Nai
+SV500|Hoàng Thanh Châu|2004-10-11|Nữ|100003960277|0945081352|sv500@student.edu.vn|QTKD K45A|Quản trị kinh doanh|Cần Thơ
+SV501|Bùi Gia Bình|2004-06-13|Nam|100003967573|0928043289|sv501@student.edu.vn|KT K49A|Kinh tế|Phú Yên
+SV502|Ngô Minh Việt|2003-01-01|Nam|100003976140|0944684273|sv502@student.edu.vn|DĐT K47B|Điện - Điện tử|Nghệ An
+SV503|Dương Minh Dũng|2006-02-23|Nam|100003983634|0988104659|sv503@student.edu.vn|QTKD K46B|Quản trị kinh doanh|TP.HCM
+SV504|Trần Hữu Phong|2003-11-24|Nam|100003991671|0981842852|sv504@student.edu.vn|KTTC K48B|Kế toán|Hà Nội
+SV505|Nguyễn Đức Bình|2006-01-14|Nam|100003999953|0928546344|sv505@student.edu.vn|KTTC K45A|Kế toán|Nghệ An
+SV506|Phan Mai Châu|2005-10-13|Nữ|100004007157|0911135136|sv506@student.edu.vn|XD K46C|Xây dựng|Đồng Nai
+SV507|Hồ Bảo Linh|2004-05-21|Nữ|100004015615|0919323532|sv507@student.edu.vn|DĐT K45C|Điện - Điện tử|Thanh Hóa
+SV508|Nguyễn Minh Thắng|2005-06-16|Nam|100004023497|0925908731|sv508@student.edu.vn|NNA K46B|Ngôn ngữ Anh|Nam Định
+SV509|Dương Bảo Anh|2003-01-08|Nữ|100004030933|0937865795|sv509@student.edu.vn|CK K45C|Cơ khí|Đà Nẵng
+SV510|Hoàng Thanh Mai|2005-04-09|Nữ|100004038802|0951079125|sv510@student.edu.vn|NNA K45A|Ngôn ngữ Anh|Quảng Ninh
+SV511|Phạm Kim Mai|2004-08-22|Nữ|100004047014|0947490178|sv511@student.edu.vn|DĐT K49A|Điện - Điện tử|Khánh Hòa
+SV512|Võ Hoàng Việt|2004-01-03|Nam|100004054930|0986454080|sv512@student.edu.vn|QTKD K45B|Quản trị kinh doanh|Phú Yên
+SV513|Huỳnh Bảo Linh|2004-11-23|Nữ|100004063140|0919680543|sv513@student.edu.vn|CNTT K46C|Công nghệ thông tin|Nghệ An
+SV514|Dương Gia Dũng|2004-10-14|Nam|100004071201|0939130449|sv514@student.edu.vn|DĐT K49B|Điện - Điện tử|Đà Nẵng
+SV515|Trần Tuấn An|2006-11-26|Nam|100004078748|0977847449|sv515@student.edu.vn|NNA K48C|Ngôn ngữ Anh|Quảng Ninh
+SV516|Hoàng Anh Tuấn|2005-01-07|Nam|100004087010|0957334454|sv516@student.edu.vn|KT K48B|Kinh tế|Thái Bình
+SV517|Lê Tuấn Phong|2005-12-02|Nam|100004094412|0986078044|sv517@student.edu.vn|CK K49A|Cơ khí|TP.HCM
+SV518|Hồ Tuấn Tài|2004-01-09|Nam|100004102099|0975342787|sv518@student.edu.vn|KT K49B|Kinh tế|Cần Thơ
+SV519|Phạm Thu Linh|2006-02-12|Nữ|100004109998|0960814259|sv519@student.edu.vn|DĐT K48A|Điện - Điện tử|Thái Bình
+SV520|Ngô Thị Dung|2005-01-23|Nữ|100004118237|0971552312|sv520@student.edu.vn|NNA K45C|Ngôn ngữ Anh|Khánh Hòa
+SV521|Huỳnh Bảo My|2006-11-04|Nữ|100004126019|0921971414|sv521@student.edu.vn|DĐT K45B|Điện - Điện tử|Khánh Hòa
+SV522|Bùi Thị Nhung|2003-04-15|Nữ|100004134176|0946176457|sv522@student.edu.vn|NNA K45B|Ngôn ngữ Anh|Đồng Nai
+SV523|Đặng Bảo Châu|2006-04-19|Nữ|100004141864|0947213271|sv523@student.edu.vn|CNTT K46C|Công nghệ thông tin|Thái Bình
+SV524|Trần Thanh Linh|2006-12-23|Nữ|100004150294|0935322289|sv524@student.edu.vn|KT K46C|Kinh tế|Nghệ An
+SV525|Hoàng Thu Hà|2006-10-02|Nữ|100004157682|0993934903|sv525@student.edu.vn|KTTC K46C|Kế toán|TP.HCM
+SV526|Bùi Khánh Hạnh|2005-11-22|Nữ|100004165493|0954933310|sv526@student.edu.vn|NNA K49C|Ngôn ngữ Anh|Huế
+SV527|Đỗ Tuấn Sơn|2004-07-07|Nam|100004173623|0954559171|sv527@student.edu.vn|NNA K45A|Ngôn ngữ Anh|Cần Thơ
+SV528|Dương Gia Thắng|2005-05-15|Nam|100004182027|0924904382|sv528@student.edu.vn|KT K46C|Kinh tế|Khánh Hòa
+SV529|Trần Quốc Hải|2006-05-12|Nam|100004189409|0976870637|sv529@student.edu.vn|QTKD K46A|Quản trị kinh doanh|Đà Nẵng
+SV530|Đỗ Lan Hà|2003-06-07|Nữ|100004197284|0948044968|sv530@student.edu.vn|XD K47C|Xây dựng|Thái Bình
+SV531|Huỳnh Gia Tuấn|2005-07-20|Nam|100004205592|0916658997|sv531@student.edu.vn|KT K45A|Kinh tế|Đồng Nai
+SV532|Bùi Kim Nga|2005-04-16|Nữ|100004213222|0960058367|sv532@student.edu.vn|DĐT K45C|Điện - Điện tử|Thái Bình
+SV533|Bùi Khánh Bình|2003-11-16|Nữ|100004221608|0991755933|sv533@student.edu.vn|CNTT K48C|Công nghệ thông tin|Phú Yên
+SV534|Võ Phương Ngọc|2005-09-03|Nữ|100004229283|0979218948|sv534@student.edu.vn|KTTC K46C|Kế toán|Cần Thơ
+SV535|Trần Hữu Tuấn|2005-07-01|Nam|100004237256|0964560462|sv535@student.edu.vn|CNTT K46A|Công nghệ thông tin|Nam Định
+SV536|Bùi Thanh Tài|2005-05-23|Nam|100004245325|0948541554|sv536@student.edu.vn|CNTT K49C|Công nghệ thông tin|Hải Phòng
+SV537|Hồ Quốc Cường|2003-03-09|Nam|100004253330|0974477373|sv537@student.edu.vn|NNA K46C|Ngôn ngữ Anh|Huế
+SV538|Ngô Minh Hải|2004-04-20|Nam|100004260992|0960207034|sv538@student.edu.vn|NNA K49A|Ngôn ngữ Anh|Nam Định
+SV539|Dương Khánh Ngọc|2003-09-03|Nữ|100004268624|0916088761|sv539@student.edu.vn|QTKD K46B|Quản trị kinh doanh|Thái Bình
+SV540|Bùi Văn Long|2003-06-21|Nam|100004276296|0929640343|sv540@student.edu.vn|CNTT K48A|Công nghệ thông tin|Huế
+SV541|Lê Phương Thảo|2004-06-04|Nữ|100004284321|0940027715|sv541@student.edu.vn|NNA K47C|Ngôn ngữ Anh|Quảng Ninh
+SV542|Dương Thu Bình|2005-10-22|Nữ|100004292591|0936438572|sv542@student.edu.vn|CNTT K48A|Công nghệ thông tin|Hải Phòng
+SV543|Phạm Anh Sơn|2006-10-15|Nam|100004300497|0927866454|sv543@student.edu.vn|XD K48A|Xây dựng|Thái Bình
+SV544|Huỳnh Lan Nga|2004-07-13|Nữ|100004308692|0994038885|sv544@student.edu.vn|DĐT K49A|Điện - Điện tử|Thanh Hóa
+SV545|Phan Thị Giang|2003-12-21|Nữ|100004315985|0923024851|sv545@student.edu.vn|XD K46C|Xây dựng|Thanh Hóa
+SV546|Phan Bảo Hạnh|2006-07-24|Nữ|100004324365|0991646291|sv546@student.edu.vn|NNA K48B|Ngôn ngữ Anh|Khánh Hòa
+SV547|Bùi Quốc Khang|2004-02-14|Nam|100004332119|0982310688|sv547@student.edu.vn|KT K47C|Kinh tế|Lâm Đồng
+SV548|Phan Lan Ngọc|2004-07-27|Nữ|100004340327|0988832409|sv548@student.edu.vn|CNTT K45B|Công nghệ thông tin|Thái Bình
+SV549|Hoàng Thanh An|2006-03-17|Nam|100004347877|0995568741|sv549@student.edu.vn|CNTT K48C|Công nghệ thông tin|Thanh Hóa
+SV550|Lê Văn Tuấn|2004-04-11|Nam|100004355595|0978485044|sv550@student.edu.vn|NNA K49A|Ngôn ngữ Anh|Nam Định
+SV551|Bùi Anh Cường|2005-05-23|Nam|100004363830|0984557882|sv551@student.edu.vn|QTKD K48C|Quản trị kinh doanh|Hải Phòng
+SV552|Huỳnh Đức Thắng|2004-12-27|Nam|100004372170|0948383966|sv552@student.edu.vn|DĐT K48C|Điện - Điện tử|Phú Yên
+SV553|Lê Lan Mai|2006-11-23|Nữ|100004380069|0998395395|sv553@student.edu.vn|XD K47C|Xây dựng|Nghệ An
+SV554|Dương Anh Hải|2006-04-04|Nam|100004387156|0911022389|sv554@student.edu.vn|CNTT K48C|Công nghệ thông tin|TP.HCM
+SV555|Phạm Thị Phương|2006-02-05|Nữ|100004395859|0969322935|sv555@student.edu.vn|CK K48A|Cơ khí|Nghệ An
+SV556|Dương Thu Hà|2004-12-01|Nữ|100004403795|0961796153|sv556@student.edu.vn|CNTT K45A|Công nghệ thông tin|Nam Định
+SV557|Ngô Thanh Sơn|2003-12-16|Nam|100004411540|0997529571|sv557@student.edu.vn|CK K49A|Cơ khí|Hải Phòng
+SV558|Đặng Hữu Tài|2004-03-27|Nam|100004419228|0957322301|sv558@student.edu.vn|KT K48C|Kinh tế|Khánh Hòa
+SV559|Lý Ngọc Hạnh|2003-12-19|Nữ|100004427480|0973229724|sv559@student.edu.vn|QTKD K45C|Quản trị kinh doanh|Huế
+SV560|Đỗ Thanh Phương|2004-04-05|Nữ|100004434752|0972827460|sv560@student.edu.vn|NNA K47C|Ngôn ngữ Anh|Phú Yên
+SV561|Lê Khánh Trang|2005-12-27|Nữ|100004442892|0931136245|sv561@student.edu.vn|KTTC K47B|Kế toán|Thanh Hóa
+SV562|Vũ Mai My|2004-05-22|Nữ|100004451140|0943115005|sv562@student.edu.vn|QTKD K48C|Quản trị kinh doanh|Nam Định
+SV563|Võ Gia An|2005-10-14|Nam|100004458714|0924722825|sv563@student.edu.vn|KTTC K46C|Kế toán|Khánh Hòa
+SV564|Lý Minh Phong|2003-02-06|Nam|100004467038|0941643018|sv564@student.edu.vn|CK K48A|Cơ khí|TP.HCM
+SV565|Nguyễn Văn Long|2006-09-07|Nam|100004474852|0955877805|sv565@student.edu.vn|NNA K48A|Ngôn ngữ Anh|Hà Nội
+SV566|Trần Ngọc Phương|2006-12-22|Nữ|100004482681|0919245189|sv566@student.edu.vn|DĐT K47C|Điện - Điện tử|Đà Nẵng
+SV567|Võ Ngọc Bình|2006-11-26|Nữ|100004490521|0973063006|sv567@student.edu.vn|NNA K46C|Ngôn ngữ Anh|Bình Dương
+SV568|Võ Thị Ngọc|2005-05-11|Nữ|100004498079|0940422079|sv568@student.edu.vn|CNTT K48B|Công nghệ thông tin|Đồng Nai
+SV569|Hoàng Phương Vy|2003-06-19|Nữ|100004506592|0914416858|sv569@student.edu.vn|CK K47B|Cơ khí|Huế
+SV570|Phạm Phương Bình|2005-11-03|Nữ|100004514157|0937029852|sv570@student.edu.vn|QTKD K47B|Quản trị kinh doanh|Cần Thơ
+SV571|Phan Văn Hùng|2004-06-15|Nam|100004521929|0917284264|sv571@student.edu.vn|CK K49C|Cơ khí|Hải Phòng
+SV572|Nguyễn Bảo Nga|2006-06-09|Nữ|100004530538|0955598007|sv572@student.edu.vn|KT K47A|Kinh tế|Nghệ An
+SV573|Vũ Mai Lan|2003-12-16|Nữ|100004538439|0939154182|sv573@student.edu.vn|QTKD K48C|Quản trị kinh doanh|Cần Thơ
+SV574|Ngô Quốc Thắng|2005-07-10|Nam|100004545871|0913398832|sv574@student.edu.vn|CNTT K47B|Công nghệ thông tin|Thanh Hóa
+SV575|Trần Quốc Sơn|2004-06-02|Nam|100004553428|0966062838|sv575@student.edu.vn|CNTT K49B|Công nghệ thông tin|Bình Dương
+SV576|Lê Hoàng Nam|2006-02-25|Nam|100004561806|0944145302|sv576@student.edu.vn|NNA K48C|Ngôn ngữ Anh|Huế
+SV577|Dương Văn Thắng|2004-10-22|Nam|100004569778|0985679166|sv577@student.edu.vn|KTTC K48B|Kế toán|Hà Nội
+SV578|Bùi Hoàng Long|2006-06-06|Nam|100004577194|0951815038|sv578@student.edu.vn|KT K45B|Kinh tế|Cần Thơ
+SV579|Hồ Anh Tài|2005-09-27|Nam|100004585752|0947942207|sv579@student.edu.vn|KT K49C|Kinh tế|Khánh Hòa
+SV580|Hồ Văn Dũng|2005-08-22|Nam|100004593697|0991382110|sv580@student.edu.vn|KT K46C|Kinh tế|Đồng Nai
+SV581|Vũ Hữu Phong|2005-11-07|Nam|100004601017|0950550166|sv581@student.edu.vn|CNTT K48A|Công nghệ thông tin|Lâm Đồng
+SV582|Đỗ Thu Phương|2005-04-18|Nữ|100004608929|0947621277|sv582@student.edu.vn|NNA K49A|Ngôn ngữ Anh|Huế
+SV583|Hồ Hữu Long|2005-09-22|Nam|100004617664|0962671052|sv583@student.edu.vn|NNA K46C|Ngôn ngữ Anh|Thanh Hóa
+SV584|Đặng Gia Quân|2006-05-03|Nam|100004625391|0976681373|sv584@student.edu.vn|CNTT K47A|Công nghệ thông tin|Khánh Hòa
+SV585|Hoàng Phương Ngọc|2003-07-10|Nữ|100004632723|0951193165|sv585@student.edu.vn|NNA K47C|Ngôn ngữ Anh|Thanh Hóa
+SV586|Huỳnh Bảo Hạnh|2003-01-27|Nữ|100004640541|0931020499|sv586@student.edu.vn|CNTT K47C|Công nghệ thông tin|Đồng Nai
+SV587|Lê Lan Ngọc|2005-02-11|Nữ|100004649227|0983483005|sv587@student.edu.vn|KTTC K47C|Kế toán|Nghệ An
+SV588|Vũ Mai My|2003-01-17|Nữ|100004656624|0954851178|sv588@student.edu.vn|DĐT K49B|Điện - Điện tử|Thái Bình
+SV589|Trần Gia Sơn|2003-02-25|Nam|100004664653|0994964556|sv589@student.edu.vn|KT K46C|Kinh tế|Lâm Đồng
+SV590|Đặng Gia Bình|2006-06-13|Nam|100004672892|0946601739|sv590@student.edu.vn|NNA K48B|Ngôn ngữ Anh|Nam Định
+SV591|Lê Quốc Bình|2004-11-09|Nam|100004680766|0973147039|sv591@student.edu.vn|QTKD K45A|Quản trị kinh doanh|Quảng Ninh
+SV592|Lý Văn Tài|2004-01-24|Nam|100004688265|0966061940|sv592@student.edu.vn|CNTT K48B|Công nghệ thông tin|Nam Định
+SV593|Lý Minh Việt|2005-01-02|Nam|100004696191|0974942962|sv593@student.edu.vn|CK K45C|Cơ khí|Lâm Đồng
+SV594|Vũ Minh Tài|2004-06-26|Nam|100004704298|0925156656|sv594@student.edu.vn|NNA K48C|Ngôn ngữ Anh|Đà Nẵng
+SV595|Đỗ Lan Nhung|2003-09-19|Nữ|100004712152|0953822360|sv595@student.edu.vn|QTKD K47C|Quản trị kinh doanh|Đồng Nai
+SV596|Trần Văn Phong|2004-01-24|Nam|100004720166|0964936789|sv596@student.edu.vn|NNA K45C|Ngôn ngữ Anh|Đồng Nai
+SV597|Vũ Hữu Hải|2004-06-09|Nam|100004728039|0952753770|sv597@student.edu.vn|QTKD K47C|Quản trị kinh doanh|Huế
+SV598|Lê Đức Việt|2003-08-01|Nam|100004736188|0940904780|sv598@student.edu.vn|DĐT K46B|Điện - Điện tử|Hải Phòng
+SV599|Hồ Thanh Vy|2004-08-25|Nữ|100004743949|0954753432|sv599@student.edu.vn|KT K49A|Kinh tế|Thái Bình
+SV600|Phan Hoàng Quân|2006-07-17|Nam|100004752043|0972420086|sv600@student.edu.vn|CK K45B|Cơ khí|Quảng Ninh
+SV601|Ngô Anh Trung|2005-02-18|Nam|100004759536|0975184188|sv601@student.edu.vn|KTTC K48B|Kế toán|Nam Định
+SV602|Trần Thị Phương|2006-07-20|Nữ|100004767413|0955130911|sv602@student.edu.vn|KTTC K47C|Kế toán|TP.HCM
+SV603|Lý Phương Anh|2003-08-09|Nữ|100004776039|0922089145|sv603@student.edu.vn|CNTT K47B|Công nghệ thông tin|Bình Dương
+SV604|Đặng Thanh Hương|2006-06-04|Nữ|100004783764|0967725563|sv604@student.edu.vn|KTTC K48C|Kế toán|Khánh Hòa
+SV605|Lý Minh Việt|2003-06-05|Nam|100004791446|0938698357|sv605@student.edu.vn|CK K48C|Cơ khí|Nghệ An
+SV606|Lê Văn Thắng|2003-06-06|Nam|100004799248|0988383482|sv606@student.edu.vn|CNTT K47A|Công nghệ thông tin|Đồng Nai
+SV607|Đặng Quốc Dũng|2004-10-04|Nam|100004807177|0922267323|sv607@student.edu.vn|QTKD K49A|Quản trị kinh doanh|Phú Yên
+SV608|Vũ Minh Khang|2006-11-19|Nam|100004815228|0939739325|sv608@student.edu.vn|XD K48C|Xây dựng|Huế
+SV609|Bùi Quốc Quân|2006-08-24|Nam|100004823180|0950372490|sv609@student.edu.vn|KTTC K45A|Kế toán|Cần Thơ
+SV610|Võ Thị Vy|2006-03-17|Nữ|100004830774|0943700346|sv610@student.edu.vn|CK K46B|Cơ khí|Hải Phòng
+SV611|Vũ Ngọc Ngọc|2005-08-09|Nữ|100004839274|0962278085|sv611@student.edu.vn|NNA K45B|Ngôn ngữ Anh|Huế
+SV612|Hoàng Hoàng Quân|2006-12-07|Nam|100004846951|0999806171|sv612@student.edu.vn|CNTT K47B|Công nghệ thông tin|TP.HCM
+SV613|Phạm Mai Thảo|2006-01-04|Nữ|100004854884|0997084602|sv613@student.edu.vn|NNA K47C|Ngôn ngữ Anh|Nam Định
+SV614|Hồ Khánh Hạnh|2003-12-13|Nữ|100004862550|0994773497|sv614@student.edu.vn|QTKD K49C|Quản trị kinh doanh|Lâm Đồng
+SV615|Phạm Gia Quân|2004-08-10|Nam|100004870652|0911987155|sv615@student.edu.vn|CNTT K47C|Công nghệ thông tin|Huế
+SV616|Phan Kim Hà|2006-10-24|Nữ|100004878954|0942618223|sv616@student.edu.vn|NNA K45B|Ngôn ngữ Anh|Hà Nội
+SV617|Ngô Lan My|2006-05-04|Nữ|100004886134|0976928649|sv617@student.edu.vn|XD K49B|Xây dựng|TP.HCM
+SV618|Phan Khánh Mai|2005-12-17|Nữ|100004894476|0912336905|sv618@student.edu.vn|CNTT K46C|Công nghệ thông tin|Thanh Hóa
+SV619|Ngô Tuấn Việt|2006-07-27|Nam|100004902127|0918784751|sv619@student.edu.vn|NNA K48B|Ngôn ngữ Anh|Đà Nẵng
+SV620|Đặng Quốc Dũng|2004-12-26|Nam|100004910468|0913078131|sv620@student.edu.vn|NNA K47C|Ngôn ngữ Anh|Khánh Hòa
+SV621|Nguyễn Đức Nam|2006-05-26|Nam|100004918070|0931472735|sv621@student.edu.vn|QTKD K46C|Quản trị kinh doanh|TP.HCM
+SV622|Huỳnh Thanh Sơn|2006-09-05|Nam|100004926111|0983501671|sv622@student.edu.vn|CNTT K46C|Công nghệ thông tin|Bình Dương
+SV623|Đỗ Thanh Bình|2004-05-05|Nam|100004933588|0940848578|sv623@student.edu.vn|XD K49B|Xây dựng|Khánh Hòa
+SV624|Vũ Thanh Tuấn|2004-02-12|Nam|100004941784|0961250367|sv624@student.edu.vn|KTTC K49B|Kế toán|Bình Dương
+SV625|Bùi Ngọc Hương|2003-03-19|Nữ|100004949539|0998629797|sv625@student.edu.vn|KT K48A|Kinh tế|Thái Bình
+SV626|Đặng Thị Bình|2004-12-03|Nữ|100004957466|0944641670|sv626@student.edu.vn|CK K48C|Cơ khí|Đồng Nai
+SV627|Phan Hoàng Trung|2003-10-21|Nam|100004965911|0959709791|sv627@student.edu.vn|KTTC K49C|Kế toán|Thái Bình
+SV628|Dương Phương Hạnh|2003-01-21|Nữ|100004973513|0935133516|sv628@student.edu.vn|DĐT K46B|Điện - Điện tử|Đà Nẵng
+SV629|Phạm Quốc Long|2006-05-12|Nam|100004981357|0922510008|sv629@student.edu.vn|QTKD K49A|Quản trị kinh doanh|Hà Nội
+SV630|Huỳnh Ngọc Hà|2003-03-03|Nữ|100004989452|0936061736|sv630@student.edu.vn|KT K48A|Kinh tế|Thanh Hóa
+SV631|Lê Thu Phương|2005-12-10|Nữ|100004996913|0975528296|sv631@student.edu.vn|KTTC K46A|Kế toán|Bình Dương
+SV632|Võ Hữu Nam|2005-07-06|Nam|100005004956|0922570000|sv632@student.edu.vn|NNA K46C|Ngôn ngữ Anh|Khánh Hòa
+SV633|Phan Hữu Tài|2003-09-11|Nam|100005013131|0971876380|sv633@student.edu.vn|QTKD K45B|Quản trị kinh doanh|Phú Yên
+SV634|Hồ Văn Dũng|2006-09-06|Nam|100005021127|0972123090|sv634@student.edu.vn|KTTC K49C|Kế toán|Đồng Nai
+SV635|Ngô Quốc Phong|2006-12-23|Nam|100005029300|0983040233|sv635@student.edu.vn|XD K47C|Xây dựng|Thanh Hóa
+SV636|Đỗ Ngọc Phương|2004-06-05|Nữ|100005037207|0960423149|sv636@student.edu.vn|NNA K45C|Ngôn ngữ Anh|Huế
+SV637|Hồ Ngọc Lan|2006-08-26|Nữ|100005044772|0968109110|sv637@student.edu.vn|KTTC K45A|Kế toán|Thanh Hóa
+SV638|Võ Anh Dũng|2006-08-06|Nam|100005052651|0918679388|sv638@student.edu.vn|NNA K47C|Ngôn ngữ Anh|Cần Thơ
+SV639|Đặng Tuấn Nam|2004-03-18|Nam|100005060458|0948146860|sv639@student.edu.vn|CNTT K48B|Công nghệ thông tin|TP.HCM
+SV640|Nguyễn Thị Anh|2003-12-19|Nữ|100005068855|0943920579|sv640@student.edu.vn|CK K49B|Cơ khí|Huế
+SV641|Đỗ Ngọc Lan|2004-10-15|Nữ|100005076570|0921602766|sv641@student.edu.vn|QTKD K47A|Quản trị kinh doanh|TP.HCM
+SV642|Vũ Thu Nga|2004-04-23|Nữ|100005084683|0981519563|sv642@student.edu.vn|KT K46A|Kinh tế|Hải Phòng
+SV643|Phạm Hữu Bình|2006-12-05|Nam|100005092723|0968916441|sv643@student.edu.vn|XD K45C|Xây dựng|Khánh Hòa
+SV644|Ngô Phương Nga|2005-06-24|Nữ|100005099954|0915404914|sv644@student.edu.vn|KT K47C|Kinh tế|Hải Phòng
+SV645|Võ Lan Nhung|2005-11-10|Nữ|100005107827|0941685283|sv645@student.edu.vn|QTKD K45A|Quản trị kinh doanh|Nghệ An
+SV646|Lý Ngọc Hà|2005-03-20|Nữ|100005116335|0953563666|sv646@student.edu.vn|XD K46A|Xây dựng|Thanh Hóa
+SV647|Phạm Ngọc Hạnh|2003-01-12|Nữ|100005124288|0951439283|sv647@student.edu.vn|CK K45C|Cơ khí|Nghệ An
+SV648|Đặng Gia Nam|2005-07-18|Nam|100005131790|0988537491|sv648@student.edu.vn|XD K49C|Xây dựng|Đồng Nai
+SV649|Lý Đức An|2005-07-17|Nam|100005139461|0916132628|sv649@student.edu.vn|KT K49C|Kinh tế|Quảng Ninh
+SV650|Đặng Gia Cường|2004-01-10|Nam|100005147508|0999050775|sv650@student.edu.vn|CNTT K45C|Công nghệ thông tin|Thanh Hóa
+SV651|Vũ Ngọc Trang|2004-02-16|Nữ|100005155617|0968709220|sv651@student.edu.vn|NNA K46B|Ngôn ngữ Anh|TP.HCM
+SV652|Hoàng Mai Châu|2004-09-14|Nữ|100005163348|0955609846|sv652@student.edu.vn|CNTT K48C|Công nghệ thông tin|Đồng Nai
+SV653|Phan Khánh Hạnh|2006-05-02|Nữ|100005171159|0989703353|sv653@student.edu.vn|KT K49A|Kinh tế|Thái Bình
+SV654|Phan Kim Hạnh|2003-04-20|Nữ|100005179211|0959322381|sv654@student.edu.vn|CNTT K49C|Công nghệ thông tin|Đồng Nai
+SV655|Vũ Quốc Dũng|2004-06-06|Nam|100005187522|0935967947|sv655@student.edu.vn|KT K49A|Kinh tế|Huế
+SV656|Phan Thị Nga|2003-07-27|Nữ|100005195386|0988017646|sv656@student.edu.vn|CNTT K46A|Công nghệ thông tin|Thái Bình
+SV657|Lý Đức Hùng|2004-08-14|Nam|100005203019|0996027682|sv657@student.edu.vn|KTTC K48C|Kế toán|Phú Yên
+SV658|Dương Hoàng Nam|2003-12-02|Nam|100005211251|0940701723|sv658@student.edu.vn|QTKD K45C|Quản trị kinh doanh|Nam Định
+SV659|Dương Văn Phong|2004-01-02|Nam|100005219032|0916481327|sv659@student.edu.vn|KT K46C|Kinh tế|Lâm Đồng
+SV660|Hồ Hoàng Việt|2006-04-26|Nam|100005226834|0922868219|sv660@student.edu.vn|CNTT K46B|Công nghệ thông tin|Lâm Đồng
+SV661|Trần Quốc Bình|2005-04-12|Nam|100005234808|0938743414|sv661@student.edu.vn|KTTC K46B|Kế toán|Đà Nẵng
+SV662|Bùi Mai Hà|2005-01-16|Nữ|100005242750|0971985591|sv662@student.edu.vn|QTKD K46B|Quản trị kinh doanh|Huế
+SV663|Lý Thanh Dung|2006-09-06|Nữ|100005250760|0983941725|sv663@student.edu.vn|XD K45A|Xây dựng|Huế
+SV664|Võ Khánh Vy|2003-01-16|Nữ|100005258789|0964112534|sv664@student.edu.vn|QTKD K49C|Quản trị kinh doanh|Nghệ An
+SV665|Hồ Đức Phong|2006-12-20|Nam|100005266269|0944347210|sv665@student.edu.vn|NNA K48A|Ngôn ngữ Anh|Lâm Đồng
+SV666|Phạm Thanh Thảo|2005-03-08|Nữ|100005274182|0915263078|sv666@student.edu.vn|CNTT K49C|Công nghệ thông tin|TP.HCM
+SV667|Hồ Tuấn Hải|2005-08-09|Nam|100005282349|0945111148|sv667@student.edu.vn|NNA K45A|Ngôn ngữ Anh|Đà Nẵng
+SV668|Hoàng Đức Phong|2003-09-23|Nam|100005290232|0960931760|sv668@student.edu.vn|QTKD K49C|Quản trị kinh doanh|Bình Dương
+SV669|Võ Thu Giang|2006-06-24|Nữ|100005298458|0974818003|sv669@student.edu.vn|XD K46A|Xây dựng|Phú Yên
+SV670|Ngô Quốc Bình|2006-08-17|Nam|100005306183|0911923271|sv670@student.edu.vn|CNTT K48B|Công nghệ thông tin|Thái Bình
+SV671|Ngô Gia Sơn|2004-11-15|Nam|100005313722|0984622897|sv671@student.edu.vn|DĐT K45A|Điện - Điện tử|Đồng Nai
+SV672|Phan Khánh Lan|2004-02-13|Nữ|100005321847|0959249827|sv672@student.edu.vn|CNTT K49B|Công nghệ thông tin|Bình Dương
+SV673|Lê Văn Thắng|2005-06-22|Nam|100005330252|0925442134|sv673@student.edu.vn|XD K45A|Xây dựng|Bình Dương
+SV674|Đặng Gia Hùng|2003-03-27|Nam|100005337558|0910908493|sv674@student.edu.vn|KT K45B|Kinh tế|Khánh Hòa
+SV675|Nguyễn Thanh Nhung|2006-09-07|Nữ|100005346069|0959259491|sv675@student.edu.vn|NNA K49A|Ngôn ngữ Anh|Hải Phòng
+SV676|Huỳnh Lan Lan|2004-06-12|Nữ|100005353925|0979266039|sv676@student.edu.vn|XD K48A|Xây dựng|Thái Bình
+SV677|Vũ Mai Hạnh|2006-01-06|Nữ|100005361932|0990260203|sv677@student.edu.vn|DĐT K46B|Điện - Điện tử|Đà Nẵng
+SV678|Hồ Thanh Thắng|2003-09-07|Nam|100005369854|0957815462|sv678@student.edu.vn|CK K46B|Cơ khí|Phú Yên
+SV679|Lê Kim Phương|2003-12-14|Nữ|100005377835|0994856268|sv679@student.edu.vn|DĐT K47A|Điện - Điện tử|Thanh Hóa
+SV680|Ngô Mai Phương|2005-07-01|Nữ|100005385172|0922019971|sv680@student.edu.vn|CK K45C|Cơ khí|Khánh Hòa
+SV681|Lý Thị Giang|2006-01-21|Nữ|100005392998|0949955118|sv681@student.edu.vn|CNTT K49A|Công nghệ thông tin|Đồng Nai
+SV682|Dương Hoàng Khang|2003-04-17|Nam|100005401395|0979320883|sv682@student.edu.vn|NNA K47C|Ngôn ngữ Anh|TP.HCM
+SV683|Đặng Khánh Lan|2005-11-24|Nữ|100005408998|0918174813|sv683@student.edu.vn|KTTC K49C|Kế toán|Nam Định
+SV684|Phan Hoàng Nam|2006-06-20|Nam|100005417394|0937889857|sv684@student.edu.vn|CNTT K45C|Công nghệ thông tin|Bình Dương
+SV685|Huỳnh Thị Châu|2005-07-14|Nữ|100005425200|0925282491|sv685@student.edu.vn|KT K48C|Kinh tế|Huế
+SV686|Lê Quốc Cường|2004-05-18|Nam|100005432499|0989966576|sv686@student.edu.vn|KT K47A|Kinh tế|Đồng Nai
+SV687|Nguyễn Minh Phong|2004-06-19|Nam|100005441156|0927853439|sv687@student.edu.vn|KTTC K46C|Kế toán|Thái Bình
+SV688|Phạm Minh Hải|2003-08-15|Nam|100005448494|0948703507|sv688@student.edu.vn|KTTC K47A|Kế toán|Khánh Hòa
+SV689|Trần Phương Phương|2003-08-24|Nữ|100005457044|0956383331|sv689@student.edu.vn|NNA K47B|Ngôn ngữ Anh|Khánh Hòa
+SV690|Hoàng Gia Thắng|2005-01-06|Nam|100005464533|0916484038|sv690@student.edu.vn|NNA K49B|Ngôn ngữ Anh|Nam Định
+SV691|Hồ Mai My|2004-08-10|Nữ|100005472749|0973311581|sv691@student.edu.vn|KTTC K46B|Kế toán|Nghệ An
+SV692|Trần Kim Nhung|2005-08-17|Nữ|100005480450|0939205284|sv692@student.edu.vn|QTKD K48B|Quản trị kinh doanh|Nam Định
+SV693|Lý Thu Nga|2005-08-06|Nữ|100005488048|0978688274|sv693@student.edu.vn|CNTT K47C|Công nghệ thông tin|Hà Nội
+SV694|Hoàng Bảo Mai|2005-04-12|Nữ|100005495982|0935143945|sv694@student.edu.vn|CNTT K47A|Công nghệ thông tin|Khánh Hòa
+SV695|Nguyễn Quốc Nam|2005-10-01|Nam|100005504154|0915019433|sv695@student.edu.vn|NNA K47A|Ngôn ngữ Anh|Thái Bình
+SV696|Lê Thu Vy|2006-06-24|Nữ|100005512215|0967787391|sv696@student.edu.vn|QTKD K48C|Quản trị kinh doanh|Bình Dương
+SV697|Lê Thanh Hải|2006-09-10|Nam|100005520358|0942852519|sv697@student.edu.vn|KT K49A|Kinh tế|Bình Dương
+SV698|Dương Phương Trang|2006-04-14|Nữ|100005528129|0965829395|sv698@student.edu.vn|QTKD K45A|Quản trị kinh doanh|TP.HCM
+SV699|Phan Văn Sơn|2005-09-21|Nam|100005536219|0953066119|sv699@student.edu.vn|DĐT K48C|Điện - Điện tử|Huế
+SV700|Đỗ Thị Hạnh|2003-05-20|Nữ|100005543644|0966837148|sv700@student.edu.vn|CNTT K45C|Công nghệ thông tin|Thanh Hóa
+SV701|Hoàng Tuấn Sơn|2006-09-26|Nam|100005551896|0969289243|sv701@student.edu.vn|XD K49C|Xây dựng|Thanh Hóa
+SV702|Vũ Gia Hùng|2003-10-04|Nam|100005559453|0951175132|sv702@student.edu.vn|DĐT K48A|Điện - Điện tử|Hải Phòng
+SV703|Đặng Lan Lan|2004-12-25|Nữ|100005567264|0941740437|sv703@student.edu.vn|NNA K45C|Ngôn ngữ Anh|Thái Bình
+SV704|Hồ Thanh Dũng|2006-03-17|Nam|100005575486|0935481620|sv704@student.edu.vn|KT K48A|Kinh tế|Nam Định
+SV705|Đặng Minh Tuấn|2004-02-11|Nam|100005583535|0916896414|sv705@student.edu.vn|QTKD K45A|Quản trị kinh doanh|Thanh Hóa
+SV706|Hồ Thu Nhung|2006-07-14|Nữ|100005590951|0973479779|sv706@student.edu.vn|QTKD K47A|Quản trị kinh doanh|Nam Định
+SV707|Đỗ Gia Hùng|2004-01-04|Nam|100005599157|0969292129|sv707@student.edu.vn|QTKD K45B|Quản trị kinh doanh|Hà Nội
+SV708|Phan Ngọc Vy|2004-10-27|Nữ|100005606938|0944942526|sv708@student.edu.vn|DĐT K46B|Điện - Điện tử|Hải Phòng
+SV709|Ngô Thanh Quân|2004-07-18|Nam|100005615016|0966403863|sv709@student.edu.vn|CK K45C|Cơ khí|Nam Định
+SV710|Trần Thị Dung|2004-02-09|Nữ|100005623366|0963013991|sv710@student.edu.vn|CNTT K49C|Công nghệ thông tin|Lâm Đồng
+SV711|Hoàng Thanh Châu|2006-04-22|Nữ|100005630572|0989078705|sv711@student.edu.vn|QTKD K48A|Quản trị kinh doanh|Hà Nội
+SV712|Hồ Phương Hạnh|2005-02-08|Nữ|100005638784|0977906990|sv712@student.edu.vn|DĐT K46A|Điện - Điện tử|Cần Thơ
+SV713|Phạm Hoàng Phong|2005-10-25|Nam|100005646627|0973979720|sv713@student.edu.vn|QTKD K49B|Quản trị kinh doanh|Phú Yên
+SV714|Dương Lan Châu|2006-05-04|Nữ|100005654598|0957690100|sv714@student.edu.vn|NNA K47A|Ngôn ngữ Anh|Quảng Ninh
+SV715|Vũ Mai Bình|2004-05-24|Nữ|100005662619|0919094205|sv715@student.edu.vn|KTTC K49A|Kế toán|Bình Dương
+SV716|Trần Phương Thảo|2004-09-23|Nữ|100005670868|0944514844|sv716@student.edu.vn|QTKD K48B|Quản trị kinh doanh|TP.HCM
+SV717|Trần Bảo Ngọc|2005-10-09|Nữ|100005678262|0998766104|sv717@student.edu.vn|NNA K45B|Ngôn ngữ Anh|Thái Bình
+SV718|Bùi Minh Quân|2004-10-22|Nam|100005686046|0955201298|sv718@student.edu.vn|CNTT K49B|Công nghệ thông tin|Hà Nội
+SV719|Phan Mai Lan|2003-08-12|Nữ|100005694078|0946179338|sv719@student.edu.vn|DĐT K48B|Điện - Điện tử|Lâm Đồng
+SV720|Nguyễn Minh Trung|2005-07-07|Nam|100005702166|0929640540|sv720@student.edu.vn|KT K48C|Kinh tế|Hà Nội
+SV721|Ngô Bảo Lan|2003-12-01|Nữ|100005710240|0914501101|sv721@student.edu.vn|XD K49B|Xây dựng|Quảng Ninh
+SV722|Phạm Hữu Bình|2006-05-07|Nam|100005717959|0972488906|sv722@student.edu.vn|DĐT K45B|Điện - Điện tử|Quảng Ninh
+SV723|Phan Đức Phong|2003-08-20|Nam|100005725513|0974360916|sv723@student.edu.vn|KTTC K47C|Kế toán|Khánh Hòa
+SV724|Phan Ngọc Bình|2003-03-09|Nữ|100005733622|0917366264|sv724@student.edu.vn|CNTT K49A|Công nghệ thông tin|Quảng Ninh
+SV725|Võ Hữu Dũng|2003-10-22|Nam|100005741931|0962477135|sv725@student.edu.vn|KTTC K46B|Kế toán|Khánh Hòa
+SV726|Hồ Hoàng Tài|2005-01-04|Nam|100005749292|0962414985|sv726@student.edu.vn|DĐT K46B|Điện - Điện tử|Khánh Hòa
+SV727|Huỳnh Thị Hà|2004-07-11|Nữ|100005757869|0933100580|sv727@student.edu.vn|KT K47B|Kinh tế|Huế
+SV728|Lê Kim Giang|2006-11-16|Nữ|100005765373|0985021962|sv728@student.edu.vn|KTTC K45B|Kế toán|Nghệ An
+SV729|Nguyễn Thu Nhung|2005-02-17|Nữ|100005773270|0998878740|sv729@student.edu.vn|NNA K48A|Ngôn ngữ Anh|Hải Phòng
+SV730|Lê Bảo Châu|2005-09-07|Nữ|100005780931|0942204703|sv730@student.edu.vn|XD K45A|Xây dựng|TP.HCM
+SV731|Nguyễn Quốc Việt|2006-01-25|Nam|100005789676|0964533022|sv731@student.edu.vn|QTKD K47B|Quản trị kinh doanh|Huế
+SV732|Dương Minh Tài|2005-04-26|Nam|100005797214|0927519371|sv732@student.edu.vn|NNA K47C|Ngôn ngữ Anh|Thái Bình
+SV733|Trần Quốc Phong|2003-02-12|Nam|100005805162|0973504290|sv733@student.edu.vn|KTTC K45C|Kế toán|Khánh Hòa
+SV734|Phan Thu Bình|2006-04-18|Nữ|100005812615|0938901209|sv734@student.edu.vn|QTKD K49B|Quản trị kinh doanh|Quảng Ninh
+SV735|Phan Phương Giang|2005-10-08|Nữ|100005821257|0976587617|sv735@student.edu.vn|DĐT K48A|Điện - Điện tử|Quảng Ninh
+SV736|Nguyễn Anh Sơn|2004-02-20|Nam|100005829239|0970851689|sv736@student.edu.vn|KTTC K46A|Kế toán|Đồng Nai
+SV737|Trần Tuấn Việt|2006-06-25|Nam|100005836924|0941019002|sv737@student.edu.vn|CNTT K45B|Công nghệ thông tin|Nam Định
+SV738|Đỗ Tuấn Tuấn|2005-07-02|Nam|100005844600|0985808505|sv738@student.edu.vn|KTTC K45B|Kế toán|Nam Định
+SV739|Dương Mai Châu|2006-03-05|Nữ|100005852970|0962934016|sv739@student.edu.vn|KT K45C|Kinh tế|Hà Nội
+SV740|Lê Gia Bình|2006-11-07|Nam|100005860388|0993238325|sv740@student.edu.vn|XD K45C|Xây dựng|Nam Định
+SV741|Nguyễn Thu Hương|2004-09-10|Nữ|100005868705|0976390594|sv741@student.edu.vn|XD K46A|Xây dựng|Hải Phòng
+SV742|Hoàng Thị Nga|2005-10-04|Nữ|100005876421|0946274702|sv742@student.edu.vn|XD K48C|Xây dựng|Bình Dương
+SV743|Phan Gia Thắng|2006-04-10|Nam|100005884597|0947178158|sv743@student.edu.vn|KT K48A|Kinh tế|Khánh Hòa
+SV744|Phan Minh Long|2003-05-24|Nam|100005892432|0994691235|sv744@student.edu.vn|XD K46A|Xây dựng|Thanh Hóa
+SV745|Bùi Quốc Khang|2003-06-18|Nam|100005900436|0946321162|sv745@student.edu.vn|XD K45C|Xây dựng|Hà Nội
+SV746|Dương Quốc Nam|2003-05-12|Nam|100005908309|0948081313|sv746@student.edu.vn|CK K46C|Cơ khí|Khánh Hòa
+SV747|Ngô Tuấn Hùng|2004-04-14|Nam|100005915923|0990734280|sv747@student.edu.vn|CK K47A|Cơ khí|Nam Định
+SV748|Đặng Tuấn Việt|2004-01-14|Nam|100005923521|0937512859|sv748@student.edu.vn|XD K47B|Xây dựng|Lâm Đồng
+SV749|Ngô Thanh Trang|2006-01-11|Nữ|100005931683|0915714105|sv749@student.edu.vn|DĐT K45A|Điện - Điện tử|Bình Dương
+SV750|Phan Phương Châu|2003-11-12|Nữ|100005939381|0927949546|sv750@student.edu.vn|DĐT K49B|Điện - Điện tử|Cần Thơ
+SV751|Vũ Gia Bình|2006-05-25|Nam|100005947678|0943440083|sv751@student.edu.vn|CK K49C|Cơ khí|Phú Yên
+SV752|Bùi Gia Cường|2006-10-25|Nam|100005955884|0922926770|sv752@student.edu.vn|CNTT K47A|Công nghệ thông tin|Lâm Đồng
+SV753|Nguyễn Thanh Nhung|2006-09-13|Nữ|100005963592|0967262064|sv753@student.edu.vn|XD K48C|Xây dựng|Thái Bình
+SV754|Lê Kim Linh|2006-09-06|Nữ|100005971269|0945354784|sv754@student.edu.vn|DĐT K47A|Điện - Điện tử|Hà Nội
+SV755|Đặng Quốc Dũng|2004-01-26|Nam|100005978886|0986473248|sv755@student.edu.vn|XD K49B|Xây dựng|Đồng Nai
+SV756|Võ Minh Trung|2005-10-05|Nam|100005987580|0927902093|sv756@student.edu.vn|CK K49B|Cơ khí|Quảng Ninh
+SV757|Lý Khánh Dung|2003-02-18|Nữ|100005995533|0956573057|sv757@student.edu.vn|XD K46B|Xây dựng|Huế
+SV758|Lý Bảo Nhung|2003-02-24|Nữ|100006002687|0960882763|sv758@student.edu.vn|CK K46B|Cơ khí|Hà Nội
+SV759|Dương Ngọc Vy|2006-06-16|Nữ|100006010561|0931157401|sv759@student.edu.vn|XD K48C|Xây dựng|Đồng Nai
+SV760|Lý Lan Nga|2005-11-12|Nữ|100006018592|0921149663|sv760@student.edu.vn|KT K45B|Kinh tế|Huế
+SV761|Hồ Thu Giang|2004-03-17|Nữ|100006026519|0949213001|sv761@student.edu.vn|CK K48B|Cơ khí|Hà Nội
+SV762|Ngô Phương Lan|2003-03-03|Nữ|100006034786|0945257441|sv762@student.edu.vn|XD K46C|Xây dựng|Hà Nội
+SV763|Lê Tuấn Phong|2005-02-15|Nam|100006042502|0976304129|sv763@student.edu.vn|DĐT K49C|Điện - Điện tử|Khánh Hòa
+SV764|Trần Hữu Hùng|2003-12-03|Nam|100006050646|0919275920|sv764@student.edu.vn|KTTC K48B|Kế toán|Đà Nẵng
+SV765|Huỳnh Kim Hương|2006-11-10|Nữ|100006058238|0984664203|sv765@student.edu.vn|NNA K46C|Ngôn ngữ Anh|Hà Nội
+SV766|Nguyễn Thanh Anh|2003-09-14|Nữ|100006066232|0986509146|sv766@student.edu.vn|CNTT K45A|Công nghệ thông tin|Đồng Nai
+SV767|Ngô Đức Hải|2005-03-26|Nam|100006074377|0935453442|sv767@student.edu.vn|KT K47B|Kinh tế|Thái Bình
+SV768|Bùi Khánh Mai|2005-03-13|Nữ|100006081991|0928873304|sv768@student.edu.vn|CNTT K49A|Công nghệ thông tin|Bình Dương
+SV769|Lê Bảo Vy|2004-11-08|Nữ|100006089921|0945911804|sv769@student.edu.vn|KTTC K48B|Kế toán|Nam Định
+SV770|Dương Đức Long|2006-04-18|Nam|100006097725|0977245199|sv770@student.edu.vn|DĐT K49A|Điện - Điện tử|Nghệ An
+SV771|Bùi Khánh Giang|2006-07-06|Nữ|100006106412|0934692892|sv771@student.edu.vn|DĐT K48A|Điện - Điện tử|Lâm Đồng
+SV772|Trần Thanh Mai|2003-09-01|Nữ|100006114035|0921196884|sv772@student.edu.vn|KTTC K48C|Kế toán|Hải Phòng
+SV773|Phan Khánh Dung|2004-01-19|Nữ|100006122187|0910424179|sv773@student.edu.vn|KTTC K49A|Kế toán|Khánh Hòa
+SV774|Huỳnh Anh Thắng|2003-10-03|Nam|100006130205|0978126858|sv774@student.edu.vn|KTTC K47A|Kế toán|Phú Yên
+SV775|Hoàng Tuấn Tài|2003-08-13|Nam|100006137763|0997868712|sv775@student.edu.vn|DĐT K47A|Điện - Điện tử|Huế
+SV776|Bùi Kim Mai|2004-11-11|Nữ|100006145504|0958592660|sv776@student.edu.vn|CK K48A|Cơ khí|Nghệ An
+SV777|Bùi Minh Trung|2006-01-01|Nam|100006153535|0991171367|sv777@student.edu.vn|NNA K45A|Ngôn ngữ Anh|Huế
+SV778|Bùi Minh Dũng|2005-07-20|Nam|100006161538|0916993149|sv778@student.edu.vn|NNA K45A|Ngôn ngữ Anh|TP.HCM
+SV779|Hồ Mai My|2005-02-12|Nữ|100006169540|0968156575|sv779@student.edu.vn|DĐT K47A|Điện - Điện tử|Nam Định
+SV780|Nguyễn Anh Thắng|2003-11-08|Nam|100006177686|0977200657|sv780@student.edu.vn|CK K46B|Cơ khí|TP.HCM
+SV781|Đặng Thanh Tuấn|2003-02-17|Nam|100006185395|0955629152|sv781@student.edu.vn|KT K45A|Kinh tế|Phú Yên
+SV782|Ngô Lan Linh|2006-09-02|Nữ|100006193212|0914798371|sv782@student.edu.vn|CK K48A|Cơ khí|Hải Phòng
+SV783|Lý Minh Thắng|2003-01-07|Nam|100006201074|0912648576|sv783@student.edu.vn|DĐT K49C|Điện - Điện tử|Huế
+SV784|Võ Hoàng Tuấn|2006-10-13|Nam|100006208912|0996722075|sv784@student.edu.vn|NNA K45A|Ngôn ngữ Anh|Lâm Đồng
+SV785|Hoàng Khánh Bình|2006-02-18|Nữ|100006216437|0910664267|sv785@student.edu.vn|CK K47C|Cơ khí|Đà Nẵng
+SV786|Trần Hoàng Tuấn|2003-11-22|Nam|100006224652|0951506302|sv786@student.edu.vn|KTTC K46A|Kế toán|Lâm Đồng
+SV787|Ngô Lan Dung|2005-12-15|Nữ|100006232479|0955483061|sv787@student.edu.vn|XD K45C|Xây dựng|Thái Bình
+SV788|Trần Phương Giang|2006-08-07|Nữ|100006240772|0974031929|sv788@student.edu.vn|NNA K46A|Ngôn ngữ Anh|Nghệ An
+SV789|Vũ Đức Bình|2005-01-27|Nam|100006248162|0939705261|sv789@student.edu.vn|DĐT K46C|Điện - Điện tử|TP.HCM
+SV790|Lê Kim My|2003-02-26|Nữ|100006256117|0919332714|sv790@student.edu.vn|CK K49A|Cơ khí|Khánh Hòa
+SV791|Dương Ngọc Châu|2004-07-04|Nữ|100006264058|0971076759|sv791@student.edu.vn|CNTT K48B|Công nghệ thông tin|Cần Thơ
+SV792|Lý Tuấn Long|2004-03-12|Nam|100006272516|0912016289|sv792@student.edu.vn|CNTT K48A|Công nghệ thông tin|Cần Thơ
+SV793|Lê Hoàng Dũng|2006-08-24|Nam|100006279783|0938604226|sv793@student.edu.vn|CNTT K49A|Công nghệ thông tin|Cần Thơ
+SV794|Đỗ Kim Trang|2003-02-06|Nữ|100006288451|0919558179|sv794@student.edu.vn|XD K46B|Xây dựng|Nghệ An
+SV795|Hồ Kim Ngọc|2006-06-27|Nữ|100006295791|0946754141|sv795@student.edu.vn|XD K49B|Xây dựng|Cần Thơ
+SV796|Võ Hoàng Tài|2006-12-06|Nam|100006304407|0952347722|sv796@student.edu.vn|CK K48A|Cơ khí|Thái Bình
+SV797|Dương Khánh Vy|2003-12-15|Nữ|100006311745|0913932658|sv797@student.edu.vn|CNTT K45B|Công nghệ thông tin|Hải Phòng
+SV798|Phạm Minh Khang|2005-02-13|Nam|100006320092|0996332708|sv798@student.edu.vn|CK K48B|Cơ khí|TP.HCM
+SV799|Vũ Đức Bình|2003-03-18|Nam|100006328104|0980429449|sv799@student.edu.vn|CNTT K48B|Công nghệ thông tin|Lâm Đồng
+SV800|Lý Kim Châu|2004-03-04|Nữ|100006335787|0948671542|sv800@student.edu.vn|XD K49A|Xây dựng|Nam Định
+SV801|Bùi Ngọc Nga|2003-10-17|Nữ|100006343196|0964218830|sv801@student.edu.vn|CNTT K49C|Công nghệ thông tin|Hà Nội
+SV802|Lý Mai Ngọc|2003-04-26|Nữ|100006351854|0929895573|sv802@student.edu.vn|NNA K49C|Ngôn ngữ Anh|Cần Thơ
+SV803|Hoàng Đức Việt|2004-07-01|Nam|100006359040|0956623270|sv803@student.edu.vn|CNTT K48A|Công nghệ thông tin|Lâm Đồng
+SV804|Ngô Lan Hà|2006-01-06|Nữ|100006367238|0936645963|sv804@student.edu.vn|KT K46C|Kinh tế|Lâm Đồng
+SV805|Lê Thị Lan|2003-04-23|Nữ|100006375667|0943069681|sv805@student.edu.vn|QTKD K48B|Quản trị kinh doanh|Đồng Nai
+SV806|Dương Anh Khang|2006-07-17|Nam|100006382996|0939593893|sv806@student.edu.vn|KT K45C|Kinh tế|Bình Dương
+SV807|Bùi Bảo Châu|2003-02-07|Nữ|100006391171|0999330670|sv807@student.edu.vn|DĐT K45A|Điện - Điện tử|Lâm Đồng
+SV808|Hoàng Bảo My|2004-01-17|Nữ|100006398769|0976975128|sv808@student.edu.vn|QTKD K47C|Quản trị kinh doanh|Hải Phòng
+SV809|Lê Phương Giang|2003-11-14|Nữ|100006406955|0955775294|sv809@student.edu.vn|KT K45A|Kinh tế|Hải Phòng
+SV810|Phan Thị Hạnh|2003-11-08|Nữ|100006414462|0910520573|sv810@student.edu.vn|QTKD K47C|Quản trị kinh doanh|Đồng Nai
+SV811|Hoàng Quốc An|2004-05-06|Nam|100006423094|0936750499|sv811@student.edu.vn|CNTT K45C|Công nghệ thông tin|Lâm Đồng
+SV812|Đặng Quốc An|2003-10-11|Nam|100006430479|0955642684|sv812@student.edu.vn|KT K46B|Kinh tế|Hải Phòng
+SV813|Bùi Ngọc Phương|2006-02-15|Nữ|100006438490|0982291353|sv813@student.edu.vn|KT K45B|Kinh tế|Phú Yên
+SV814|Nguyễn Mai Hà|2004-12-16|Nữ|100006446274|0982257506|sv814@student.edu.vn|CK K48C|Cơ khí|Hải Phòng
+SV815|Huỳnh Mai My|2003-02-17|Nữ|100006454140|0983090291|sv815@student.edu.vn|KTTC K48B|Kế toán|Cần Thơ
+SV816|Phạm Khánh Hà|2004-02-15|Nữ|100006462163|0913901625|sv816@student.edu.vn|QTKD K49A|Quản trị kinh doanh|Lâm Đồng
+SV817|Ngô Anh Thắng|2006-05-22|Nam|100006470327|0946069946|sv817@student.edu.vn|KT K45A|Kinh tế|TP.HCM
+SV818|Ngô Gia Tuấn|2004-08-21|Nam|100006477768|0999363881|sv818@student.edu.vn|QTKD K48B|Quản trị kinh doanh|Quảng Ninh
+SV819|Vũ Kim Nga|2006-06-10|Nữ|100006485874|0994017094|sv819@student.edu.vn|DĐT K45A|Điện - Điện tử|Đồng Nai
+SV820|Đỗ Thanh Phong|2003-06-03|Nam|100006493838|0923030845|sv820@student.edu.vn|CK K48A|Cơ khí|Thái Bình
+SV821|Vũ Tuấn Hải|2004-03-08|Nam|100006502020|0980557866|sv821@student.edu.vn|QTKD K48C|Quản trị kinh doanh|Cần Thơ
+SV822|Ngô Bảo Bình|2003-06-24|Nữ|100006510163|0936446434|sv822@student.edu.vn|CNTT K46B|Công nghệ thông tin|Quảng Ninh
+SV823|Phan Văn Long|2006-04-14|Nam|100006517372|0919744778|sv823@student.edu.vn|XD K46C|Xây dựng|Quảng Ninh
+SV824|Hồ Văn Phong|2004-02-23|Nam|100006525948|0984527089|sv824@student.edu.vn|KT K47A|Kinh tế|Bình Dương
+SV825|Hoàng Văn An|2004-07-23|Nam|100006533280|0985584789|sv825@student.edu.vn|DĐT K47A|Điện - Điện tử|Huế
+SV826|Hoàng Hoàng Nam|2006-06-11|Nam|100006541749|0948411105|sv826@student.edu.vn|CNTT K48C|Công nghệ thông tin|Khánh Hòa
+SV827|Đặng Hữu Nam|2003-08-11|Nam|100006549210|0915468994|sv827@student.edu.vn|KT K49A|Kinh tế|Thanh Hóa
+SV828|Ngô Thu Dung|2006-07-07|Nữ|100006557684|0982602202|sv828@student.edu.vn|KTTC K47B|Kế toán|Cần Thơ
+SV829|Đỗ Bảo Phương|2003-04-08|Nữ|100006565496|0945211611|sv829@student.edu.vn|KT K47A|Kinh tế|Khánh Hòa
+SV830|Dương Mai Giang|2003-04-11|Nữ|100006573224|0964999140|sv830@student.edu.vn|KTTC K47A|Kế toán|Đà Nẵng
+SV831|Võ Tuấn Khang|2003-01-06|Nam|100006581490|0967232816|sv831@student.edu.vn|CK K46A|Cơ khí|Hà Nội
+SV832|Ngô Lan Lan|2005-09-23|Nữ|100006588791|0967358229|sv832@student.edu.vn|QTKD K47B|Quản trị kinh doanh|Huế
+SV833|Dương Thanh Khang|2003-05-15|Nam|100006597425|0915776182|sv833@student.edu.vn|CK K49A|Cơ khí|Hải Phòng
+SV834|Trần Bảo Giang|2003-12-01|Nữ|100006605315|0964570506|sv834@student.edu.vn|KTTC K48A|Kế toán|Lâm Đồng
+SV835|Phan Kim My|2003-04-22|Nữ|100006612799|0974031108|sv835@student.edu.vn|QTKD K45A|Quản trị kinh doanh|Huế
+SV836|Đỗ Văn Phong|2003-11-12|Nam|100006620680|0922916435|sv836@student.edu.vn|CK K46B|Cơ khí|Hà Nội
+SV837|Võ Phương Ngọc|2004-01-06|Nữ|100006628497|0957602878|sv837@student.edu.vn|KT K45B|Kinh tế|Huế
+SV838|Phạm Lan Phương|2006-09-27|Nữ|100006636776|0995115921|sv838@student.edu.vn|QTKD K49A|Quản trị kinh doanh|Huế
+SV839|Đỗ Khánh Nga|2005-08-07|Nữ|100006644191|0978085435|sv839@student.edu.vn|QTKD K49A|Quản trị kinh doanh|Thái Bình
+SV840|Nguyễn Minh Nam|2005-01-04|Nam|100006652459|0943047395|sv840@student.edu.vn|KT K48A|Kinh tế|Lâm Đồng
+SV841|Phan Mai My|2004-09-19|Nữ|100006660624|0923032424|sv841@student.edu.vn|NNA K49C|Ngôn ngữ Anh|Thanh Hóa
+SV842|Phạm Quốc Thắng|2006-10-22|Nam|100006668659|0961684348|sv842@student.edu.vn|XD K47B|Xây dựng|Khánh Hòa
+SV843|Dương Kim Linh|2005-09-10|Nữ|100006676464|0989814380|sv843@student.edu.vn|DĐT K49A|Điện - Điện tử|Hà Nội
+SV844|Huỳnh Văn Việt|2005-04-17|Nam|100006683773|0964398408|sv844@student.edu.vn|XD K46B|Xây dựng|Hải Phòng
+SV845|Võ Bảo Châu|2004-10-05|Nữ|100006692067|0981727840|sv845@student.edu.vn|DĐT K49B|Điện - Điện tử|Thái Bình
+SV846|Vũ Gia Phong|2004-07-18|Nam|100006700336|0962631508|sv846@student.edu.vn|NNA K49B|Ngôn ngữ Anh|Nghệ An
+SV847|Ngô Hữu Hải|2006-10-25|Nam|100006707693|0981788918|sv847@student.edu.vn|DĐT K49C|Điện - Điện tử|Nghệ An
+SV848|Lý Đức Long|2005-03-09|Nam|100006715913|0916472252|sv848@student.edu.vn|KT K47A|Kinh tế|Huế
+SV849|Lý Thu Hạnh|2003-01-15|Nữ|100006723275|0956263893|sv849@student.edu.vn|QTKD K45B|Quản trị kinh doanh|Phú Yên
+SV850|Đỗ Hữu Khang|2005-09-22|Nam|100006732007|0952440389|sv850@student.edu.vn|CK K47A|Cơ khí|Thái Bình
+SV851|Hoàng Lan Dung|2005-12-06|Nữ|100006739501|0915784577|sv851@student.edu.vn|XD K45B|Xây dựng|Phú Yên
+SV852|Phạm Mai Mai|2005-05-25|Nữ|100006747690|0919436069|sv852@student.edu.vn|KTTC K45C|Kế toán|Huế
+SV853|Hoàng Phương Giang|2004-09-05|Nữ|100006755041|0942892152|sv853@student.edu.vn|KT K46A|Kinh tế|Bình Dương
+SV854|Huỳnh Quốc An|2006-07-26|Nam|100006763582|0979451775|sv854@student.edu.vn|KTTC K47C|Kế toán|Hà Nội
+SV855|Phạm Minh Phong|2005-08-15|Nam|100006770912|0921733827|sv855@student.edu.vn|XD K49C|Xây dựng|Đồng Nai
+SV856|Hoàng Gia Phong|2006-01-06|Nam|100006778682|0943273610|sv856@student.edu.vn|KTTC K47A|Kế toán|Phú Yên
+SV857|Đỗ Thanh Bình|2005-12-08|Nữ|100006786806|0966246209|sv857@student.edu.vn|XD K45C|Xây dựng|Huế
+SV858|Hồ Khánh Trang|2004-05-06|Nữ|100006794633|0926762388|sv858@student.edu.vn|KTTC K45A|Kế toán|Huế
+SV859|Đỗ Thị Nhung|2005-08-14|Nữ|100006803268|0912826757|sv859@student.edu.vn|DĐT K47A|Điện - Điện tử|Hải Phòng
+SV860|Đặng Khánh Ngọc|2004-08-20|Nữ|100006810755|0937720151|sv860@student.edu.vn|NNA K47B|Ngôn ngữ Anh|Hải Phòng
+SV861|Ngô Gia Khang|2003-06-24|Nam|100006818416|0950613603|sv861@student.edu.vn|KTTC K46C|Kế toán|Cần Thơ
+SV862|Huỳnh Hữu Sơn|2006-12-24|Nam|100006826335|0951466853|sv862@student.edu.vn|CK K48B|Cơ khí|Hải Phòng
+SV863|Võ Thị Giang|2004-06-08|Nữ|100006834500|0959171887|sv863@student.edu.vn|CK K46B|Cơ khí|Đồng Nai
+SV864|Lê Văn Nam|2003-03-23|Nam|100006842113|0930803208|sv864@student.edu.vn|NNA K49B|Ngôn ngữ Anh|Thanh Hóa
+SV865|Đặng Thị Nga|2003-11-25|Nữ|100006850732|0991284874|sv865@student.edu.vn|QTKD K45A|Quản trị kinh doanh|Cần Thơ
+SV866|Đặng Bảo Phương|2005-04-02|Nữ|100006858134|0989205652|sv866@student.edu.vn|CK K45C|Cơ khí|Bình Dương
+SV867|Bùi Ngọc Hạnh|2003-03-17|Nữ|100006866516|0979080255|sv867@student.edu.vn|CK K47C|Cơ khí|Nghệ An
+SV868|Đỗ Thanh Cường|2006-12-07|Nam|100006874357|0943210226|sv868@student.edu.vn|KT K46B|Kinh tế|Khánh Hòa
+SV869|Võ Ngọc Nhung|2006-11-18|Nữ|100006882148|0939757704|sv869@student.edu.vn|KT K48B|Kinh tế|Cần Thơ
+SV870|Đặng Khánh Anh|2006-05-26|Nữ|100006889759|0985000149|sv870@student.edu.vn|QTKD K47C|Quản trị kinh doanh|Thái Bình
+SV871|Đỗ Tuấn Dũng|2004-11-26|Nam|100006897760|0966080621|sv871@student.edu.vn|CNTT K48C|Công nghệ thông tin|Phú Yên
+SV872|Hoàng Bảo Châu|2004-01-16|Nữ|100006905851|0917864823|sv872@student.edu.vn|CK K46A|Cơ khí|Quảng Ninh
+SV873|Vũ Khánh Nhung|2003-08-02|Nữ|100006913307|0972861701|sv873@student.edu.vn|XD K48A|Xây dựng|Phú Yên
+SV874|Đặng Kim Giang|2005-10-02|Nữ|100006921317|0989068389|sv874@student.edu.vn|CK K47C|Cơ khí|Lâm Đồng
+SV875|Lê Quốc Bình|2003-08-24|Nam|100006929226|0996824873|sv875@student.edu.vn|NNA K49C|Ngôn ngữ Anh|Lâm Đồng
+SV876|Lý Thanh Trung|2004-02-26|Nam|100006937653|0919981165|sv876@student.edu.vn|XD K48C|Xây dựng|TP.HCM
+SV877|Hoàng Ngọc Vy|2006-01-02|Nữ|100006945288|0920638817|sv877@student.edu.vn|DĐT K48B|Điện - Điện tử|Lâm Đồng
+SV878|Hoàng Gia Việt|2003-01-11|Nam|100006953491|0973075636|sv878@student.edu.vn|CNTT K46A|Công nghệ thông tin|Cần Thơ
+SV879|Hồ Minh Khang|2003-09-07|Nam|100006961664|0915334772|sv879@student.edu.vn|KTTC K49C|Kế toán|Khánh Hòa
+SV880|Ngô Khánh Trang|2003-01-07|Nữ|100006969189|0998616908|sv880@student.edu.vn|CK K49A|Cơ khí|Lâm Đồng
+SV881|Vũ Khánh Phương|2003-11-26|Nữ|100006977079|0975555402|sv881@student.edu.vn|QTKD K45C|Quản trị kinh doanh|Đồng Nai
+SV882|Huỳnh Bảo Bình|2005-10-27|Nữ|100006984939|0933122944|sv882@student.edu.vn|KTTC K45C|Kế toán|Hà Nội
+SV883|Ngô Thanh Hùng|2003-03-07|Nam|100006992787|0927565615|sv883@student.edu.vn|DĐT K47A|Điện - Điện tử|Nghệ An
+SV884|Nguyễn Hoàng Bình|2005-04-06|Nam|100007000754|0922492800|sv884@student.edu.vn|XD K48C|Xây dựng|Nam Định
+SV885|Lê Đức Hải|2006-04-02|Nam|100007008436|0959422611|sv885@student.edu.vn|KT K48B|Kinh tế|Đà Nẵng
+SV886|Vũ Mai Nhung|2005-05-23|Nữ|100007016491|0973242728|sv886@student.edu.vn|XD K46A|Xây dựng|Hà Nội
+SV887|Võ Thanh Châu|2006-02-12|Nữ|100007024257|0999275349|sv887@student.edu.vn|CNTT K49C|Công nghệ thông tin|Thái Bình
+SV888|Lê Hoàng Phong|2006-07-19|Nam|100007032400|0938239481|sv888@student.edu.vn|CK K45B|Cơ khí|Quảng Ninh
+SV889|Trần Gia Nam|2003-03-03|Nam|100007040792|0944362877|sv889@student.edu.vn|KTTC K47B|Kế toán|Hải Phòng
+SV890|Lý Thị Anh|2004-05-23|Nữ|100007048509|0919052611|sv890@student.edu.vn|CK K45A|Cơ khí|TP.HCM
+SV891|Vũ Thanh Mai|2006-07-21|Nữ|100007056343|0986282088|sv891@student.edu.vn|QTKD K47B|Quản trị kinh doanh|Lâm Đồng
+SV892|Hồ Kim Thảo|2005-10-04|Nữ|100007064341|0994509618|sv892@student.edu.vn|CK K46A|Cơ khí|Cần Thơ
+SV893|Võ Thanh Dung|2004-09-09|Nữ|100007071765|0954134649|sv893@student.edu.vn|CK K46C|Cơ khí|Khánh Hòa
+SV894|Bùi Thanh Ngọc|2005-08-14|Nữ|100007080118|0973447128|sv894@student.edu.vn|CNTT K48A|Công nghệ thông tin|Hà Nội
+SV895|Nguyễn Đức Thắng|2006-05-07|Nam|100007088002|0992286206|sv895@student.edu.vn|KT K49B|Kinh tế|Thái Bình
+SV896|Lê Lan Giang|2003-10-02|Nữ|100007096245|0986216656|sv896@student.edu.vn|NNA K45A|Ngôn ngữ Anh|TP.HCM
+SV897|Hồ Thanh Vy|2005-01-27|Nữ|100007103658|0950884387|sv897@student.edu.vn|QTKD K48C|Quản trị kinh doanh|Lâm Đồng
+SV898|Đặng Ngọc Anh|2004-10-02|Nữ|100007111898|0990205812|sv898@student.edu.vn|QTKD K49B|Quản trị kinh doanh|Lâm Đồng
+SV899|Lê Ngọc Hương|2005-06-15|Nữ|100007119787|0972463763|sv899@student.edu.vn|NNA K49C|Ngôn ngữ Anh|Đồng Nai
+SV900|Đỗ Phương Hà|2006-01-14|Nữ|100007127380|0988005350|sv900@student.edu.vn|NNA K48C|Ngôn ngữ Anh|Hà Nội
+SV901|Lê Quốc Thắng|2004-10-13|Nam|100007135617|0917969708|sv901@student.edu.vn|DĐT K46A|Điện - Điện tử|Khánh Hòa
+SV902|Lê Minh Dũng|2003-04-02|Nam|100007143636|0988439881|sv902@student.edu.vn|QTKD K45B|Quản trị kinh doanh|Thanh Hóa
+SV903|Lý Phương Anh|2005-05-15|Nữ|100007151346|0924783054|sv903@student.edu.vn|NNA K46C|Ngôn ngữ Anh|Nam Định
+SV904|Võ Văn Thắng|2006-05-06|Nam|100007158937|0983310864|sv904@student.edu.vn|QTKD K45C|Quản trị kinh doanh|Quảng Ninh
+SV905|Hồ Hoàng Khang|2006-04-05|Nam|100007166709|0914719734|sv905@student.edu.vn|NNA K45A|Ngôn ngữ Anh|TP.HCM
+SV906|Võ Ngọc Bình|2006-11-08|Nữ|100007174740|0931904067|sv906@student.edu.vn|KTTC K48A|Kế toán|Thanh Hóa
+SV907|Phan Thu Vy|2005-06-11|Nữ|100007182812|0992506838|sv907@student.edu.vn|DĐT K46C|Điện - Điện tử|Bình Dương
+SV908|Hồ Anh Việt|2003-11-21|Nam|100007191154|0959419082|sv908@student.edu.vn|CK K45C|Cơ khí|Bình Dương
+SV909|Phan Hoàng Dũng|2003-06-09|Nam|100007198665|0954261685|sv909@student.edu.vn|DĐT K48A|Điện - Điện tử|Lâm Đồng
+SV910|Bùi Bảo Trang|2005-11-09|Nữ|100007206446|0986889626|sv910@student.edu.vn|KTTC K45A|Kế toán|Huế
+SV911|Huỳnh Thanh Dung|2005-04-07|Nữ|100007214248|0928029076|sv911@student.edu.vn|XD K45C|Xây dựng|Huế
+SV912|Vũ Thu Mai|2006-03-25|Nữ|100007222279|0927823216|sv912@student.edu.vn|CNTT K49B|Công nghệ thông tin|Nam Định
+SV913|Phan Đức Khang|2006-01-27|Nam|100007230677|0964846445|sv913@student.edu.vn|XD K48A|Xây dựng|TP.HCM
+SV914|Ngô Tuấn Nam|2005-09-06|Nam|100007238144|0915459334|sv914@student.edu.vn|DĐT K49A|Điện - Điện tử|Huế
+SV915|Huỳnh Mai Nga|2003-09-16|Nữ|100007246546|0920341244|sv915@student.edu.vn|DĐT K48C|Điện - Điện tử|TP.HCM
+SV916|Đỗ Tuấn Dũng|2004-08-08|Nam|100007254577|0975831189|sv916@student.edu.vn|CNTT K46C|Công nghệ thông tin|Nghệ An
+SV917|Phan Thanh Bình|2005-07-02|Nam|100007262041|0918535162|sv917@student.edu.vn|KTTC K46C|Kế toán|Phú Yên
+SV918|Đỗ Mai Hương|2003-03-18|Nữ|100007270193|0972161501|sv918@student.edu.vn|NNA K46C|Ngôn ngữ Anh|Quảng Ninh
+SV919|Nguyễn Gia Dũng|2004-12-27|Nam|100007278282|0951469565|sv919@student.edu.vn|KT K49A|Kinh tế|Cần Thơ
+SV920|Hồ Thanh Tuấn|2003-07-08|Nam|100007286110|0973416758|sv920@student.edu.vn|KTTC K47B|Kế toán|Hà Nội
+SV921|Nguyễn Tuấn Phong|2006-05-07|Nam|100007293586|0929556409|sv921@student.edu.vn|CNTT K48C|Công nghệ thông tin|Quảng Ninh
+SV922|Lý Anh Long|2005-05-10|Nam|100007302009|0913881087|sv922@student.edu.vn|XD K49C|Xây dựng|Nghệ An
+SV923|Đặng Thanh Mai|2004-03-24|Nữ|100007309479|0983411222|sv923@student.edu.vn|XD K45C|Xây dựng|Hải Phòng
+SV924|Hồ Thị Trang|2005-01-02|Nữ|100007317856|0924668352|sv924@student.edu.vn|QTKD K48A|Quản trị kinh doanh|Nam Định
+SV925|Nguyễn Hoàng Cường|2003-11-22|Nam|100007325554|0960286036|sv925@student.edu.vn|CK K47B|Cơ khí|Huế
+SV926|Nguyễn Văn Nam|2003-12-16|Nam|100007333337|0982522337|sv926@student.edu.vn|KTTC K48A|Kế toán|Đà Nẵng
+SV927|Bùi Thanh Nga|2004-12-10|Nữ|100007341373|0918798913|sv927@student.edu.vn|DĐT K45C|Điện - Điện tử|Phú Yên
+SV928|Trần Gia An|2003-07-08|Nam|100007348995|0961916423|sv928@student.edu.vn|CNTT K48B|Công nghệ thông tin|Cần Thơ
+SV929|Bùi Phương Hà|2004-07-01|Nữ|100007357627|0915875150|sv929@student.edu.vn|CNTT K49C|Công nghệ thông tin|Quảng Ninh
+SV930|Hoàng Thị Hương|2003-01-24|Nữ|100007364888|0989450089|sv930@student.edu.vn|NNA K48C|Ngôn ngữ Anh|Quảng Ninh
+SV931|Ngô Anh Hải|2005-11-02|Nam|100007372598|0926745739|sv931@student.edu.vn|CK K49C|Cơ khí|Quảng Ninh
+SV932|Bùi Tuấn An|2006-10-04|Nam|100007381258|0990423941|sv932@student.edu.vn|XD K45A|Xây dựng|Thái Bình
+SV933|Hồ Thị Thảo|2003-11-14|Nữ|100007388554|0938728448|sv933@student.edu.vn|KT K49C|Kinh tế|Thanh Hóa
+SV934|Ngô Quốc Long|2005-02-16|Nam|100007397062|0962148205|sv934@student.edu.vn|KT K47C|Kinh tế|Huế
+SV935|Bùi Phương Hạnh|2006-11-02|Nữ|100007404906|0928684496|sv935@student.edu.vn|QTKD K49A|Quản trị kinh doanh|Thanh Hóa
+SV936|Hoàng Hoàng Cường|2005-10-07|Nam|100007412605|0976340218|sv936@student.edu.vn|QTKD K47B|Quản trị kinh doanh|Quảng Ninh
+SV937|Bùi Minh Bình|2005-08-01|Nam|100007420728|0992698078|sv937@student.edu.vn|DĐT K48C|Điện - Điện tử|Cần Thơ
+SV938|Đỗ Thanh Thắng|2005-05-03|Nam|100007428196|0916415138|sv938@student.edu.vn|QTKD K47B|Quản trị kinh doanh|Khánh Hòa
+SV939|Bùi Thị Giang|2004-01-24|Nữ|100007436436|0983737739|sv939@student.edu.vn|NNA K47A|Ngôn ngữ Anh|Đồng Nai
+SV940|Hoàng Thanh Cường|2004-08-05|Nam|100007444054|0971606302|sv940@student.edu.vn|NNA K48C|Ngôn ngữ Anh|Khánh Hòa
+SV941|Huỳnh Minh Việt|2004-07-19|Nam|100007452594|0910287939|sv941@student.edu.vn|NNA K48C|Ngôn ngữ Anh|Huế
+SV942|Lê Lan Hạnh|2004-03-20|Nữ|100007460512|0998269234|sv942@student.edu.vn|DĐT K47C|Điện - Điện tử|Lâm Đồng
+SV943|Hoàng Khánh Trang|2003-05-08|Nữ|100007468147|0988812007|sv943@student.edu.vn|NNA K47C|Ngôn ngữ Anh|TP.HCM
+SV944|Phan Thanh Khang|2006-02-12|Nam|100007476321|0998082910|sv944@student.edu.vn|CNTT K47B|Công nghệ thông tin|Hải Phòng
+SV945|Phạm Tuấn Cường|2005-09-01|Nam|100007483901|0958944549|sv945@student.edu.vn|NNA K47A|Ngôn ngữ Anh|Hải Phòng
+SV946|Phan Anh Tài|2005-04-13|Nam|100007491571|0921288245|sv946@student.edu.vn|QTKD K45B|Quản trị kinh doanh|Thái Bình
+SV947|Võ Anh An|2004-12-15|Nam|100007500141|0987644694|sv947@student.edu.vn|CNTT K48C|Công nghệ thông tin|Thái Bình
+SV948|Ngô Phương Linh|2003-04-08|Nữ|100007507817|0982184710|sv948@student.edu.vn|CNTT K49A|Công nghệ thông tin|Quảng Ninh
+SV949|Dương Anh Khang|2006-09-15|Nam|100007515754|0942701048|sv949@student.edu.vn|NNA K47B|Ngôn ngữ Anh|Đà Nẵng
+SV950|Võ Quốc Long|2004-03-01|Nam|100007523708|0963810259|sv950@student.edu.vn|KTTC K48B|Kế toán|Hải Phòng
+SV951|Huỳnh Thu Mai|2004-01-21|Nữ|100007531770|0984254192|sv951@student.edu.vn|CK K49B|Cơ khí|Đà Nẵng
+SV952|Lê Hoàng Khang|2004-01-27|Nam|100007539704|0989261367|sv952@student.edu.vn|DĐT K46B|Điện - Điện tử|Khánh Hòa
+SV953|Phạm Thanh Mai|2004-05-21|Nữ|100007547434|0988320899|sv953@student.edu.vn|KT K47C|Kinh tế|Hà Nội
+SV954|Hồ Hoàng Quân|2006-05-26|Nam|100007554892|0921932290|sv954@student.edu.vn|DĐT K47A|Điện - Điện tử|Hải Phòng
+SV955|Đặng Mai Trang|2005-11-05|Nữ|100007563360|0942024928|sv955@student.edu.vn|KTTC K46A|Kế toán|Quảng Ninh
+SV956|Đỗ Khánh Dung|2006-09-15|Nữ|100007570889|0966997750|sv956@student.edu.vn|KT K48A|Kinh tế|Lâm Đồng
+SV957|Phan Hữu Phong|2004-02-09|Nam|100007578538|0980088961|sv957@student.edu.vn|KT K46C|Kinh tế|Đồng Nai
+SV958|Bùi Thu Bình|2003-12-10|Nữ|100007586877|0973534580|sv958@student.edu.vn|KT K48C|Kinh tế|Thái Bình
+SV959|Đỗ Bảo Trang|2004-08-19|Nữ|100007594948|0982412658|sv959@student.edu.vn|CK K46C|Cơ khí|Đà Nẵng
+SV960|Dương Hoàng Trung|2005-01-08|Nam|100007602487|0917430478|sv960@student.edu.vn|DĐT K45B|Điện - Điện tử|Hà Nội
+SV961|Dương Mai Hạnh|2003-10-18|Nữ|100007610559|0942319483|sv961@student.edu.vn|KTTC K45C|Kế toán|Khánh Hòa
+SV962|Hoàng Kim Thảo|2006-12-09|Nữ|100007618118|0988249042|sv962@student.edu.vn|NNA K46C|Ngôn ngữ Anh|Bình Dương
+SV963|Bùi Thanh Ngọc|2006-09-11|Nữ|100007626348|0999121649|sv963@student.edu.vn|DĐT K46B|Điện - Điện tử|Huế
+SV964|Lê Lan Nhung|2004-02-27|Nữ|100007634670|0944237044|sv964@student.edu.vn|CNTT K46A|Công nghệ thông tin|Nam Định
+SV965|Phạm Anh Thắng|2004-02-13|Nam|100007642364|0919549892|sv965@student.edu.vn|XD K48C|Xây dựng|Phú Yên
+SV966|Vũ Quốc Tài|2004-08-10|Nam|100007650102|0946878547|sv966@student.edu.vn|KT K46A|Kinh tế|TP.HCM
+SV967|Ngô Thanh Hải|2005-05-13|Nam|100007658496|0954182999|sv967@student.edu.vn|KT K47A|Kinh tế|Cần Thơ
+SV968|Nguyễn Anh Khang|2003-12-03|Nam|100007666108|0968213671|sv968@student.edu.vn|KTTC K47C|Kế toán|Huế
+SV969|Ngô Phương Phương|2003-08-19|Nữ|100007673841|0998029744|sv969@student.edu.vn|KTTC K49C|Kế toán|Quảng Ninh
+SV970|Phạm Tuấn Việt|2004-12-15|Nam|100007681581|0942804866|sv970@student.edu.vn|QTKD K47A|Quản trị kinh doanh|Hà Nội
+SV971|Nguyễn Hữu Nam|2004-04-17|Nam|100007689463|0966738451|sv971@student.edu.vn|KTTC K46C|Kế toán|TP.HCM
+SV972|Vũ Kim Hà|2004-02-16|Nữ|100007698015|0952229729|sv972@student.edu.vn|XD K48C|Xây dựng|Hải Phòng
+SV973|Lê Mai Hạnh|2005-02-23|Nữ|100007705205|0933215444|sv973@student.edu.vn|CK K49B|Cơ khí|Cần Thơ
+SV974|Phạm Ngọc Phương|2005-06-09|Nữ|100007713326|0922155288|sv974@student.edu.vn|CNTT K46A|Công nghệ thông tin|Nam Định
+SV975|Phan Hoàng Tuấn|2003-10-22|Nam|100007721145|0977394504|sv975@student.edu.vn|NNA K48A|Ngôn ngữ Anh|TP.HCM
+SV976|Ngô Văn Phong|2006-02-21|Nam|100007729036|0967462842|sv976@student.edu.vn|QTKD K48B|Quản trị kinh doanh|Cần Thơ
+SV977|Phan Anh Long|2003-02-07|Nam|100007737343|0982372347|sv977@student.edu.vn|NNA K49B|Ngôn ngữ Anh|Huế
+SV978|Đỗ Minh Tài|2005-06-15|Nam|100007745266|0929794511|sv978@student.edu.vn|NNA K45B|Ngôn ngữ Anh|Hải Phòng
+SV979|Huỳnh Tuấn Sơn|2003-07-08|Nam|100007753498|0957627386|sv979@student.edu.vn|NNA K45A|Ngôn ngữ Anh|Quảng Ninh
+SV980|Nguyễn Phương Lan|2004-04-06|Nữ|100007760853|0915250163|sv980@student.edu.vn|CNTT K49C|Công nghệ thông tin|Bình Dương
+SV981|Trần Thanh An|2006-10-23|Nam|100007769322|0911288259|sv981@student.edu.vn|XD K48A|Xây dựng|Quảng Ninh
+SV982|Trần Gia Nam|2004-12-12|Nam|100007776813|0982288784|sv982@student.edu.vn|NNA K49C|Ngôn ngữ Anh|Hà Nội
+SV983|Phan Kim Bình|2003-12-22|Nữ|100007784757|0941819591|sv983@student.edu.vn|KT K45B|Kinh tế|Huế
+SV984|Võ Đức Quân|2003-11-09|Nam|100007792378|0999794861|sv984@student.edu.vn|CNTT K48B|Công nghệ thông tin|Lâm Đồng
+SV985|Vũ Thu Hương|2005-09-08|Nữ|100007801043|0986013478|sv985@student.edu.vn|NNA K49C|Ngôn ngữ Anh|Đồng Nai
+SV986|Huỳnh Kim Trang|2006-06-01|Nữ|100007808813|0960189167|sv986@student.edu.vn|XD K49A|Xây dựng|Quảng Ninh
+SV987|Vũ Anh Tuấn|2004-05-15|Nam|100007816433|0994511150|sv987@student.edu.vn|QTKD K45C|Quản trị kinh doanh|Bình Dương
+SV988|Phạm Hữu Phong|2003-08-18|Nam|100007824389|0922298174|sv988@student.edu.vn|XD K45A|Xây dựng|Hải Phòng
+SV989|Võ Văn Long|2005-04-06|Nam|100007832110|0966544558|sv989@student.edu.vn|DĐT K45C|Điện - Điện tử|TP.HCM
+SV990|Phan Thu Phương|2003-09-26|Nữ|100007840081|0913750018|sv990@student.edu.vn|DĐT K45C|Điện - Điện tử|Phú Yên
+SV991|Võ Tuấn Việt|2005-10-23|Nam|100007847770|0932933778|sv991@student.edu.vn|CNTT K46B|Công nghệ thông tin|Phú Yên
+SV992|Đỗ Mai Phương|2004-07-18|Nữ|100007856539|0916500709|sv992@student.edu.vn|KT K46A|Kinh tế|Thái Bình
+SV993|Lê Anh Bình|2005-11-12|Nam|100007864240|0999929062|sv993@student.edu.vn|CK K46B|Cơ khí|Cần Thơ
+SV994|Trần Văn Hải|2004-11-08|Nam|100007871736|0987385291|sv994@student.edu.vn|KT K49A|Kinh tế|Nghệ An
+SV995|Huỳnh Bảo Giang|2004-09-18|Nữ|100007879938|0939755732|sv995@student.edu.vn|CK K45A|Cơ khí|Quảng Ninh
+SV996|Trần Văn Trung|2003-12-05|Nam|100007887403|0938939789|sv996@student.edu.vn|KTTC K49C|Kế toán|Lâm Đồng
+SV997|Nguyễn Gia Phong|2006-12-23|Nam|100007895490|0937132582|sv997@student.edu.vn|CNTT K49C|Công nghệ thông tin|Nghệ An
+SV998|Nguyễn Lan Trang|2004-12-03|Nữ|100007903251|0948714226|sv998@student.edu.vn|KT K46C|Kinh tế|Đà Nẵng
+SV999|Trần Mai Hà|2006-11-12|Nữ|100007911510|0941627495|sv999@student.edu.vn|KTTC K49C|Kế toán|Phú Yên
+SV1000|Huỳnh Văn Cường|2006-01-04|Nam|100007919591|0938486542|sv1000@student.edu.vn|CNTT K46B|Công nghệ thông tin|Đà Nẵng
+SV1001|Đỗ Lan Trang|2006-05-16|Nữ|100007927592|0999730345|sv1001@student.edu.vn|DĐT K49A|Điện - Điện tử|Quảng Ninh
+SV1002|Huỳnh Anh Hùng|2004-10-05|Nam|100007935411|0985094410|sv1002@student.edu.vn|DĐT K45A|Điện - Điện tử|Hải Phòng
+SV1003|Ngô Hữu Sơn|2006-12-24|Nam|100007943295|0994383578|sv1003@student.edu.vn|CK K48B|Cơ khí|Phú Yên
+SV1004|Lê Thị Châu|2005-02-04|Nữ|100007951275|0913574824|sv1004@student.edu.vn|DĐT K48C|Điện - Điện tử|Khánh Hòa
+SV1005|Phạm Phương Châu|2006-08-17|Nữ|100007959148|0927096986|sv1005@student.edu.vn|CK K46B|Cơ khí|Lâm Đồng
+124000385|Bùi Minh Tự|2006-02-03|Nam|564564565466|0865162518|tubui00998877@gmail.com|24CT114|Công nghệ thông tin|Phú yên

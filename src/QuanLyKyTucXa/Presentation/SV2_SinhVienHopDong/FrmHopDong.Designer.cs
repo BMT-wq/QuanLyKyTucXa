@@ -60,14 +60,11 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dgvStyle = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dgvHeaderStyle = new System.Windows.Forms.DataGridViewCellStyle();
-
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblHeader = new System.Windows.Forms.Label();
             this.lblSubtitle = new System.Windows.Forms.Label();
-
             this.grpThongTin = new System.Windows.Forms.GroupBox();
             this.lblMaHD = new System.Windows.Forms.Label();
             this.txtMaHD = new System.Windows.Forms.TextBox();
@@ -85,13 +82,11 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.cboTrangThai = new System.Windows.Forms.ComboBox();
             this.lblGhiChu = new System.Windows.Forms.Label();
             this.txtGhiChu = new System.Windows.Forms.TextBox();
-
             this.pnlButtons = new System.Windows.Forms.Panel();
             this.btnTaoHD = new System.Windows.Forms.Button();
             this.btnGiaHan = new System.Windows.Forms.Button();
             this.btnThanhLy = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
-
             this.grpTimKiem = new System.Windows.Forms.GroupBox();
             this.lblTimKiem = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
@@ -100,11 +95,9 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblLocPhong = new System.Windows.Forms.Label();
             this.cboLocPhong = new System.Windows.Forms.ComboBox();
             this.btnHienThiTatCa = new System.Windows.Forms.Button();
-
             this.grpDanhSach = new System.Windows.Forms.GroupBox();
             this.dgvHopDong = new System.Windows.Forms.DataGridView();
             this.lblTongSo = new System.Windows.Forms.Label();
-
             this.pnlHeader.SuspendLayout();
             this.grpThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudTienDatCoc)).BeginInit();
@@ -113,11 +106,10 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.grpDanhSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHopDong)).BeginInit();
             this.SuspendLayout();
-
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(235, 248, 235);
+            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
             this.pnlHeader.Controls.Add(this.lblHeader);
             this.pnlHeader.Controls.Add(this.lblSubtitle);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -125,33 +117,29 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(1100, 60);
             this.pnlHeader.TabIndex = 0;
-
             // 
             // lblHeader
             // 
             this.lblHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblHeader.Font = new System.Drawing.Font("Segoe UI", 13.5F, System.Drawing.FontStyle.Bold);
             this.lblHeader.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblHeader.Location = new System.Drawing.Point(0, 0);
+            this.lblHeader.Location = new System.Drawing.Point(0, 24);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(1100, 32);
             this.lblHeader.TabIndex = 0;
-            this.lblHeader.Text = "PHÂN HỆ 2: QUẢN LÝ HỢP ĐỒNG THUÊ PHÒNG NỘI TRÚ";
+            this.lblHeader.Text = "QUẢN LÝ HỢP ĐỒNG THUÊ PHÒNG NỘI TRÚ";
             this.lblHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
             // 
             // lblSubtitle
             // 
             this.lblSubtitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblSubtitle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
             this.lblSubtitle.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblSubtitle.Location = new System.Drawing.Point(0, 32);
+            this.lblSubtitle.Location = new System.Drawing.Point(0, 0);
             this.lblSubtitle.Name = "lblSubtitle";
             this.lblSubtitle.Size = new System.Drawing.Size(1100, 24);
             this.lblSubtitle.TabIndex = 1;
-            this.lblSubtitle.Text = "Lập hợp đồng mới, tự động tăng giảm sĩ số phòng, gia hạn thời gian và thanh lý hợp đồng";
             this.lblSubtitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
             // 
             // grpThongTin
             // 
@@ -180,7 +168,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.grpThongTin.TabIndex = 1;
             this.grpThongTin.TabStop = false;
             this.grpThongTin.Text = " Thông tin hợp đồng thuê phòng ";
-
             // 
             // lblMaHD
             // 
@@ -192,7 +179,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblMaHD.Size = new System.Drawing.Size(82, 15);
             this.lblMaHD.TabIndex = 0;
             this.lblMaHD.Text = "Mã hợp đồng:";
-
             // 
             // txtMaHD
             // 
@@ -201,7 +187,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.txtMaHD.Name = "txtMaHD";
             this.txtMaHD.Size = new System.Drawing.Size(245, 23);
             this.txtMaHD.TabIndex = 1;
-
             // 
             // lblSinhVien
             // 
@@ -212,19 +197,17 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblSinhVien.Name = "lblSinhVien";
             this.lblSinhVien.Size = new System.Drawing.Size(58, 15);
             this.lblSinhVien.TabIndex = 2;
-            this.lblSinhVien.Text = "Sinh viên:";
-
+            this.lblSinhVien.Text = "SV (tên/mã):";
             // 
             // cboSinhVien
             // 
-            this.cboSinhVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSinhVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.cboSinhVien.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cboSinhVien.FormattingEnabled = true;
             this.cboSinhVien.Location = new System.Drawing.Point(115, 67);
             this.cboSinhVien.Name = "cboSinhVien";
             this.cboSinhVien.Size = new System.Drawing.Size(245, 23);
             this.cboSinhVien.TabIndex = 3;
-
             // 
             // lblPhong
             // 
@@ -236,7 +219,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblPhong.Size = new System.Drawing.Size(45, 15);
             this.lblPhong.TabIndex = 4;
             this.lblPhong.Text = "Phòng:";
-
             // 
             // cboPhong
             // 
@@ -247,7 +229,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.cboPhong.Name = "cboPhong";
             this.cboPhong.Size = new System.Drawing.Size(245, 23);
             this.cboPhong.TabIndex = 5;
-
             // 
             // lblNgayBatDau
             // 
@@ -259,7 +240,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblNgayBatDau.Size = new System.Drawing.Size(81, 15);
             this.lblNgayBatDau.TabIndex = 6;
             this.lblNgayBatDau.Text = "Ngày bắt đầu:";
-
             // 
             // dtpNgayBatDau
             // 
@@ -270,7 +250,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.dtpNgayBatDau.Name = "dtpNgayBatDau";
             this.dtpNgayBatDau.Size = new System.Drawing.Size(245, 23);
             this.dtpNgayBatDau.TabIndex = 7;
-
             // 
             // lblNgayKetThuc
             // 
@@ -282,7 +261,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblNgayKetThuc.Size = new System.Drawing.Size(84, 15);
             this.lblNgayKetThuc.TabIndex = 8;
             this.lblNgayKetThuc.Text = "Ngày kết thúc:";
-
             // 
             // dtpNgayKetThuc
             // 
@@ -293,7 +271,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.dtpNgayKetThuc.Name = "dtpNgayKetThuc";
             this.dtpNgayKetThuc.Size = new System.Drawing.Size(245, 23);
             this.dtpNgayKetThuc.TabIndex = 9;
-
             // 
             // lblTienDatCoc
             // 
@@ -302,22 +279,28 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblTienDatCoc.ForeColor = System.Drawing.Color.Black;
             this.lblTienDatCoc.Location = new System.Drawing.Point(15, 230);
             this.lblTienDatCoc.Name = "lblTienDatCoc";
-            this.lblTienDatCoc.Size = new System.Drawing.Size(87, 15);
+            this.lblTienDatCoc.Size = new System.Drawing.Size(90, 15);
             this.lblTienDatCoc.TabIndex = 10;
             this.lblTienDatCoc.Text = "Tiền cọc (VNĐ):";
-
             // 
             // nudTienDatCoc
             // 
             this.nudTienDatCoc.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.nudTienDatCoc.Increment = new decimal(new int[] { 50000, 0, 0, 0 });
+            this.nudTienDatCoc.Increment = new decimal(new int[] {
+            50000,
+            0,
+            0,
+            0});
             this.nudTienDatCoc.Location = new System.Drawing.Point(115, 227);
-            this.nudTienDatCoc.Maximum = new decimal(new int[] { 100000000, 0, 0, 0 });
+            this.nudTienDatCoc.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
             this.nudTienDatCoc.Name = "nudTienDatCoc";
             this.nudTienDatCoc.Size = new System.Drawing.Size(245, 23);
             this.nudTienDatCoc.TabIndex = 11;
             this.nudTienDatCoc.ThousandsSeparator = true;
-
             // 
             // lblTrangThai
             // 
@@ -326,22 +309,23 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblTrangThai.ForeColor = System.Drawing.Color.Black;
             this.lblTrangThai.Location = new System.Drawing.Point(15, 270);
             this.lblTrangThai.Name = "lblTrangThai";
-            this.lblTrangThai.Size = new System.Drawing.Size(62, 15);
+            this.lblTrangThai.Size = new System.Drawing.Size(63, 15);
             this.lblTrangThai.TabIndex = 12;
             this.lblTrangThai.Text = "Trạng thái:";
-
             // 
             // cboTrangThai
             // 
             this.cboTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTrangThai.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cboTrangThai.FormattingEnabled = true;
-            this.cboTrangThai.Items.AddRange(new object[] { "Hiệu lực", "Đã thanh lý", "Hết hạn" });
+            this.cboTrangThai.Items.AddRange(new object[] {
+            "Hiệu lực",
+            "Đã thanh lý",
+            "Hết hạn"});
             this.cboTrangThai.Location = new System.Drawing.Point(115, 267);
             this.cboTrangThai.Name = "cboTrangThai";
             this.cboTrangThai.Size = new System.Drawing.Size(245, 23);
             this.cboTrangThai.TabIndex = 13;
-
             // 
             // lblGhiChu
             // 
@@ -353,7 +337,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblGhiChu.Size = new System.Drawing.Size(51, 15);
             this.lblGhiChu.TabIndex = 14;
             this.lblGhiChu.Text = "Ghi chú:";
-
             // 
             // txtGhiChu
             // 
@@ -363,7 +346,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(245, 65);
             this.txtGhiChu.TabIndex = 15;
-
             // 
             // pnlButtons
             // 
@@ -375,11 +357,10 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.pnlButtons.Name = "pnlButtons";
             this.pnlButtons.Size = new System.Drawing.Size(345, 145);
             this.pnlButtons.TabIndex = 16;
-
             // 
             // btnTaoHD
             // 
-            this.btnTaoHD.BackColor = System.Drawing.Color.FromArgb(46, 125, 50);
+            this.btnTaoHD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(125)))), ((int)(((byte)(50)))));
             this.btnTaoHD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTaoHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaoHD.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
@@ -390,11 +371,10 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.btnTaoHD.TabIndex = 0;
             this.btnTaoHD.Text = "📋 Lập hợp đồng";
             this.btnTaoHD.UseVisualStyleBackColor = false;
-
             // 
             // btnGiaHan
             // 
-            this.btnGiaHan.BackColor = System.Drawing.Color.FromArgb(230, 124, 0);
+            this.btnGiaHan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(124)))), ((int)(((byte)(0)))));
             this.btnGiaHan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGiaHan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGiaHan.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
@@ -405,11 +385,10 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.btnGiaHan.TabIndex = 1;
             this.btnGiaHan.Text = "⏳ Gia hạn HĐ";
             this.btnGiaHan.UseVisualStyleBackColor = false;
-
             // 
             // btnThanhLy
             // 
-            this.btnThanhLy.BackColor = System.Drawing.Color.FromArgb(198, 40, 40);
+            this.btnThanhLy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnThanhLy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThanhLy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThanhLy.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
@@ -420,11 +399,10 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.btnThanhLy.TabIndex = 2;
             this.btnThanhLy.Text = "🚪 Thanh lý HĐ";
             this.btnThanhLy.UseVisualStyleBackColor = false;
-
             // 
             // btnLamMoi
             // 
-            this.btnLamMoi.BackColor = System.Drawing.Color.FromArgb(90, 100, 110);
+            this.btnLamMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(100)))), ((int)(((byte)(110)))));
             this.btnLamMoi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLamMoi.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
@@ -435,11 +413,11 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.btnLamMoi.TabIndex = 3;
             this.btnLamMoi.Text = "🔄 Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = false;
-
             // 
             // grpTimKiem
             // 
-            this.grpTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grpTimKiem.Controls.Add(this.lblTimKiem);
             this.grpTimKiem.Controls.Add(this.txtTimKiem);
             this.grpTimKiem.Controls.Add(this.lblLocTrangThai);
@@ -455,7 +433,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.grpTimKiem.TabIndex = 2;
             this.grpTimKiem.TabStop = false;
             this.grpTimKiem.Text = " Tra cứu & Lọc hợp đồng ";
-
             // 
             // lblTimKiem
             // 
@@ -464,10 +441,9 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblTimKiem.ForeColor = System.Drawing.Color.Black;
             this.lblTimKiem.Location = new System.Drawing.Point(15, 30);
             this.lblTimKiem.Name = "lblTimKiem";
-            this.lblTimKiem.Size = new System.Drawing.Size(56, 15);
+            this.lblTimKiem.Size = new System.Drawing.Size(60, 15);
             this.lblTimKiem.TabIndex = 0;
             this.lblTimKiem.Text = "Tìm kiếm:";
-
             // 
             // txtTimKiem
             // 
@@ -476,7 +452,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(160, 23);
             this.txtTimKiem.TabIndex = 1;
-
             // 
             // lblLocTrangThai
             // 
@@ -485,22 +460,24 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblLocTrangThai.ForeColor = System.Drawing.Color.Black;
             this.lblLocTrangThai.Location = new System.Drawing.Point(245, 30);
             this.lblLocTrangThai.Name = "lblLocTrangThai";
-            this.lblLocTrangThai.Size = new System.Drawing.Size(62, 15);
+            this.lblLocTrangThai.Size = new System.Drawing.Size(63, 15);
             this.lblLocTrangThai.TabIndex = 2;
             this.lblLocTrangThai.Text = "Trạng thái:";
-
             // 
             // cboLocTrangThai
             // 
             this.cboLocTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLocTrangThai.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cboLocTrangThai.FormattingEnabled = true;
-            this.cboLocTrangThai.Items.AddRange(new object[] { "Tất cả", "Hiệu lực", "Đã thanh lý", "Hết hạn" });
+            this.cboLocTrangThai.Items.AddRange(new object[] {
+            "Tất cả",
+            "Hiệu lực",
+            "Đã thanh lý",
+            "Hết hạn"});
             this.cboLocTrangThai.Location = new System.Drawing.Point(310, 27);
             this.cboLocTrangThai.Name = "cboLocTrangThai";
             this.cboLocTrangThai.Size = new System.Drawing.Size(110, 23);
             this.cboLocTrangThai.TabIndex = 3;
-
             // 
             // lblLocPhong
             // 
@@ -512,7 +489,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblLocPhong.Size = new System.Drawing.Size(45, 15);
             this.lblLocPhong.TabIndex = 4;
             this.lblLocPhong.Text = "Phòng:";
-
             // 
             // cboLocPhong
             // 
@@ -523,11 +499,10 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.cboLocPhong.Name = "cboLocPhong";
             this.cboLocPhong.Size = new System.Drawing.Size(95, 23);
             this.cboLocPhong.TabIndex = 5;
-
             // 
             // btnHienThiTatCa
             // 
-            this.btnHienThiTatCa.BackColor = System.Drawing.Color.FromArgb(240, 244, 248);
+            this.btnHienThiTatCa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(248)))));
             this.btnHienThiTatCa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHienThiTatCa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHienThiTatCa.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Bold);
@@ -538,11 +513,12 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.btnHienThiTatCa.TabIndex = 6;
             this.btnHienThiTatCa.Text = "Hiện tất cả";
             this.btnHienThiTatCa.UseVisualStyleBackColor = false;
-
             // 
             // grpDanhSach
             // 
-            this.grpDanhSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpDanhSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grpDanhSach.Controls.Add(this.dgvHopDong);
             this.grpDanhSach.Controls.Add(this.lblTongSo);
             this.grpDanhSach.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
@@ -553,33 +529,34 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.grpDanhSach.TabIndex = 3;
             this.grpDanhSach.TabStop = false;
             this.grpDanhSach.Text = " Danh sách hợp đồng thuê phòng ";
-
             // 
             // dgvHopDong
             // 
             this.dgvHopDong.AllowUserToAddRows = false;
             this.dgvHopDong.AllowUserToDeleteRows = false;
             this.dgvHopDong.AllowUserToResizeRows = false;
-            dgvStyle.BackColor = System.Drawing.Color.FromArgb(248, 253, 248);
-            this.dgvHopDong.AlternatingRowsDefaultCellStyle = dgvStyle;
-            this.dgvHopDong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(253)))), ((int)(((byte)(248)))));
+            this.dgvHopDong.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvHopDong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvHopDong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvHopDong.BackgroundColor = System.Drawing.Color.White;
             this.dgvHopDong.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvHopDong.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dgvHeaderStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dgvHeaderStyle.BackColor = System.Drawing.Color.FromArgb(235, 245, 235);
-            dgvHeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            dgvHeaderStyle.ForeColor = System.Drawing.Color.DarkGreen;
-            dgvHeaderStyle.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dgvHeaderStyle.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dgvHeaderStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvHopDong.ColumnHeadersDefaultCellStyle = dgvHeaderStyle;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(245)))), ((int)(((byte)(235)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DarkGreen;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvHopDong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvHopDong.ColumnHeadersHeight = 32;
             this.dgvHopDong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvHopDong.EnableHeadersVisualStyles = false;
             this.dgvHopDong.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dgvHopDong.GridColor = System.Drawing.Color.FromArgb(220, 235, 220);
+            this.dgvHopDong.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(235)))), ((int)(((byte)(220)))));
             this.dgvHopDong.Location = new System.Drawing.Point(10, 25);
             this.dgvHopDong.MultiSelect = false;
             this.dgvHopDong.Name = "dgvHopDong";
@@ -589,7 +566,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.dgvHopDong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvHopDong.Size = new System.Drawing.Size(660, 425);
             this.dgvHopDong.TabIndex = 0;
-
             // 
             // lblTongSo
             // 
@@ -599,10 +575,9 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.lblTongSo.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblTongSo.Location = new System.Drawing.Point(10, 458);
             this.lblTongSo.Name = "lblTongSo";
-            this.lblTongSo.Size = new System.Drawing.Size(129, 15);
+            this.lblTongSo.Size = new System.Drawing.Size(113, 15);
             this.lblTongSo.TabIndex = 1;
             this.lblTongSo.Text = "Tổng số: 0 hợp đồng";
-
             // 
             // FrmHopDong
             // 
@@ -619,7 +594,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản lý Hợp đồng Thuê phòng Ký túc xá";
             this.Load += new System.EventHandler(this.FrmHopDong_Load);
-
             this.pnlHeader.ResumeLayout(false);
             this.grpThongTin.ResumeLayout(false);
             this.grpThongTin.PerformLayout();
@@ -631,6 +605,7 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             this.grpDanhSach.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHopDong)).EndInit();
             this.ResumeLayout(false);
+
         }
     }
 }

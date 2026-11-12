@@ -14,6 +14,7 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
         private readonly DataContext _context;
         private readonly HopDongService _hopDongService;
         private bool _isBinding = false;
+        private bool _dangLocSinhVien = false;
 
         private class ComboBoxItem
         {
@@ -45,7 +46,6 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
         private void InitControls()
         {
-            cboTrangThai.SelectedIndex = 0;
             cboLocTrangThai.SelectedIndex = 0;
 
             dtpNgayBatDau.Value = DateTime.Today;
@@ -62,8 +62,14 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             cboLocTrangThai.SelectedIndexChanged += CboLoc_SelectedIndexChanged;
             cboLocPhong.SelectedIndexChanged += CboLoc_SelectedIndexChanged;
 
+            // Cho phép gõ tên hoặc mã sinh viên để lọc nhanh danh sách trong combobox
+            cboSinhVien.TextUpdate += CboSinhVien_TextUpdate;
+            cboSinhVien.SelectedIndexChanged += CboSinhVien_SelectedIndexChanged;
+            cboSinhVien.Leave += CboSinhVien_Leave;
+
             dgvHopDong.SelectionChanged += DgvHopDong_SelectionChanged;
             dgvHopDong.CellClick += DgvHopDong_CellClick;
+            dgvHopDong.CellFormatting += DgvHopDong_CellFormatting;
 
             ConfigureDataGridView();
         }
@@ -84,6 +90,22 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             {
                 DataPropertyName = nameof(HopDong.MaSV),
                 HeaderText = "Mã SV",
+                Width = 80
+            });
+
+            // Hai cột dưới đây không bind trực tiếp vì HopDong chỉ lưu Mã SV;
+            // dữ liệu được điền trong sự kiện CellFormatting.
+            dgvHopDong.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "colSinhVien",
+                HeaderText = "Sinh viên",
+                Width = 150
+            });
+
+            dgvHopDong.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "colLop",
+                HeaderText = "Lớp",
                 Width = 90
             });
 
@@ -91,7 +113,7 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             {
                 DataPropertyName = nameof(HopDong.MaPhong),
                 HeaderText = "Phòng",
-                Width = 85
+                Width = 75
             });
 
             dgvHopDong.Columns.Add(new DataGridViewTextBoxColumn
@@ -137,52 +159,88 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             });
         }
 
-        private void LoadSinhVienComboBox()
+        private void LoadSinhVienComboBox(string keyword = null)
         {
             if (_context?.DanhSachSinhVien == null) return;
 
-            cboSinhVien.Items.Clear();
-            foreach (var sv in _context.DanhSachSinhVien)
+            bool dangLocTruocDo = _dangLocSinhVien;
+            _dangLocSinhVien = true;
+            try
             {
-                bool daCoHD = _hopDongService.KiemTraSinhVienCoHopDongHieuLuc(sv.MaSV);
-                string tag = daCoHD ? " [Đã có phòng]" : " [Chưa thuê]";
-                cboSinhVien.Items.Add(new ComboBoxItem
-                {
-                    Value = sv.MaSV,
-                    Text = $"{sv.HoTen} ({sv.MaSV}) - {sv.Lop}{tag}"
-                });
-            }
+                string kw = HopDongService.ChuanHoaTimKiem(keyword);
 
-            if (cboSinhVien.Items.Count > 0)
+                // Tập hợp sinh viên đang có hợp đồng hiệu lực (tính một lần cho nhanh)
+                var sinhVienDaCoHopDong = new HashSet<string>(
+                    _context.DanhSachHopDong
+                        .Where(h => h.TrangThai == "Hiệu lực")
+                        .Select(h => h.MaSV),
+                    StringComparer.OrdinalIgnoreCase);
+
+                cboSinhVien.BeginUpdate();
+                cboSinhVien.Items.Clear();
+                foreach (var sv in _context.DanhSachSinhVien)
+                {
+                    if (kw.Length > 0 &&
+                        !HopDongService.ChuanHoaTimKiem(sv.MaSV).Contains(kw) &&
+                        !HopDongService.ChuanHoaTimKiem(sv.HoTen).Contains(kw) &&
+                        !HopDongService.ChuanHoaTimKiem(sv.Lop).Contains(kw))
+                    {
+                        continue;
+                    }
+
+                    string tag = sinhVienDaCoHopDong.Contains(sv.MaSV) ? " [Đã có phòng]" : " [Chưa thuê]";
+                    cboSinhVien.Items.Add(new ComboBoxItem
+                    {
+                        Value = sv.MaSV,
+                        Text = $"{sv.HoTen} ({sv.MaSV}) - {sv.Lop}{tag}"
+                    });
+                }
+                cboSinhVien.EndUpdate();
+            }
+            finally
             {
-                cboSinhVien.SelectedIndex = 0;
+                _dangLocSinhVien = dangLocTruocDo;
             }
         }
 
-        private void LoadPhongComboBox(string includeMaPhong = null)
+        private void LoadPhongComboBox(string includeMaPhong = null, string gioiTinh = null)
         {
             if (_context?.DanhSachPhong == null) return;
 
-            cboPhong.Items.Clear();
-            var phongList = _context.DanhSachPhong;
+            string gt = HopDongService.ChuanHoaGioiTinh(gioiTinh);
 
-            foreach (var p in phongList)
+            cboPhong.BeginUpdate();
+            cboPhong.Items.Clear();
+
+            foreach (var p in _context.DanhSachPhong)
             {
+                bool conCho = p.SoChoHienTai < p.SoChoToiDa && p.TrangThai != "Đang sửa chữa";
+                bool cuaHopDongDangXem = !string.IsNullOrEmpty(includeMaPhong) &&
+                                         p.MaPhong.Equals(includeMaPhong, StringComparison.OrdinalIgnoreCase);
+
                 // Chỉ nạp phòng còn chỗ hoặc phòng của hợp đồng đang xem
-                if (p.SoChoHienTai < p.SoChoToiDa || p.MaPhong.Equals(includeMaPhong, StringComparison.OrdinalIgnoreCase))
+                if (!conCho && !cuaHopDongDangXem) continue;
+
+                // Nam chỉ ở phòng Nam, Nữ chỉ ở phòng Nữ
+                if (gt.Length > 0 && !cuaHopDongDangXem &&
+                    HopDongService.ChuanHoaGioiTinh(p.LoaiPhong) != gt)
                 {
-                    int choTrong = Math.Max(0, p.SoChoToiDa - p.SoChoHienTai);
-                    cboPhong.Items.Add(new ComboBoxItem
-                    {
-                        Value = p.MaPhong,
-                        Text = $"{p.TenPhong} ({p.MaPhong}) - {p.LoaiPhong} [Trống: {choTrong}/{p.SoChoToiDa}]"
-                    });
+                    continue;
                 }
+
+                int choTrong = Math.Max(0, p.SoChoToiDa - p.SoChoHienTai);
+                cboPhong.Items.Add(new ComboBoxItem
+                {
+                    Value = p.MaPhong,
+                    Text = $"{p.TenPhong} ({p.MaPhong}) - {p.LoaiPhong} [Trống: {choTrong}/{p.SoChoToiDa}]"
+                });
             }
 
-            if (cboPhong.Items.Count > 0)
+            cboPhong.EndUpdate();
+
+            if (!string.IsNullOrEmpty(includeMaPhong))
             {
-                cboPhong.SelectedIndex = 0;
+                ChonPhongTrongCombo(includeMaPhong);
             }
         }
 
@@ -215,9 +273,22 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
             var list = ApplyFilters();
             _isBinding = true;
-            dgvHopDong.DataSource = null;
-            dgvHopDong.DataSource = list;
-            _isBinding = false;
+            try
+            {
+                dgvHopDong.DataSource = null;
+                dgvHopDong.DataSource = list;
+
+                // Không tự chọn dòng đầu tiên để phần thông tin hợp đồng không bị điền lại
+                dgvHopDong.ClearSelection();
+                if (dgvHopDong.CurrentRow != null)
+                {
+                    dgvHopDong.CurrentCell = null;
+                }
+            }
+            finally
+            {
+                _isBinding = false;
+            }
 
             int countHieuLuc = _hopDongService.GetAllHopDong().Count(h => h.TrangThai == "Hiệu lực");
             lblTongSo.Text = $"Tổng số: {list.Count} hợp đồng ({countHieuLuc} hợp đồng đang có hiệu lực)";
@@ -262,36 +333,170 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             }
         }
 
+        private void DgvHopDong_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.ColumnIndex < 0) return;
+            if (!(dgvHopDong.Rows[e.RowIndex].DataBoundItem is HopDong hd)) return;
+
+            string tenCot = dgvHopDong.Columns[e.ColumnIndex].Name;
+            if (tenCot == "colSinhVien")
+            {
+                var sv = _hopDongService?.GetSinhVienById(hd.MaSV);
+                e.Value = sv?.HoTen ?? "(Không tìm thấy)";
+                e.FormattingApplied = true;
+            }
+            else if (tenCot == "colLop")
+            {
+                var sv = _hopDongService?.GetSinhVienById(hd.MaSV);
+                e.Value = sv?.Lop ?? string.Empty;
+                e.FormattingApplied = true;
+            }
+        }
+
+        private void CboSinhVien_TextUpdate(object sender, EventArgs e)
+        {
+            if (_isBinding || _dangLocSinhVien) return;
+
+            // Khi chọn một dòng trong dropdown, ComboBox có thể phát sinh TextUpdate;
+            // bỏ qua để không lọc nhầm theo toàn bộ nội dung dòng đã chọn.
+            if (cboSinhVien.SelectedItem is ComboBoxItem daChon && cboSinhVien.Text == daChon.Text)
+            {
+                return;
+            }
+
+            string keyword = cboSinhVien.Text;
+            LoadSinhVienComboBox(keyword);
+
+            _dangLocSinhVien = true;
+            try
+            {
+                cboSinhVien.Text = keyword;
+                cboSinhVien.SelectionStart = keyword.Length;
+            }
+            finally
+            {
+                _dangLocSinhVien = false;
+            }
+
+            // Khi đang gõ tìm kiếm thì chưa xác định sinh viên -> hiển thị toàn bộ phòng
+            if (!(cboSinhVien.SelectedItem is ComboBoxItem))
+            {
+                LoadPhongComboBox(null, null);
+            }
+
+            if (cboSinhVien.Items.Count > 0 && cboSinhVien.Focused)
+            {
+                cboSinhVien.DroppedDown = true;
+            }
+        }
+
+        private void CboSinhVien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (_isBinding || _dangLocSinhVien) return;
+
+            var sv = GetSelectedSinhVien();
+            LoadPhongComboBox(null, sv?.GioiTinh);
+        }
+
+        private void CboSinhVien_Leave(object sender, EventArgs e)
+        {
+            if (_isBinding || _dangLocSinhVien) return;
+            if (cboSinhVien.SelectedItem is ComboBoxItem) return;
+
+            string text = cboSinhVien.Text.Trim();
+            if (text.Length == 0)
+            {
+                LoadPhongComboBox(null, null);
+                return;
+            }
+
+            var sv = TimSinhVienTheoChuoi(text);
+            if (sv != null)
+            {
+                LoadSinhVienComboBox();
+                ChonSinhVienTrongCombo(sv.MaSV);
+            }
+            else
+            {
+                LoadPhongComboBox(null, null);
+            }
+        }
+
+        private SinhVien GetSelectedSinhVien()
+        {
+            if (cboSinhVien.SelectedItem is ComboBoxItem item)
+            {
+                return _hopDongService?.GetSinhVienById(item.Value);
+            }
+
+            return TimSinhVienTheoChuoi(cboSinhVien.Text);
+        }
+
+        private SinhVien TimSinhVienTheoChuoi(string text)
+        {
+            if (_context?.DanhSachSinhVien == null || string.IsNullOrWhiteSpace(text)) return null;
+
+            string value = text.Trim();
+
+            // Ưu tiên khớp chính xác theo mã sinh viên
+            var theoMa = _context.DanhSachSinhVien
+                .FirstOrDefault(s => string.Equals(s.MaSV, value, StringComparison.OrdinalIgnoreCase));
+            if (theoMa != null) return theoMa;
+
+            // Sau đó khớp chính xác theo họ tên (không phân biệt dấu, hoa thường)
+            string chuanHoa = HopDongService.ChuanHoaTimKiem(value);
+            var theoTen = _context.DanhSachSinhVien
+                .Where(s => HopDongService.ChuanHoaTimKiem(s.HoTen) == chuanHoa)
+                .ToList();
+
+            return theoTen.Count == 1 ? theoTen[0] : null;
+        }
+
+        private void ChonSinhVienTrongCombo(string maSV)
+        {
+            for (int i = 0; i < cboSinhVien.Items.Count; i++)
+            {
+                if (cboSinhVien.Items[i] is ComboBoxItem item &&
+                    item.Value.Equals(maSV, StringComparison.OrdinalIgnoreCase))
+                {
+                    cboSinhVien.SelectedIndex = i;
+                    return;
+                }
+            }
+        }
+
+        private void ChonPhongTrongCombo(string maPhong)
+        {
+            for (int i = 0; i < cboPhong.Items.Count; i++)
+            {
+                if (cboPhong.Items[i] is ComboBoxItem item &&
+                    item.Value.Equals(maPhong, StringComparison.OrdinalIgnoreCase))
+                {
+                    cboPhong.SelectedIndex = i;
+                    return;
+                }
+            }
+        }
+
         private void SyncSelectionToForm()
         {
-            if (dgvHopDong.CurrentRow?.DataBoundItem is HopDong hd)
+            if (!(dgvHopDong.CurrentRow?.DataBoundItem is HopDong hd)) return;
+
+            bool dangBindingTruocDo = _isBinding;
+            _isBinding = true;
+            try
             {
                 txtMaHD.Text = hd.MaHopDong;
                 txtMaHD.ReadOnly = true;
                 txtMaHD.BackColor = Color.FromArgb(245, 245, 245);
 
-                // Nạp lại cboPhong để đảm bảo hiển thị đúng phòng của HĐ này
-                LoadPhongComboBox(hd.MaPhong);
+                // Nạp lại danh sách sinh viên đầy đủ rồi chọn đúng sinh viên của hợp đồng
+                LoadSinhVienComboBox();
+                ChonSinhVienTrongCombo(hd.MaSV);
 
-                // Chọn sinh viên
-                for (int i = 0; i < cboSinhVien.Items.Count; i++)
-                {
-                    if (cboSinhVien.Items[i] is ComboBoxItem item && item.Value.Equals(hd.MaSV, StringComparison.OrdinalIgnoreCase))
-                    {
-                        cboSinhVien.SelectedIndex = i;
-                        break;
-                    }
-                }
-
-                // Chọn phòng
-                for (int i = 0; i < cboPhong.Items.Count; i++)
-                {
-                    if (cboPhong.Items[i] is ComboBoxItem item && item.Value.Equals(hd.MaPhong, StringComparison.OrdinalIgnoreCase))
-                    {
-                        cboPhong.SelectedIndex = i;
-                        break;
-                    }
-                }
+                // Chỉ đổ xuống các phòng phù hợp với giới tính của sinh viên
+                var sv = GetSelectedSinhVien();
+                LoadPhongComboBox(hd.MaPhong, sv?.GioiTinh);
 
                 dtpNgayBatDau.Value = hd.NgayBatDau;
                 dtpNgayKetThuc.Value = hd.NgayKetThuc;
@@ -299,22 +504,49 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
                 cboTrangThai.SelectedItem = hd.TrangThai ?? "Hiệu lực";
                 txtGhiChu.Text = hd.GhiChu;
             }
+            finally
+            {
+                _isBinding = dangBindingTruocDo;
+            }
         }
 
+        /// <summary>
+        /// Làm mới: tự sinh mã hợp đồng mới, xóa trắng các thông tin còn lại và bỏ chọn dòng trong danh sách.
+        /// </summary>
         private void ResetForm()
         {
-            txtMaHD.ReadOnly = false;
-            txtMaHD.BackColor = Color.White;
-            txtMaHD.Text = _hopDongService?.SinhMaHopDongTuDong() ?? "HD001";
+            bool dangBindingTruocDo = _isBinding;
+            _isBinding = true;
+            try
+            {
+                txtMaHD.ReadOnly = false;
+                txtMaHD.BackColor = Color.White;
+                txtMaHD.Text = _hopDongService?.SinhMaHopDongTuDong() ?? string.Empty;
 
-            LoadSinhVienComboBox();
-            LoadPhongComboBox();
+                LoadSinhVienComboBox();
+                cboSinhVien.SelectedIndex = -1;
+                cboSinhVien.Text = string.Empty;
 
-            dtpNgayBatDau.Value = DateTime.Today;
-            dtpNgayKetThuc.Value = DateTime.Today.AddMonths(5);
-            nudTienDatCoc.Value = 500000;
-            cboTrangThai.SelectedItem = "Hiệu lực";
-            txtGhiChu.Clear();
+                LoadPhongComboBox(null, null);
+                cboPhong.SelectedIndex = -1;
+                cboPhong.Text = string.Empty;
+
+                dtpNgayBatDau.Value = DateTime.Today;
+                dtpNgayKetThuc.Value = DateTime.Today.AddMonths(5);
+                nudTienDatCoc.Value = nudTienDatCoc.Minimum;
+                cboTrangThai.SelectedIndex = -1;
+                txtGhiChu.Clear();
+
+                dgvHopDong.ClearSelection();
+                if (dgvHopDong.CurrentRow != null)
+                {
+                    dgvHopDong.CurrentCell = null;
+                }
+            }
+            finally
+            {
+                _isBinding = dangBindingTruocDo;
+            }
 
             txtMaHD.Focus();
         }
@@ -329,15 +561,52 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
                 return;
             }
 
-            if (!(cboSinhVien.SelectedItem is ComboBoxItem svItem))
+            var sv = GetSelectedSinhVien();
+            if (sv == null)
             {
-                MessageBox.Show("Vui lòng chọn sinh viên cần lập hợp đồng!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(
+                    "Vui lòng chọn sinh viên cần lập hợp đồng!\n" +
+                    "Gợi ý: gõ tên hoặc mã sinh viên vào ô 'Sinh viên' để tìm nhanh.",
+                    "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboSinhVien.Focus();
                 return;
+            }
+
+            // Hiển thị đúng sinh viên đã chọn trong combobox (không làm mất phòng đã chọn)
+            if (!(cboSinhVien.SelectedItem is ComboBoxItem))
+            {
+                bool dangBindingTruocDo = _isBinding;
+                _isBinding = true;
+                try
+                {
+                    ChonSinhVienTrongCombo(sv.MaSV);
+                }
+                finally
+                {
+                    _isBinding = dangBindingTruocDo;
+                }
             }
 
             if (!(cboPhong.SelectedItem is ComboBoxItem phongItem))
             {
-                MessageBox.Show("Vui lòng chọn phòng ký túc xá cho sinh viên!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(
+                    $"Sinh viên '{sv.HoTen}' là {sv.GioiTinh}. Vui lòng chọn phòng dành cho {sv.GioiTinh}!",
+                    "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboPhong.Focus();
+                return;
+            }
+
+            var phong = _context.DanhSachPhong
+                .FirstOrDefault(p => p.MaPhong.Equals(phongItem.Value, StringComparison.OrdinalIgnoreCase));
+
+            if (phong != null && !HopDongService.KiemTraGioiTinhPhuHop(sv, phong))
+            {
+                MessageBox.Show(
+                    $"Sinh viên '{sv.HoTen} ({sv.MaSV})' là {(HopDongService.ChuanHoaGioiTinh(sv.GioiTinh) == "nu" ? "Nữ" : "Nam")}, " +
+                    $"không thể xếp vào phòng '{phong.TenPhong}' dành cho {phong.LoaiPhong}.\n" +
+                    $"Vui lòng chọn phòng dành cho {(HopDongService.ChuanHoaGioiTinh(sv.GioiTinh) == "nu" ? "Nữ" : "Nam")}!",
+                    "Sai giới tính phòng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboPhong.Focus();
                 return;
             }
 
@@ -349,7 +618,7 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
             var hd = new HopDong(
                 maHD,
-                svItem.Value,
+                sv.MaSV,
                 phongItem.Value,
                 dtpNgayBatDau.Value,
                 dtpNgayKetThuc.Value,
@@ -362,15 +631,13 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
             {
                 MessageBox.Show(
                     $"Tạo hợp đồng '{maHD}' thành công!\n" +
-                    $"- Sinh viên: {svItem.Text}\n" +
+                    $"- Sinh viên: {sv.HoTen} ({sv.MaSV})\n" +
                     $"- Phòng: {phongItem.Value}\n" +
                     $"- Sĩ số phòng đã được tự động cập nhật.",
                     "Thông báo thành công",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
 
-                LoadSinhVienComboBox();
-                LoadPhongComboBox();
                 LoadPhongFilter();
                 LoadData();
                 ResetForm();
@@ -460,10 +727,9 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
 
-                    LoadSinhVienComboBox();
-                    LoadPhongComboBox();
                     LoadPhongFilter();
                     LoadData();
+                    ResetForm();
                 }
                 else
                 {
@@ -474,6 +740,8 @@ namespace QuanLyKyTucXa.Presentation.SV2_SinhVienHopDong
 
         private void BtnLamMoi_Click(object sender, EventArgs e)
         {
+            // Nạp lại danh sách mới nhất rồi xóa trắng phần thông tin hợp đồng
+            LoadData();
             ResetForm();
         }
 
